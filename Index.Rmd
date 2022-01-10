@@ -1,0 +1,112 @@
+---
+title: "Vorhersagemodellierung"
+subtitle: "Einführung mit R"
+author: "Sebastian Sauer"
+date: "Letzte Aktualisierung: `r Sys.time()`"
+output:
+   
+  rmdformats::downcute:
+    self_contained: true
+    thumbnails: true
+    lightbox: true
+    gallery: false
+    highlight: tango
+    number_sections: TRUE
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r global-knitr-options, include=FALSE}
+  knitr::opts_chunk$set(
+  fig.pos = 'H',
+  fig.asp = 0.618,
+  fig.align='center',
+  fig.width = 5,
+  out.width = "100%",
+  fig.cap = "", 
+  fig.path = "chunk-img/",
+  dpi = 300,
+  # tidy = TRUE,
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE,
+  cache = FALSE,
+  fig.show = "hold")
+```
+
+
+
+```{r bib, cache=FALSE}
+library(RefManageR)
+BibOptions(check.entries = FALSE, 
+           bib.style = "authoryear", 
+           style = "markdown",
+           max.names = 5,
+           dashed = TRUE,
+           no.print.fields = 
+             c("url", "page","isbn", "location", "urldate", "note", "urldate", "issn")
+           )
+bib_file <- "bib.bib"
+bib <- ReadBib(bib_file)
+```
+
+---
+
+**WORK IN PROGRESS**
+
+---
+
+# tl;dr
+
+
+
+
+
+
+
+# Hinweise
+
+- Dieser Kurs ist lizensiert unter der [MIT Lizenz](https://github.com/sebastiansauer/bayes-start/blob/main/LICENSE). Das ist eine permissive Lizenz, die erlaubt, dass Sie diesen Kurs frei verwenden können. Sie haben (nur) die Verpflichtung, zu zitieren und auf die Lizenzart hinzuweisen.
+
+- [Installation von R und seinen Freunden ](https://data-se.netlify.app/2021/11/30/installation-von-r-und-seiner-freunde/)
+
+
+
+
+- Mitarbeit oder Verbesserungsvorschläge: am besten als [Github Issue](https://github.com/sebastiansauer/bayes-start/issues) einstellen.
+
+
+
+# Themen
+
+
+# Prüfung
+
+Bei der Prüfung handelt es sich um einen *Prognosewettbewerb.*
+
+## Hinweise zur Prüfung
+
+[Hinweise zur Prüfung]()
+
+
+
+
+# Literatur
+
+```{r Hinweise-1, results='asis', echo=FALSE, cache=FALSE}
+RefManageR::PrintBibliography(bib)
+```
+
+
+
+
+# Kudos
+
+Beim Schreiben dieses Kurses habe ich auf der Vorarbeit vieler Menschen aufgebaut.
+Viele Menschen haben mich unterstützt, großzügig und auf verschiedene Weise.
+
+Einige möchte ich herausgreifen, um Danke zu sagen:
+
+- Kollegis wie Karsten Lübke, von denen ich viel gelernt habe.
+- Alle Open-Source-Entwickler, die Projekte wie dieses überhaupt erst möglichen machen. 💌
+
