@@ -1,6 +1,6 @@
 ---
 title: "Vorhersagemodellierung"
-subtitle: "Einführung mit R"
+subtitle: "Ein Einführungskurs mit R"
 author: "Sebastian Sauer"
 date: "Letzte Aktualisierung: `r Sys.time()`"
 output:
@@ -86,7 +86,7 @@ Bei der Prüfung handelt es sich um einen *Prognosewettbewerb.*
 
 ## Hinweise zur Prüfung
 
-[Hinweise zur Prüfung]()
+[Hinweise zur Prüfung](https://sebastiansauer.github.io/vorhersagemodellierung/Hinweise-Prognosewettbewerb.html)
 
 
 
