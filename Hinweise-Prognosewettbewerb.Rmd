@@ -1,7 +1,7 @@
 ---
 title: "Hinweise zur Prüfungsleistung 'Vorhersagemodellierung'"
 author: "Sebastian Sauer"
-date: "`r Sys.Date()`"
+date: "`r Sys.time()`"
 output:
   rmdformats::downcute:
     self_contained: true
@@ -89,7 +89,7 @@ Das Modell wird angewendet auf die Testdaten (Anwendungsdaten).
 Da man hier aber auch die Zielvariable ($y_0$) kennt, kann damit das Modell evaluiert werden.
 
 
-# Koeffizient zur Güte der Vorhersagegüte 
+# Gütemaßstab 
 
 Ihre Aufgabe ist: Spielen Sie den Data-Scientist! 
 Konstruieren Sie ein Modell auf Basis der Trainingsdaten $(\bf{x},y$) 
@@ -98,10 +98,10 @@ und sagen Sie für die Anwendungsdaten ($\bf{x_0}$) die Zielvariable möglichst 
 Ihr(e) Dozent\*in kennt den Wert der Zielvariable ($y_0$).
 
 
-Zur Bewertung der Vorhersagegüte wird $R^2$ herangezogen.
 
 Von zwei Prognosemodellen zum gleichen Datensatz ist dasjenige Modell besser,
-das einen höheren $R^2$-Wert aufweist. Kurz gesagt: Höher ist besser.
+das weniger Vorhersagefehler aufweist, also genauer vorhersagt. 
+Kurz gesagt: Genauer ist besser.
 
 <!-- Zur Bewertung der Vorhersagegüte wird der mittlere absolute Fehler als Koeffizient $\text{MAE}$ (${\bf{m}}$ean ${\bf{a}}$bsolute ${\bf{e}}$rror) auf die Anwendungsdaten herangezogen: -->
 

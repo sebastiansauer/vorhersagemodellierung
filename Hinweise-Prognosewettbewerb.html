@@ -7,7 +7,6 @@
 
         <meta name="author" content="Sebastian Sauer" />
     
-        <meta name="date" content="2022-01-10" />
     
     <title>Hinweise zur Prüfungsleistung ‘Vorhersagemodellierung’</title>
 
@@ -1828,7 +1827,7 @@ Prism.languages.r={comment:/#.*/,string:{pattern:/(['"])(?:\\.|(?!\1)[^\\\r\n])*
             <ul>
             <li><a href="#tldr-zusammenfassung"><span class="toc-section-number">1</span> tl;dr: Zusammenfassung</a></li>
             <li><a href="#vorhersage"><span class="toc-section-number">2</span> Vorhersage</a></li>
-            <li><a href="#koeffizient-zur-güte-der-vorhersagegüte"><span class="toc-section-number">3</span> Koeffizient zur Güte der Vorhersagegüte</a></li>
+            <li><a href="#gütemaßstab"><span class="toc-section-number">3</span> Gütemaßstab</a></li>
             <li><a href="#zum-aufbau-ihrer-prognosedatei-im-csv-format"><span class="toc-section-number">4</span> Zum Aufbau Ihrer Prognosedatei im CSV-Format</a></li>
             <li><a href="#einzureichende-dateien"><span class="toc-section-number">5</span> Einzureichende Dateien</a></li>
             <li><a href="#tipps"><span class="toc-section-number">6</span> Tipps</a>
@@ -1838,7 +1837,11 @@ Prism.languages.r={comment:/#.*/,string:{pattern:/(['"])(?:\\.|(?!\1)[^\\\r\n])*
             <li><a href="#tipps-zum-aufbau-des-analyseskripts"><span class="toc-section-number">6.3</span> Tipps zum Aufbau des Analyseskripts</a></li>
             <li><a href="#sonstiges"><span class="toc-section-number">6.4</span> Sonstiges</a></li>
             </ul></li>
-            <li><a href="#bewertung"><span class="toc-section-number">7</span> Bewertung</a></li>
+            <li><a href="#bewertung"><span class="toc-section-number">7</span> Bewertung</a>
+            <ul>
+            <li><a href="#kriterien"><span class="toc-section-number">7.1</span> Kriterien</a></li>
+            <li><a href="#grenzwerte-für-notenstufen"><span class="toc-section-number">7.2</span> Grenzwerte für Notenstufen</a></li>
+            </ul></li>
             <li><a href="#hinweise"><span class="toc-section-number">8</span> Hinweise</a></li>
             <li><a href="#formalia"><span class="toc-section-number">9</span> Formalia</a></li>
             <li><a href="#wo-finde-ich-beispiele"><span class="toc-section-number">10</span> Wo finde ich Beispiele?</a></li>
@@ -1857,7 +1860,7 @@ Prism.languages.r={comment:/#.*/,string:{pattern:/(['"])(?:\\.|(?!\1)[^\\\r\n])*
       <p class="authors">
            <span class="glyphicon glyphicon-user"></span> Sebastian Sauer
       </p>
-         <p class="date"><span class="glyphicon glyphicon-calendar"></span> 2022-01-10</p>
+         <p class="date"><span class="glyphicon glyphicon-calendar"></span> 2022-01-11 22:45:00</p>
            
 
    
@@ -1888,12 +1891,11 @@ Prism.languages.r={comment:/#.*/,string:{pattern:/(['"])(?:\\.|(?!\1)[^\\\r\n])*
 </ol>
 <p>Im Computer kann man dieses Anwendungsszenario <em>simulieren</em>: man teilt die Datenmenge <em>zufällig</em> in eine Lern- bzw. Trainingsstichprobe (Trainingsdaten; <span class="math inline">\((\bf{x},y)\)</span>) und eine Teststichprobe (Anwendungsdaten, <span class="math inline">\((\bf{x_0})\)</span>) auf: Die Modellierung erfolgt auf den Trainingsdaten. Das Modell wird angewendet auf die Testdaten (Anwendungsdaten). Da man hier aber auch die Zielvariable (<span class="math inline">\(y_0\)</span>) kennt, kann damit das Modell evaluiert werden.</p>
 </div>
-<div id="koeffizient-zur-güte-der-vorhersagegüte" class="section level1" number="3">
-<h1><span class="header-section-number">3</span> Koeffizient zur Güte der Vorhersagegüte</h1>
+<div id="gütemaßstab" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Gütemaßstab</h1>
 <p>Ihre Aufgabe ist: Spielen Sie den Data-Scientist! Konstruieren Sie ein Modell auf Basis der Trainingsdaten <span class="math inline">\((\bf{x},y\)</span>) und sagen Sie für die Anwendungsdaten (<span class="math inline">\(\bf{x_0}\)</span>) die Zielvariable möglichst genau voraus (<span class="math inline">\(\hat{y}_0\)</span>).</p>
 <p>Ihr(e) Dozent*in kennt den Wert der Zielvariable (<span class="math inline">\(y_0\)</span>).</p>
-<p>Zur Bewertung der Vorhersagegüte wird <span class="math inline">\(R^2\)</span> herangezogen.</p>
-<p>Von zwei Prognosemodellen zum gleichen Datensatz ist dasjenige Modell besser, das einen höheren <span class="math inline">\(R^2\)</span>-Wert aufweist. Kurz gesagt: Höher ist besser.</p>
+<p>Von zwei Prognosemodellen zum gleichen Datensatz ist dasjenige Modell besser, das weniger Vorhersagefehler aufweist, also genauer vorhersagt. Kurz gesagt: Genauer ist besser.</p>
 <!-- Zur Bewertung der Vorhersagegüte wird der mittlere absolute Fehler als Koeffizient $\text{MAE}$ (${\bf{m}}$ean ${\bf{a}}$bsolute ${\bf{e}}$rror) auf die Anwendungsdaten herangezogen: -->
 <!-- $$\text{MAE}_{\text{Test}}=\frac{1}{n_{\text{Test}}}\sum_{i=1}^{n_{\text{Test}}} |y_i-\hat{y}_i|$$ -->
 <!-- Dabei sind $y_i$ die wahren Werte, $\hat{y}_i$ die prognostizierten Werte des geschätzten Modells $\hat{f}(\cdot)$ und $n_{\text{Test}}$ die Anzahl der Beobachtungen des Testdatensatzes (Anwendungsdatensatz).
@@ -1963,6 +1965,8 @@ Für eine gute Prognose sollte daher $\text{MAE}_{\text{Test}}$ möglichst klein
 </div>
 <div id="bewertung" class="section level1" number="7">
 <h1><span class="header-section-number">7</span> Bewertung</h1>
+<div id="kriterien" class="section level2" number="7.1">
+<h2><span class="header-section-number">7.1</span> Kriterien</h2>
 <ul>
 <li><p>Es gibt drei Bewertungskriterien:</p>
 <ul>
@@ -1971,16 +1975,25 @@ Für eine gute Prognose sollte daher $\text{MAE}_{\text{Test}}$ möglichst klein
 <li><p><em>Inhalt</em>: <strong>Vorhersagegüte</strong>.</p></li>
 </ul></li>
 <li><p>Das zentrale Bewertungskriterium ist <em>Inhalt</em>; die übrigen beiden Kriterien fließen nur bei besonders guter oder schlechter Leistung in die Gesamtnote ein.</p></li>
-<li><p>Zur Vorhersagegüte: Die Vorhersagegüte eines einfachen Minimalmodells entspricht einer <span class="math inline">\(4,0\)</span>, die eines Referenzmodells des Dozenten einer <span class="math inline">\(2,0\)</span><a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>. Ihre Bewertung erfolgt entsprechend Ihrer Vorhersagegüte, d.h., sind Sie besser als das Referenzmodell erhalten Sie hier in diesem Teilaspekt eine bessere Note als <span class="math inline">\(2,0\)</span>!</p></li>
 <li><p>Die quantitative Datenanalyse in Durchführung und Interpretation ist der Schwerpunkt dieser Arbeit. Zufälliges identisches Vorgehen, z.B. im R Code, ist sehr unwahrscheinlich und kann als <strong>Plagiat</strong> bewertet werden.</p></li>
 <li><p>Die Gesamtnote muss sich nicht als arithmetischer Mittelwert der Teilnoten ergeben.</p></li>
-<li><p>Es werden keine Teilnoten vergeben, sondern nur eine Gesamtnote.</p></li>
+<li><p>Es werden keine Teilnoten vergeben, sondern nur eine Gesamtnote wird vergeben.</p></li>
 </ul>
+</div>
+<div id="grenzwerte-für-notenstufen" class="section level2" number="7.2">
+<h2><span class="header-section-number">7.2</span> Grenzwerte für Notenstufen</h2>
+<p>Die Güte der Vorhersage wird anhand des <em>mittleren Absolutfehlers</em> (mae) bemessen:</p>
+<p><span class="math display">\[\text{mae} = \frac{1}{n} \sum_{i=1}^n(y_i - \hat{y}_i)\]</span></p>
+<ul>
+<li>Zur Vorhersagegüte: Die Vorhersagegüte eines einfachen Minimalmodells entspricht einer <span class="math inline">\(4,0\)</span>, die eines Referenzmodells des Dozenten einer <span class="math inline">\(2,0\)</span>.</li>
+</ul>
+<p>Ihre Bewertung erfolgt entsprechend Ihrer Vorhersagegüte, d.h., sind Sie besser als das Referenzmodell erhalten Sie hier in diesem Teilaspekt eine bessere Note als <span class="math inline">\(2,0\)</span>!</p>
+</div>
 </div>
 <div id="hinweise" class="section level1" number="8">
 <h1><span class="header-section-number">8</span> Hinweise</h1>
 <p>Sie haben freie Methodenwahl bei der Modellierung und Vorverarbeitung. Nutzen Sie den Stoff wie im Unterricht gelernt; Sie können aber auch auf weitere Inhalte, die nicht im Unterricht behandelt wurden, zugreifen.</p>
-<p>Eine Einführung in verschiedene Methoden gibt es z.B. bei Sebastian Sauer (2019): <em>Moderne Datenanalyse mit R</em><a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> aber auch bei Max Kuhn und Julia Silge (2021): <em>Tidy Modeling with R</em>.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>. Die Bücher beinhalten jeweils Beispiele und Anwendung mit R.</p>
+<p>Eine Einführung in verschiedene Methoden gibt es z.B. bei Sebastian Sauer (2019): <em>Moderne Datenanalyse mit R</em><a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> aber auch bei Max Kuhn und Julia Silge (2021): <em>Tidy Modeling with R</em>.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>. Die Bücher beinhalten jeweils Beispiele und Anwendung mit R.</p>
 <p>Auch ist es Ihnen überlassen, welche Variablen Sie zur Modellierung heranziehen – und ob Sie diese eventuell vorverarbeiten, d.h., transformieren, zusammenfassen, Ausreißer bereinigen o.Ä.. Denken Sie nur daran, die Datentransformation, die Sie auf den Trainingsdaten durchführen, auch auf den Testdaten (Anwendungsdaten) durchzuführen.</p>
 <p>Hinweise zur Modellwahl usw. gibt es auch in erwähnter Literatur, aber auch in vielen Büchern zum Thema Data-Science.</p>
 <p><strong>Alles, was Sie tun, Datenvorverarbeitung, Modellierung und Anwenden, muss transparent und reproduzierbar sein.</strong> Im Übrigen lautet die Aufgabe: Finden Sie ein Modell, von dem Sie glauben, dass es die Testdaten gut vorhersagt. <span class="math inline">\(\hat{y}=42\)</span> ist zwar eine schöne Antwort, trifft die Wirklichkeit aber leider nicht immer. Eine gute Modellierung auf den <em>Trainingsdaten</em> (z.B. hohes <span class="math inline">\(R^2\)</span>) bedeutet nicht zwangsläufig eine gute Vorhersage (<em>Test-Set</em>).</p>
@@ -2011,9 +2024,8 @@ Für eine gute Prognose sollte daher $\text{MAE}_{\text{Test}}$ möglichst klein
 <div class="footnotes footnotes-end-of-document">
 <hr />
 <ol>
-<li id="fn1"><p>Gender-I: <a href="https://gender-i.de/" class="uri">https://gender-i.de/</a><a href="#fnref1" class="footnote-back">↩︎</a></p></li>
-<li id="fn2"><p><a href="https://link.springer.com/book/10.1007/978-3-658-21587-3">https://link.springer.com/book/10.1007/978-3-658-21587-3</a><a href="#fnref2" class="footnote-back">↩︎</a></p></li>
-<li id="fn3"><p><a href="https://www.tmwr.org/">https://www.tmwr.org/</a><a href="#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn1"><p><a href="https://link.springer.com/book/10.1007/978-3-658-21587-3">https://link.springer.com/book/10.1007/978-3-658-21587-3</a><a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p><a href="https://www.tmwr.org/">https://www.tmwr.org/</a><a href="#fnref2" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
 </div>
