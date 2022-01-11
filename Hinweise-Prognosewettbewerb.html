@@ -1827,7 +1827,7 @@ Prism.languages.r={comment:/#.*/,string:{pattern:/(['"])(?:\\.|(?!\1)[^\\\r\n])*
             <ul>
             <li><a href="#tldr-zusammenfassung"><span class="toc-section-number">1</span> tl;dr: Zusammenfassung</a></li>
             <li><a href="#vorhersage"><span class="toc-section-number">2</span> Vorhersage</a></li>
-            <li><a href="#gütemaßstab"><span class="toc-section-number">3</span> Gütemaßstab</a></li>
+            <li><a href="#hauptziel-genaue-prognose"><span class="toc-section-number">3</span> Hauptziel: Genaue Prognose</a></li>
             <li><a href="#zum-aufbau-ihrer-prognosedatei-im-csv-format"><span class="toc-section-number">4</span> Zum Aufbau Ihrer Prognosedatei im CSV-Format</a></li>
             <li><a href="#einzureichende-dateien"><span class="toc-section-number">5</span> Einzureichende Dateien</a></li>
             <li><a href="#tipps"><span class="toc-section-number">6</span> Tipps</a>
@@ -1840,7 +1840,9 @@ Prism.languages.r={comment:/#.*/,string:{pattern:/(['"])(?:\\.|(?!\1)[^\\\r\n])*
             <li><a href="#bewertung"><span class="toc-section-number">7</span> Bewertung</a>
             <ul>
             <li><a href="#kriterien"><span class="toc-section-number">7.1</span> Kriterien</a></li>
-            <li><a href="#grenzwerte-für-notenstufen"><span class="toc-section-number">7.2</span> Grenzwerte für Notenstufen</a></li>
+            <li><a href="#kennzahl-der-modellgüte"><span class="toc-section-number">7.2</span> Kennzahl der Modellgüte</a></li>
+            <li><a href="#notenstufen"><span class="toc-section-number">7.3</span> Notenstufen</a></li>
+            <li><a href="#bewertungsprozess"><span class="toc-section-number">7.4</span> Bewertungsprozess</a></li>
             </ul></li>
             <li><a href="#hinweise"><span class="toc-section-number">8</span> Hinweise</a></li>
             <li><a href="#formalia"><span class="toc-section-number">9</span> Formalia</a></li>
@@ -1860,7 +1862,7 @@ Prism.languages.r={comment:/#.*/,string:{pattern:/(['"])(?:\\.|(?!\1)[^\\\r\n])*
       <p class="authors">
            <span class="glyphicon glyphicon-user"></span> Sebastian Sauer
       </p>
-         <p class="date"><span class="glyphicon glyphicon-calendar"></span> 2022-01-11 22:45:00</p>
+         <p class="date"><span class="glyphicon glyphicon-calendar"></span> 2022-01-11 23:35:01</p>
            
 
    
@@ -1879,8 +1881,8 @@ Prism.languages.r={comment:/#.*/,string:{pattern:/(['"])(?:\\.|(?!\1)[^\\\r\n])*
 <p>Neben der erklärenden, rückwärtsgerichteten Modellierung spielt insbesondere in der Praxis die <em>vorhersageorientierte</em> Modellierung eine wichtige Rolle: Ziel ist es, bei gegebenen, neuen Beobachtungen die noch unbekannten Werte der Zielvariablen <span class="math inline">\(y\)</span> <em>vorherzusagen</em>, z.B. für neue Kunden auf Basis von soziodemographischen Daten den <em>Kundenwert</em> – möglichst genau – zu prognostizieren. Dies geschieht auf Basis der vorhandenen Daten der Bestandskunden, d.h. inklusive des für diese Kunden bekannten Kundenwertes.</p>
 <p>Ihnen werden <em>zwei Teildatenmengen</em> zur Verfügung gestellt: Zum einen gibt es die Trainingsdaten (auch <em>Lerndaten</em> genannt) und zum anderen gibt es Anwendungsdaten (auch <em>Testdaten</em> genannt), auf die man das Modell anwendet.</p>
 <ol style="list-style-type: decimal">
-<li><p>Bei den Trainingsdaten liegen sowohl die erklärenden Variablen <span class="math inline">\({\bf{x}} = (x_1, x_2, \ldots, x_n)\)</span> als auch die Zielvariable <span class="math inline">\(y\)</span> vor. Auf diesen Trainingsdaten wird das Modell <span class="math inline">\(y=f({\bf{x}})+\epsilon = f(x_1, x_2, \ldots, x_n)+\epsilon\)</span> gebildet und durch <span class="math inline">\(\hat{f}(\cdot)\)</span> geschätzt.</p></li>
-<li><p>Dieses geschätzte Modell (<span class="math inline">\(\hat{f}(\cdot)\)</span>) wird auf die Anwendungsdaten <span class="math inline">\(\bf{x}_0\)</span>, für die (Ihnen) die Werte der Zielvariable unbekannt sind, angewendet, d.h., es wird <span class="math inline">\(\hat{y}_0 :=\hat{f}({\bf{x}}_0)\)</span> berechnet. Der unbekannte Wert <span class="math inline">\(y_0\)</span> der Zielvariable <span class="math inline">\(y\)</span> wird durch <span class="math inline">\(\hat{y}_0\)</span> prognostiziert.</p></li>
+<li><p>Bei den Trainingsdaten (Train-Sample) liegen sowohl die erklärenden Variablen <span class="math inline">\({\bf{x}} = (x_1, x_2, \ldots, x_n)\)</span> als auch die Zielvariable <span class="math inline">\(y\)</span> vor. Auf diesen Trainingsdaten wird das Modell <span class="math inline">\(y=f({\bf{x}})+\epsilon = f(x_1, x_2, \ldots, x_n)+\epsilon\)</span> gebildet und durch <span class="math inline">\(\hat{f}(\cdot)\)</span> geschätzt. Es ist also die Variable <span class="math inline">\(y\)</span> vorherszusagen.</p></li>
+<li><p>Dieses geschätzte Modell (<span class="math inline">\(\hat{f}(\cdot)\)</span>) wird auf die Anwendungsdaten <span class="math inline">\(\bf{x}_0\)</span>, für die (Ihnen) die Werte der Zielvariable <span class="math inline">\(y\)</span> unbekannt sind, angewendet, d.h., es wird <span class="math inline">\(\hat{y}_0 :=\hat{f}({\bf{x}}_0)\)</span> berechnet. Der unbekannte Wert <span class="math inline">\(y_0\)</span> der Zielvariable <span class="math inline">\(y\)</span> wird durch <span class="math inline">\(\hat{y}_0\)</span> prognostiziert.</p></li>
 </ol>
 <p>Liegt zu einem noch späteren Zeitpunkt der eingetroffene Wert <span class="math inline">\(y_0\)</span> der Zielvariable <span class="math inline">\(y\)</span> vor, so kann die eigene Vorhersage <span class="math inline">\(\hat{y}_0\)</span> evaluiert werden, d.h. z.B. kann der Fehler <span class="math inline">\(e=y_0-\hat{y}_0\)</span> zwischen prognostiziertem Wert <span class="math inline">\(\hat{y}_0\)</span> und wahrem Wert <span class="math inline">\(y_0\)</span> analysiert werden.</p>
 <p>In der praktischen Anwendung können zeitlich drei aufeinanderfolgende Schritte unterschieden werden (vergleiche oben):</p>
@@ -1891,8 +1893,8 @@ Prism.languages.r={comment:/#.*/,string:{pattern:/(['"])(?:\\.|(?!\1)[^\\\r\n])*
 </ol>
 <p>Im Computer kann man dieses Anwendungsszenario <em>simulieren</em>: man teilt die Datenmenge <em>zufällig</em> in eine Lern- bzw. Trainingsstichprobe (Trainingsdaten; <span class="math inline">\((\bf{x},y)\)</span>) und eine Teststichprobe (Anwendungsdaten, <span class="math inline">\((\bf{x_0})\)</span>) auf: Die Modellierung erfolgt auf den Trainingsdaten. Das Modell wird angewendet auf die Testdaten (Anwendungsdaten). Da man hier aber auch die Zielvariable (<span class="math inline">\(y_0\)</span>) kennt, kann damit das Modell evaluiert werden.</p>
 </div>
-<div id="gütemaßstab" class="section level1" number="3">
-<h1><span class="header-section-number">3</span> Gütemaßstab</h1>
+<div id="hauptziel-genaue-prognose" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Hauptziel: Genaue Prognose</h1>
 <p>Ihre Aufgabe ist: Spielen Sie den Data-Scientist! Konstruieren Sie ein Modell auf Basis der Trainingsdaten <span class="math inline">\((\bf{x},y\)</span>) und sagen Sie für die Anwendungsdaten (<span class="math inline">\(\bf{x_0}\)</span>) die Zielvariable möglichst genau voraus (<span class="math inline">\(\hat{y}_0\)</span>).</p>
 <p>Ihr(e) Dozent*in kennt den Wert der Zielvariable (<span class="math inline">\(y_0\)</span>).</p>
 <p>Von zwei Prognosemodellen zum gleichen Datensatz ist dasjenige Modell besser, das weniger Vorhersagefehler aufweist, also genauer vorhersagt. Kurz gesagt: Genauer ist besser.</p>
@@ -1980,14 +1982,19 @@ Für eine gute Prognose sollte daher $\text{MAE}_{\text{Test}}$ möglichst klein
 <li><p>Es werden keine Teilnoten vergeben, sondern nur eine Gesamtnote wird vergeben.</p></li>
 </ul>
 </div>
-<div id="grenzwerte-für-notenstufen" class="section level2" number="7.2">
-<h2><span class="header-section-number">7.2</span> Grenzwerte für Notenstufen</h2>
+<div id="kennzahl-der-modellgüte" class="section level2" number="7.2">
+<h2><span class="header-section-number">7.2</span> Kennzahl der Modellgüte</h2>
 <p>Die Güte der Vorhersage wird anhand des <em>mittleren Absolutfehlers</em> (mae) bemessen:</p>
 <p><span class="math display">\[\text{mae} = \frac{1}{n} \sum_{i=1}^n(y_i - \hat{y}_i)\]</span></p>
-<ul>
-<li>Zur Vorhersagegüte: Die Vorhersagegüte eines einfachen Minimalmodells entspricht einer <span class="math inline">\(4,0\)</span>, die eines Referenzmodells des Dozenten einer <span class="math inline">\(2,0\)</span>.</li>
-</ul>
+</div>
+<div id="notenstufen" class="section level2" number="7.3">
+<h2><span class="header-section-number">7.3</span> Notenstufen</h2>
+<p>Zur Vorhersagegüte: Die Vorhersagegüte eines einfachen Minimalmodells entspricht einer <span class="math inline">\(4,0\)</span>, die eines Referenzmodells des Dozenten einer <span class="math inline">\(2,0\)</span>.</p>
 <p>Ihre Bewertung erfolgt entsprechend Ihrer Vorhersagegüte, d.h., sind Sie besser als das Referenzmodell erhalten Sie hier in diesem Teilaspekt eine bessere Note als <span class="math inline">\(2,0\)</span>!</p>
+</div>
+<div id="bewertungsprozess" class="section level2" number="7.4">
+<h2><span class="header-section-number">7.4</span> Bewertungsprozess</h2>
+<p>Der Gutachter legt im Nachgang der Prüfung alle Teilnehmis ihre jeweilige Wert der Kennzahl der Modellgüte offen. Außerdem werden die vorherzusagenden Daten veröffentlicht sowie die Grenzwerte für jede Notenstufe. Auf dieser Basis ist es allen Teilnehmis möglich, die Korrektheit Ihrer Note zu überprüfen.</p>
 </div>
 </div>
 <div id="hinweise" class="section level1" number="8">
