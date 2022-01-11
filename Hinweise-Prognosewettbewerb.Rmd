@@ -192,6 +192,9 @@ Für eine gute Prognose sollte daher $\text{MAE}_{\text{Test}}$ möglichst klein
 
 # Bewertung
 
+
+## Kriterien
+
 - Es gibt drei Bewertungskriterien:
 
   - *Formalia*: u.a. Reproduzierbarkeit der Analyse, Lesbarkeit der Syntax, Übersichtlichkeit der Analyse.
@@ -202,16 +205,24 @@ Für eine gute Prognose sollte daher $\text{MAE}_{\text{Test}}$ möglichst klein
 
 - Das zentrale Bewertungskriterium ist *Inhalt*; die übrigen beiden Kriterien fließen nur bei besonders guter oder schlechter Leistung in die Gesamtnote ein.
 
-- Zur Vorhersagegüte: Die Vorhersagegüte des Nullmodells entspricht einer $4,0$, die eines (unbekannten) einfachen Referenzmodells Is Dozentis einer $2,0$^[Gender-I: <https://gender-i.de/>].
- Ihre Bewertung erfolgt entsprechend Ihrer Vorhersagegüte, d.h., sind Sie besser als das Referenzmodell erhalten Sie hier in diesem Teilaspekt eine bessere Note als $2,0$! 
 
 - Die quantitative Datenanalyse in Durchführung und Interpretation ist der Schwerpunkt dieser Arbeit. Zufälliges identisches Vorgehen, z.B. im R Code, ist sehr unwahrscheinlich und kann als **Plagiat** bewertet werden.
 
 - Die Gesamtnote muss sich nicht als arithmetischer Mittelwert der Teilnoten ergeben.
 
-- Es werden keine Teilnoten vergeben, sondern nur eine Gesamtnote.
+- Es werden keine Teilnoten vergeben, sondern nur eine Gesamtnote wird vergeben.
 
 
+
+## Grenzwerte für Notenstufen
+
+Die Güte der Vorhersage wird anhand des *mittleren Absolutfehlers* (mae) bemessen:
+
+$$\text{mae} = \frac{1}{n} \sum_{i=1}^n(y_i - \hat{y}_i)$$
+
+- Zur Vorhersagegüte: Die Vorhersagegüte eines einfachen Minimalmodells entspricht einer $4,0$, die eines Referenzmodells des Dozenten einer $2,0$.
+
+ Ihre Bewertung erfolgt entsprechend Ihrer Vorhersagegüte, d.h., sind Sie besser als das Referenzmodell erhalten Sie hier in diesem Teilaspekt eine bessere Note als $2,0$! 
 
 
 
