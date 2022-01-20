@@ -263,7 +263,7 @@ Eine gute Modellierung auf den *Trainingsdaten* (z.B. hohes $R^2$) bedeutet nich
 1. Es sind nur Einzelarbeiten zulässig. 
 
 
-12. In der Analyse muss als Ausgangspunkt der vom/von der Dozenten/in bereitgestellten Datensatz genutzt werden. Dazu muss der Datensatz zu Beginn des Skripts von der entsprechenden Internetadresse heruntergeladen werden.
+12. In der Analyse muss als Ausgangspunkt der vom/von der Dozenten/in bereitgestellten Datensatz genutzt werden.
 
 3. Alle Analyseschritte bzw. alle Veränderungen an den Daten müssen im (eingereichten) *Analyseskript* nachvollziehbar (transparent und reproduzierbar) aufgeführt sein. Das Analyseskript ist als R-Skript, Rmd-Datei oder Rmd-Notebook-Datei abzugeben. Sie können die bereitgestellte Vorlage als Analyseskript nutzen (`Template-Dokumentation-Vorhersagemodellierung.Rmd`).
 
