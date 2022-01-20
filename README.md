@@ -1,8 +1,8 @@
-# bayes-start
+# Vorhersagemodellierung
 
-Lehrmaterial zur Einführung in die Bayes-Statistik
+Lehrmaterial zur Einführung in die Vorhersagemodellierung
 
 
 ---
-[Überblick über die Lehr-/Lernmaterialien](https://sebastiansauer.github.io/bayes-start/)
+[Prüfungshinweise](https://sebastiansauer.github.io/vorhersagemodellierung/Hinweise-Prognosewettbewerb.html)
 
