@@ -1,0 +1,38 @@
+Grundbegriffe:
+  lernziele: 
+    - Sie kennen zentrale Begriffe im Kontext der Datenanalyse.
+    - Sie können den Unterschied zwischen Signal und Rauschen erklären.
+  literatur: 
+    - MODAR, Kap. 1
+ERRRstkontakt:
+  lernziele:
+    - Sie können R starten.
+    - Sie können grundlegende Operationen in R durchführen.
+  literatur: 
+    - MODAR, Kap. 2-4
+Datenimport:
+  lernziele:
+    - Sie können Daten (verschiedener Formate) in R importieren.
+    - Sie kennen einige Datenstrukturen in R.
+  literatur:
+    - MODAR, Kap. 5-6
+Datenjudo:
+  lernziele:
+    - Sie können Daten in R aufbereiten mit dem Tidyverse.
+  literatur:
+    - Modar, Kap. 7
+Deskriptive Statistik:
+  lernziele:
+    - Sie beherrschen grundlegende Operationen der univariaten deskriptiven Statistik sowohl für Lage- als auch Streuungsmaße.
+    - Sie verstehen die Grundkonzepte der Korrelation und können diese in R berechnen.
+  literatur:
+    - Modar, Kap. 8
+Praxisprobleme der Datenaufbereitung:
+  lernziele: 
+    - Sie wissen mit typischen Problemen der Datenaufbereitung umzugehen, wie mit fehlenden Werten, Datenanomalien oder Formatänderung der Tabelle.
+  literatur: 
+    - Modar, Kap. 9
+Datenvisualisierung:
+  lernziele: Sie können Daten visualisieren, um wesentliche Einsichten zu vermitteln.
+  literatur: 
+    - Modar, Kap. 11
