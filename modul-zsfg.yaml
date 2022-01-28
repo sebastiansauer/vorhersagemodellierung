@@ -1,38 +1,103 @@
 Grundbegriffe:
-  lernziele: 
+  lernziele:
     - Sie kennen zentrale Begriffe im Kontext der Datenanalyse.
     - Sie können den Unterschied zwischen Signal und Rauschen erklären.
-  literatur: 
-    - MODAR, Kap. 1
+  literatur:
+    MODAR: 1
+  videos:
+    - "[Playlist Lerntechniken](https://youtube.com/playlist?list=PLRR4REmBgpIFDcr72hs_Dp5lQbIPbDkz7)"
 ERRRstkontakt:
   lernziele:
     - Sie können R starten.
     - Sie können grundlegende Operationen in R durchführen.
-  literatur: 
-    - MODAR, Kap. 2-4
+  literatur:
+    MODAR: 2-4
+  videos:
+    - "[Playlist ERRRstkontakt](https://youtube.com/playlist?list=PLRR4REmBgpIGlsCMQykiRsF6TH7PCqIIK)"
+    - "[umfangreiche, teils fortgeschrittene Playlist zu R](https://youtube.com/playlist?list=PLRR4REmBgpIEaIyeNBgNGPgmhQJ_T1y8_)"
 Datenimport:
   lernziele:
     - Sie können Daten (verschiedener Formate) in R importieren.
     - Sie kennen einige Datenstrukturen in R.
   literatur:
-    - MODAR, Kap. 5-6
+    MODAR: "5-6"
+  videos:
+    - "[Playlist Datenstrukturen in R](https://youtube.com/playlist?list=PLRR4REmBgpIGet_lcNf2wOd0W8j4c9hYN)"
 Datenjudo:
   lernziele:
     - Sie können Daten in R aufbereiten mit dem Tidyverse.
   literatur:
-    - Modar, Kap. 7
+    MODAR: 7
+  videos:
+    - "[Playlist Datenjudo](https://youtube.com/playlist?list=PLRR4REmBgpIGet_lcNf2wOd0W8j4c9hYN)"
 Deskriptive Statistik:
   lernziele:
     - Sie beherrschen grundlegende Operationen der univariaten deskriptiven Statistik sowohl für Lage- als auch Streuungsmaße.
     - Sie verstehen die Grundkonzepte der Korrelation und können diese in R berechnen.
   literatur:
-    - Modar, Kap. 8
+    MODAR: 8
 Praxisprobleme der Datenaufbereitung:
-  lernziele: 
+  lernziele:
     - Sie wissen mit typischen Problemen der Datenaufbereitung umzugehen, wie mit fehlenden Werten, Datenanomalien oder Formatänderung der Tabelle.
-  literatur: 
-    - Modar, Kap. 9
+    - Sie kennen die grundlegenden Eigenschaften der Normalverteilung.
+  literatur:
+    MODAR: 9
+  videos:
+    - "[Playlist Praxisprobleme der Datenanalyse](https://youtube.com/playlist?list=PLRR4REmBgpIEEt2fWPz_UovZsXFfr5HJT)"
 Datenvisualisierung:
-  lernziele: Sie können Daten visualisieren, um wesentliche Einsichten zu vermitteln.
-  literatur: 
-    - Modar, Kap. 11
+  lernziele: 
+    - Sie können Daten visualisieren, um wesentliche Einsichten zu vermitteln.
+  literatur:
+    MODAR: 11
+  videos:
+    - "[Playlist Data-Viz/ggplot](https://youtube.com/playlist?list=PLRR4REmBgpIHzLSsI45bCoiBWOqXgD6Dy)"
+Fallstudie-EDA:
+  lernziele: 
+    - Sie können die gelernten Techniken der explorativen Datenanalyse praktisch anwenden.
+  literatur:
+    NA: NA
+  videos:
+    - "[Playlist YACSDAs](https://youtube.com/playlist?list=PLRR4REmBgpIGet_lcNf2wOd0W8j4c9hYN)"
+Modellieren:
+  lernziele:
+    - Sie verstehen die Methoden des Modellierens.
+  literatur:
+    MODAR: 15
+Regression:
+  lernziele:
+    - Sie verstehen die Grundkonzepte der Regression und können diese in R anwenden.
+  literatur:
+    MODAR: 18
+  videos:
+    - "[Playlist Vorhersage-Modellierung](https://youtube.com/playlist?list=PLRR4REmBgpIH6uG8LZWPTSMReX1OFxfUx)"
+Klassifikation:
+  lernziele: 
+    - Sie verstehen die Grundkonzepte der logistischen Regression und können diese in R anwenden.
+  literatur:
+    MODAR: 19
+Fallstudie-Regression:
+  lernziele:
+    - Sie können die gelernten Techniken der Regressionsanalyse praktisch anwenden.
+  literatur:
+    NA: NA
+  videos:
+    - "[Playlist YACSDAs](https://youtube.com/playlist?list=PLRR4REmBgpIGet_lcNf2wOd0W8j4c9hYN)"
+Fallstudie-Modellieren:
+  lernziele: 
+    - Sie können die gelernten Techniken de Modellierens in der Statistik praktisch anwenden.
+  literatur:
+    NA: NA
+  videos:
+    - "[Playlist YACSDAs](https://youtube.com/playlist?list=PLRR4REmBgpIGet_lcNf2wOd0W8j4c9hYN)"
+
+
+
+
+
+
+
+
+
+
+
+

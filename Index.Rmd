@@ -1,6 +1,6 @@
 ---
 title: "Vorhersagemodellierung"
-subtitle: "Ein Einführungskurs mit R"
+subtitle: "Bedingt ähnlich zu Glaskugel-Lesen"
 author: "Sebastian Sauer"
 date: "Letzte Aktualisierung: `r Sys.time()`"
 output:
@@ -36,6 +36,15 @@ editor_options:
 
 
 
+```{r}
+library(yaml)
+library(tidyverse)
+```
+
+
+
+
+
 ```{r bib, cache=FALSE}
 library(RefManageR)
 BibOptions(check.entries = FALSE, 
@@ -56,7 +65,20 @@ bib <- ReadBib(bib_file)
 
 ---
 
+
+```{r}
+knitr::include_graphics("https://raw.github.com/allisonhorst/stats-illustrations/master/rstats-artwork/data_cowboy.png")
+```
+
+
+
+[Allison Horst, CC-BY](https://github.com/allisonhorst/stats-illustrations)
+
+
 # tl;dr
+
+
+
 
 
 
@@ -66,18 +88,92 @@ bib <- ReadBib(bib_file)
 
 # Hinweise
 
+
 - Dieser Kurs ist lizensiert unter der [MIT Lizenz](https://github.com/sebastiansauer/bayes-start/blob/main/LICENSE). Das ist eine permissive Lizenz, die erlaubt, dass Sie diesen Kurs frei verwenden können. Sie haben (nur) die Verpflichtung, zu zitieren und auf die Lizenzart hinzuweisen.
 
 - [Installation von R und seinen Freunden ](https://data-se.netlify.app/2021/11/30/installation-von-r-und-seiner-freunde/)
 
 
-
-
 - Mitarbeit oder Verbesserungsvorschläge: am besten als [Github Issue](https://github.com/sebastiansauer/bayes-start/issues) einstellen.
+
+
+# Didaktik
+
+## Literatur
+
+Zentrale Begleitlektüre ist `r RefManageR::Citet(bib, "sauer_moderne_2019")`.
 
 
 
 # Themen
+
+
+
+
+
+
+```{r}
+modul_zsfg <- read_yaml("modul-zsfg.yaml")
+```
+
+
+
+
+
+```{r results='asis'}
+
+titel <- modul_zsfg %>% names()
+
+for (i in seq_along(titel)){
+  
+  this_title <- titel[i]
+  cat("##", this_title, "\n")
+  cat("\n")
+  
+  
+  lernziele <- modul_zsfg[[i]][[1]]
+  cat("### Lernziele \n")
+  cat("\n")
+  for (j in lernziele) {
+    cat(paste0("- ", j))
+    cat("\n")
+  }
+  
+  cat("\n")
+  cat("\n")
+  
+  
+  literatur <- modul_zsfg[[i]][[2]]
+  names_literatur <- names(literatur)
+  cat("### Literatur \n\n")
+  for (k in literatur) {
+    chap <- literatur[[1]]
+    cat(paste0("- ", names_literatur, ", Kapitel ", chap, "\n"))
+    cat("\n")
+  }
+  
+  cat("\n")
+  cat("\n")
+  
+  videos <- 
+    modul_zsfg[[2]][["videos"]]
+  
+  cat("### Videos \n\n")
+  for (l in videos) {
+    cat(paste0("- ", l, "\n"))
+  }
+  
+  # Leerzeilen, bevor neues Thema anfängt
+  cat("\n")
+  cat("\n")
+  
+}
+```
+
+
+
+
+
 
 
 # Prüfung

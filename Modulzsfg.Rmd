@@ -27,9 +27,9 @@ output: html_document
 ```{r}
 library(yaml)
 library(tidyverse)
-library(pander)
+# library(pander)
 #library(data.table)
-library(DT)
+# library(DT)
 ```
 
 
@@ -39,22 +39,17 @@ modul_zsfg <- read_yaml("modul-zsfg.yaml")
 
 
 ```{r}
-modul_zsfg %>% names()
-```
-
-
-```{r}
-titel <- modul_zsfg %>% names()
-```
-
-```{r}
 modul_zsfg[[1]]
 ```
 
 
 
 
+
 ```{r results='asis'}
+
+titel <- modul_zsfg %>% names()
+
 for (i in seq_along(titel)){
   
   this_title <- titel[i]
@@ -75,9 +70,11 @@ for (i in seq_along(titel)){
   
   
   literatur <- modul_zsfg[[i]][[2]]
+  names_literatur <- names(literatur)
   cat("## Literatur \n\n")
   for (k in literatur) {
-    cat(paste0("- ", k))
+    chap <- literatur[[1]]
+    cat(paste0("- ", names_literatur, ", Kap. ", chap))
     cat("\n")
   }
   
