@@ -1,6 +1,6 @@
 ---
-title: "QM1-Thema01"
-author: "Sebastian Sa"
+title: "QM1-Thema01, Syntax zu den Folien"
+author: "Sebastian Sauer"
 date: "1/31/2022"
 output: html_document
 ---
@@ -99,7 +99,7 @@ gridExtra::grid.arrange(p3, p4, nrow = 1)
 
 
 
-```{r learn-for-prada-no-eval, include = FALSE, fig.cap = "Ein Dozentenbeispiel: Üben macht schlau, angeblich", fig.asp = .8}
+```{r learn-for-prada-no-eval, fig.cap = "Ein Dozentenbeispiel: Üben macht schlau, angeblich", fig.asp = .8}
 data(stats_test, package = "pradadata")
 
 

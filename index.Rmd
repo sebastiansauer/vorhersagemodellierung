@@ -129,7 +129,7 @@ modul_zsfg <- read_yaml("Interna/modul-zsfg.yaml")
 
 
 
-```{r results='asis'}
+```{r build-themen, results='asis'}
 
 titel <- modul_zsfg %>% names()
 
@@ -138,53 +138,78 @@ for (i in seq_along(titel)){
   this_title <- titel[i]
   cat("##", this_title, "\n")
   cat("\n")
-  
-  
+
+
   lernziele <- modul_zsfg[[i]][[1]]
-  cat("### Lernziele \n")
-  cat("\n")
-  for (j in lernziele) {
-    cat(paste0("- ", j))
+  
+  if (!is.null(lernziele)){
+    cat("### Lernziele \n")
+    cat("\n")
+    for (j in lernziele) {
+      cat(paste0("- ", j))
+      cat("\n")
+    }
+    
+    cat("\n")
     cat("\n")
   }
-  
-  cat("\n")
-  cat("\n")
   
   
   literatur <- modul_zsfg[[i]][[2]]
   names_literatur <- names(literatur)
-  cat("### Literatur \n\n")
-  for (k in seq_along(literatur)) {
-    chap <- literatur[[k]]
-    if (names_literatur[k] == "MODAR") chap <- str_c(" Kap. ", chap, collapse = " ")
-    cat(paste0("- ", names_literatur[k], " ",chap, "\n"))
+  
+  if (!is.null(literatur)){
+    cat("### Literatur \n\n")
+    for (k in seq_along(literatur)) {
+      chap <- literatur[[k]]
+      if (names_literatur[k] == "MODAR") chap <- str_c(" Kap. ", chap, collapse = " ")
+      cat(paste0("- ", names_literatur[k], " ",chap, "\n"))
+      cat("\n")
+    }
+    
+    cat("\n")
     cat("\n")
   }
   
-  cat("\n")
-  cat("\n")
+      folien <-
+      modul_zsfg[[i]][["folien"]]
   
-  
-  folien <-
-    modul_zsfg[[i]][["folien"]]
-  cat("### Folien \n\n")
-  cat(paste0("- ", folien, "\n"))
-  
-  cat("\n")
-  cat("\n")
+  if (!is.null(folien)){
+    cat("### Folien \n\n")
+    cat(paste0("- ", folien, "\n"))
+    
+    cat("\n")
+    cat("\n")
+  }
     
   
   videos <- 
     modul_zsfg[[i]][["videos"]]
   
-  cat("### Videos \n\n")
-  for (l in videos) {
-    cat(paste0("- ", l, "\n"))
+  
+  if (!is.null(videos)){
+    cat("### Videos \n\n")
+    for (l in videos) {
+      cat(paste0("- ", l, "\n"))
+    }
+    
+    cat("\n")
+    cat("\n")
   }
   
-  cat("\n")
-  cat("\n")
+  
+  syntax <-
+    modul_zsfg[[i]][["syntax"]]
+  
+  if (!is.null(syntax)){
+    cat("### Syntax \n\n")
+    for (o in syntax){
+      cat(paste0("- ", o, "\n"))
+    }
+    
+    cat("\n")
+    cat("\n")
+  }
   
   vertiefung <-
     modul_zsfg[[i]][["vertiefung"]]
