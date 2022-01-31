@@ -1,0 +1,123 @@
+---
+title: "QM1-Thema01"
+author: "Sebastian Sa"
+date: "1/31/2022"
+output: html_document
+---
+
+# Vorbereitung
+
+```{r message=FALSE}
+data(wo_men, package = "pradadata")
+library(tidyverse)
+```
+
+
+
+## p_signal_rauschen1
+
+```{r}
+wo_men %>%
+  drop_na(sex, height) %>%
+  filter(height > 150, height < 220) -> df
+
+
+p1 <- wo_men %>%
+  drop_na(sex, height) %>%
+  filter(height > 150, height < 220) %>%
+  ggplot(aes(x = sex, y = height)) +
+  geom_jitter(width = .2, alpha = .7) +
+  ylim(150, 220) +
+  theme_minimal() -> p1
+
+
+df %>%
+  ggplot(aes(x = sex, y = height)) +
+  stat_summary(fun.y = "mean", geom = "point", size = 10,
+               color = "red", alpha = .5, shape = 15) +
+  stat_summary(fun.y = "mean", geom = "line", group = 1,
+               color = "red", alpha = .5) +
+  geom_jitter(width = .2, alpha = .7) +
+  ylim(150, 220) +
+  theme_minimal() -> p2
+
+
+gridExtra::grid.arrange(p1, p2, nrow = 1)
+```
+
+
+
+
+## p_signal_rauschen2
+
+
+
+```{r signal-noise2, echo = FALSE, out.width = "100%", fig.cap = "Das Ziehen von Stichproben  birgt Zufall"}
+
+# sample
+set.seed(123456)
+sample_m <- sample(df$row_number[df$sex == "man"], size = 1)
+sample_f <- sample(df$row_number[df$sex == "woman"], size = 1)
+
+df %>%
+  filter(row_number %in% c(sample_m, sample_f)) %>%
+  ggplot(aes(x = sex, y = height)) +
+  stat_summary(fun.y = "mean", geom = "point", size = 10,
+               color = "red", alpha = .5, shape = 15) +
+  stat_summary(fun.y = "mean", geom = "line", group = 1,
+               color = "red", alpha = .5) +
+  geom_point(alpha = .7) +
+  ylim(150, 220) +
+  theme_minimal() -> p3
+
+
+set.seed(123456)
+sample_m2 <- sample(df$row_number[df$sex == "man"], size = 5)
+sample_f2 <- sample(df$row_number[df$sex == "woman"], size = 5)
+
+df %>%
+  filter(row_number %in% c(sample_m2, sample_f2)) %>%
+  ggplot(aes(x = sex, y = height)) +
+  stat_summary(fun.y = "mean", geom = "point", size = 10,
+               color = "red", alpha = .5, shape = 15) +
+  stat_summary(fun.y = "mean", geom = "line", group = 1,
+               color = "red", alpha = .5) +
+  geom_jitter(width = .2, alpha = .7) +
+  ylim(150, 220) +
+  theme_minimal() -> p4
+
+
+gridExtra::grid.arrange(p3, p4, nrow = 1)
+
+```
+
+
+
+
+## p_learn
+
+
+
+
+```{r learn-for-prada-no-eval, include = FALSE, fig.cap = "Ein Dozentenbeispiel: Üben macht schlau, angeblich", fig.asp = .8}
+data(stats_test, package = "pradadata")
+
+
+stats_test %>%
+  filter(study_time %in% 1:5) %>%
+  select(bestanden, study_time, score) %>%
+  na.omit() %>%
+  ggplot(aes(x = factor(study_time), y = score)) +
+  geom_jitter(aes(color = bestanden, shape = bestanden), alpha = .56) +
+  geom_boxplot(alpha = .7) +
+  geom_smooth(aes(group = 1), method = "lm", se = FALSE) +
+  theme_minimal() +
+  theme(legend.position = "bottom") +
+  labs(y = "Prozent richtiger Lösungen",
+       x = "Lernaufwand [gering bis hoch]",
+       title = "Mehr Lernen, bessere Noten",
+       subtitle = "Der Zusammenhang von Lernzeit und Klausurerfolg in der Statistik",
+       caption = paste0("n = ", nrow(stats_test), " Studentis"))
+```
+
+

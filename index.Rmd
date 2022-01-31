@@ -55,7 +55,7 @@ BibOptions(check.entries = FALSE,
            no.print.fields = 
              c("url", "page","isbn", "location", "urldate", "note", "urldate", "issn")
            )
-bib_file <- "bib.bib"
+bib_file <- "Interna/bib.bib"
 bib <- ReadBib(bib_file)
 ```
 
@@ -78,8 +78,7 @@ knitr::include_graphics("https://raw.github.com/allisonhorst/stats-illustrations
 # tl;dr
 
 
-
-
+In diesem Modul lernen Sie das Handwerk der Prognose: Auf Basis von Fakten (Daten) den (noch unbekannten) Wert einer Zielvariablen vorherzusagen. Zum Beispiel wieviel Umsatz von einem Kunden mit einem bestimmten Profil im Schnitt zu erwarten ist. Damit lernen Sie die Grundkompetenzen zum Berufsbild Data Scientist – ein angesagtes Berufsbild unserer Zeit. Außerdem lernen Sie etwas Handwerkszeug der (quantitativen) Forschung; der überwältigend große Teil der Forschung basiert auf Ideen, von denen Sie ein paar in diesem Kurs lernen. 
 
 
 
@@ -104,6 +103,16 @@ knitr::include_graphics("https://raw.github.com/allisonhorst/stats-illustrations
 Zentrale Begleitlektüre ist `r RefManageR::Citet(bib, "sauer_moderne_2019")`.
 
 
+# Vorbereitung vor dem Kurs
+
+## Installation von R und seiner Freunde
+
+- Installieren Sie [R und seine Freunde](https://data-se.netlify.app/2021/11/30/installation-von-r-und-seiner-freunde/).
+- Installieren Sie die folgende R-Pakete:
+    - tidyverse
+
+
+
 
 # Themen
 
@@ -113,7 +122,7 @@ Zentrale Begleitlektüre ist `r RefManageR::Citet(bib, "sauer_moderne_2019")`.
 
 
 ```{r}
-modul_zsfg <- read_yaml("modul-zsfg.yaml")
+modul_zsfg <- read_yaml("Interna/modul-zsfg.yaml")
 ```
 
 
@@ -146,21 +155,45 @@ for (i in seq_along(titel)){
   literatur <- modul_zsfg[[i]][[2]]
   names_literatur <- names(literatur)
   cat("### Literatur \n\n")
-  for (k in literatur) {
-    chap <- literatur[[1]]
-    cat(paste0("- ", names_literatur, ", Kapitel ", chap, "\n"))
+  for (k in seq_along(literatur)) {
+    chap <- literatur[[k]]
+    if (names_literatur[k] == "MODAR") chap <- str_c(" Kap. ", chap, collapse = " ")
+    cat(paste0("- ", names_literatur[k], " ",chap, "\n"))
     cat("\n")
   }
   
   cat("\n")
   cat("\n")
   
+  
+  folien <-
+    modul_zsfg[[i]][["folien"]]
+  cat("### Folien \n\n")
+  cat(paste0("- ", folien, "\n"))
+  
+  cat("\n")
+  cat("\n")
+    
+  
   videos <- 
-    modul_zsfg[[2]][["videos"]]
+    modul_zsfg[[i]][["videos"]]
   
   cat("### Videos \n\n")
   for (l in videos) {
     cat(paste0("- ", l, "\n"))
+  }
+  
+  cat("\n")
+  cat("\n")
+  
+  vertiefung <-
+    modul_zsfg[[i]][["vertiefung"]]
+  
+  if (!is.null(vertiefung)) {
+    cat("### Vertiefung \n\n")
+    for (m in vertiefung) {
+      cat(paste0("- ", m, "\n"))
+    }
   }
   
   # Leerzeilen, bevor neues Thema anfängt
@@ -176,13 +209,14 @@ for (i in seq_along(titel)){
 
 
 
+
 # Prüfung
 
 Bei der Prüfung handelt es sich um einen *Prognosewettbewerb.*
 
 ## Hinweise zur Prüfung
 
-[Hinweise zur Prüfung](https://sebastiansauer.github.io/vorhersagemodellierung/Hinweise-Prognosewettbewerb.html)
+[Hinweise zur Prüfung](https://sebastiansauer.github.io/vorhersagemodellierung/Pruefung/Hinweise-Prognosewettbewerb.html)
 
 
 

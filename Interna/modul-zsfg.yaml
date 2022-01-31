@@ -1,0 +1,112 @@
+Grundbegriffe:
+  lernziele:
+    - Sie kennen zentrale Begriffe im Kontext der Datenanalyse.
+    - Sie können den Unterschied zwischen Signal und Rauschen erklären.
+  literatur:
+    MODAR: 1
+  videos:
+    - "[Playlist Lerntechniken](https://youtube.com/playlist?list=PLRR4REmBgpIFDcr72hs_Dp5lQbIPbDkz7)"
+  folien: "[Folienskript Thema 1](https://docs.google.com/presentation/d/1RWUE8nq835JdHveTymFvcYPH16J_V7PaNMQJcTCkUSs/edit?usp=sharing)"
+ERRRstkontakt:
+  lernziele:
+    - Sie können R starten.
+    - Sie können grundlegende Operationen in R durchführen.
+  literatur:
+    MODAR: 2-4
+  videos:
+    - "[Playlist ERRRstkontakt](https://youtube.com/playlist?list=PLRR4REmBgpIGlsCMQykiRsF6TH7PCqIIK)"
+    - "[umfangreiche, teils fortgeschrittene Playlist zu R](https://youtube.com/playlist?list=PLRR4REmBgpIEaIyeNBgNGPgmhQJ_T1y8_)"
+Datenimport:
+  lernziele:
+    - Sie können Daten (verschiedener Formate) in R importieren.
+    - Sie kennen einige Datenstrukturen in R.
+  literatur:
+    MODAR: "5-6"
+    Paper1: "[Data Organization in Spreadsheets](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989)"
+    Paper2: "[Good enough practices in scientific computing](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510)"
+  videos:
+    - "[Playlist Datenstrukturen in R](https://youtube.com/playlist?list=PLRR4REmBgpIGet_lcNf2wOd0W8j4c9hYN)"
+Datenjudo:
+  lernziele:
+    - Sie können Daten in R aufbereiten mit dem Tidyverse.
+  literatur:
+    MODAR: 7
+  videos:
+    - "[Playlist Datenjudo](https://youtube.com/playlist?list=PLRR4REmBgpIGet_lcNf2wOd0W8j4c9hYN)"
+  vertiefung:
+    - "[Kurs bei datacamp zum Tidyverse](https://www.datacamp.com/courses/introduction-to-the-tidyverse)"
+Deskriptive Statistik:
+  lernziele:
+    - Sie beherrschen grundlegende Operationen der univariaten deskriptiven Statistik sowohl für Lage- als auch Streuungsmaße.
+    - Sie verstehen die Grundkonzepte der Korrelation und können diese in R berechnen.
+  literatur:
+    MODAR: 8
+Praxisprobleme der Datenaufbereitung:
+  lernziele:
+    - Sie wissen mit typischen Problemen der Datenaufbereitung umzugehen, wie mit fehlenden Werten, Datenanomalien oder Formatänderung der Tabelle.
+    - Sie kennen die grundlegenden Eigenschaften der Normalverteilung.
+  literatur:
+    MODAR: 9
+  videos:
+    - "[Playlist Praxisprobleme der Datenanalyse](https://youtube.com/playlist?list=PLRR4REmBgpIEEt2fWPz_UovZsXFfr5HJT)"
+Datenvisualisierung:
+  lernziele: 
+    - Sie können Daten visualisieren, um wesentliche Einsichten zu vermitteln.
+  literatur:
+    MODAR: 11
+    Wilke: "[Fundamentals of Data Visualization](https://clauswilke.com/dataviz/)"
+  videos:
+    - "[Playlist Data-Viz/ggplot](https://youtube.com/playlist?list=PLRR4REmBgpIHzLSsI45bCoiBWOqXgD6Dy)"
+  Vertiefung:
+    - "[From Data to Viz](https://www.data-to-viz.com/)"
+    - "[The R Graph Gallery](https://www.r-graph-gallery.com/index.html)"
+Fallstudie-EDA:
+  lernziele: 
+    - Sie können die gelernten Techniken der explorativen Datenanalyse praktisch anwenden.
+  literatur:
+    NA: NA
+  videos:
+    - "[Playlist YACSDAs](https://youtube.com/playlist?list=PLRR4REmBgpIGet_lcNf2wOd0W8j4c9hYN)"
+Modellieren:
+  lernziele:
+    - Sie verstehen die Methoden des Modellierens.
+  literatur:
+    MODAR: 15
+Regression:
+  lernziele:
+    - Sie verstehen die Grundkonzepte der Regression und können diese in R anwenden.
+  literatur:
+    MODAR: 18
+  videos:
+    - "[Playlist Vorhersage-Modellierung](https://youtube.com/playlist?list=PLRR4REmBgpIH6uG8LZWPTSMReX1OFxfUx)"
+Klassifikation:
+  lernziele: 
+    - Sie verstehen die Grundkonzepte der logistischen Regression und können diese in R anwenden.
+  literatur:
+    MODAR: 19
+Fallstudie-Regression:
+  lernziele:
+    - Sie können die gelernten Techniken der Regressionsanalyse praktisch anwenden.
+  literatur:
+    NA: NA
+  videos:
+    - "[Playlist YACSDAs](https://youtube.com/playlist?list=PLRR4REmBgpIGet_lcNf2wOd0W8j4c9hYN)"
+Fallstudie-Modellieren:
+  lernziele: 
+    - Sie können die gelernten Techniken de Modellierens in der Statistik praktisch anwenden.
+  literatur:
+    NA: NA
+  videos:
+    - "[Playlist YACSDAs](https://youtube.com/playlist?list=PLRR4REmBgpIGet_lcNf2wOd0W8j4c9hYN)"
+
+
+
+
+
+
+
+
+
+
+
+
