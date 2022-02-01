@@ -69,6 +69,11 @@ Fallstudie-EDA:
     NA: NA
   videos:
     - "[Playlist YACSDAs](https://youtube.com/playlist?list=PLRR4REmBgpIGet_lcNf2wOd0W8j4c9hYN)"
+  fallstudien:
+    - "[TopGear](https://data-se.netlify.app/2021/02/11/yacda-topgear/)"
+    - "[OECD Wellbeing](https://data-se.netlify.app/2021/02/11/explorative-datenanalyse-zum-datensatz-oecd-wellbeing/)"
+    - "[IMDB Filmbewertungen](https://minimaxir.com/2018/07/imdb-data-analysis/)"
+    - "[Women in Parliament](https://github.com/saghirb/WiP-tidyverse/blob/master/doc/WiP-tidyverse.pdf)  "
 Modellieren:
   lernziele:
     - Sie verstehen die Methoden des Modellierens.
@@ -93,6 +98,9 @@ Fallstudie-Regression:
     NA: NA
   videos:
     - "[Playlist YACSDAs](https://youtube.com/playlist?list=PLRR4REmBgpIGet_lcNf2wOd0W8j4c9hYN)"
+  fallstudien:
+    - "[Movies](https://data-se.netlify.app/2020/11/13/fallstudie-zur-regressionsanalyse-ggplot2movies/)"
+    - ""
 Fallstudie-Modellieren:
   lernziele: 
     - Sie können die gelernten Techniken de Modellierens in der Statistik praktisch anwenden.

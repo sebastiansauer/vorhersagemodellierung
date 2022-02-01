@@ -1,0 +1,144 @@
+---
+title: "Hinweise"
+subtitle: ""
+author: "Sebastian Sauer"
+date: "Letzte Aktualisierung: `r Sys.time()`"
+output:
+   
+  rmdformats::downcute:
+    self_contained: true
+    thumbnails: true
+    lightbox: true
+    gallery: false
+    highlight: tango
+    number_sections: TRUE
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r global-knitr-options, include=FALSE}
+  knitr::opts_chunk$set(
+  fig.pos = 'H',
+  fig.asp = 0.618,
+  fig.align='center',
+  fig.width = 5,
+  out.width = "100%",
+  fig.cap = "", 
+  fig.path = "chunk-img/",
+  dpi = 300,
+  # tidy = TRUE,
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE,
+  cache = FALSE,
+  fig.show = "hold")
+```
+
+
+
+
+## Übergreifende Lernziele
+
+- Die Studentis sind mit wesentlichen Methoden der explorativen Datenanalyse vertraut und können diese selbständig anwenden.
+
+- Die Studentis können gängige Forschungsfragen in statistische Modelle übersetzen, diese auf echte Datensätze anwenden und die Ergebnisse interpretieren.
+
+
+
+
+## Organisatorisches
+
+- Bitte laden Sie sich rechtzeitig die Materialien herunter.
+- Beachten Sie die Vorbereitungshinweise zur ersten Unterrichtsstunde und für die einzelnen Termine.
+- Beachten Sie aktuell geltenden Hygienevorschriften.
+- Bitte meiden Sie datenhungrige Applikationen wie das Streamen von Filmen – Sie behindern den Unterricht und verärgern damit andere Studierende (in diesem oder anderen Kursen).
+- Ein Foliensatz kann kein Lehrbuch ersetzen; falls Sie bei einem Termin gefehlt haben oder Ihre Aufzeichnung lückenhaft ist, lesen Sie bitte in der Literatur nach oder bitten Sie eine/n Kommiliton/in um Hilfe. 
+- Beachten Sie die Hinweise der Hochschule (s. Moodle) wie die Orientierungshilfe, die Klausur- und Studiengangsordnungen. Dort finden Sie verbindliche Hinweise zu vielen organisatorischen Fragen.
+
+
+
+
+# Rechtliche Hinweise
+
+- Dieser Kurs ist lizensiert unter der [MIT Lizenz](https://github.com/sebastiansauer/bayes-start/blob/main/LICENSE). Das ist eine permissive Lizenz, die erlaubt, dass Sie diesen Kurs frei verwenden können. Sie haben (nur) die Verpflichtung, zu zitieren und auf die Lizenzart hinzuweisen.
+- Mitarbeit oder Verbesserungsvorschläge: am besten als [Github Issue](https://github.com/sebastiansauer/bayes-start/issues) einstellen.
+- Für die Inhalte von Links kann keine Haftung übernommen werden.
+- Aus Datenschutzgründen dürfen Studentis den Unterricht (Video, Ton, sonstige) nicht aufnehmen.
+
+## Aufnahme des Unterrichts
+
+- Einige Teile des Unterrichts werden u.U. aufgenommen. 
+- Die Aufnahme erfolgt nur nach vorheriger Information durch den Dozenten. 
+- Bei den Bild-Aufnahmen wird nur der Bildschirm des Dozenten aufgenommen; außerdem wird der Ton aufgenommen. 
+- Bitte verzichten Sie daher während der Aufnahme auf Zoom-Reaktionen wie Hand heben, da diese u.U. mit Ihrem Namen auf dem Bildschirm des Dozenten und damit auf der Aufnahme zu sehen sind. 
+- Während einer Aufnahme dürfen aus Datenschutzgründen keine Wortbeiträge zu hören sein, die Personen identifizieren. 
+- Bitte verzichten Sie während der Aufnahme daher auf Wortbeiträge. - Der Dozent informiert umgehend, wenn er die Aufnahme beendet. 
+- Die Aufnahmen werden im Internet (z.B. YouTube) frei veröffentlicht. Solche offenen Beiträge im Internet können u.U. in Zukunft nicht kontrolliert werden, insbesondere können sie unkontrolliert verbreitet und kommentiert werden. 
+- Der Dozent hat u.U. keinen Einfluss auf Verbreitung, Kommentare oder sonstige Weiterverwendung. 
+- Alle Rechte an den Aufnahmen liegen beim Dozenten. 
+- Aufnahme durch die Studentis sind nicht erlaubt.
+
+
+# IT
+
+- [Installieren Sie bitte R und seine Freunden ](https://data-se.netlify.app/2021/11/30/installation-von-r-und-seiner-freunde/) vor der ersten Unterrichtsstunde.
+- Bitte beachten Sie die Installationshinweise für Software und installieren Sie die Software vor Beginn des ersten Termins.
+- Sorgen Sie dafür, dass Sie in jeder Stunde über eine gute Internetverbindung verfügen.
+- Bitte stellen Sie sicher, dass Sie Zugriff auf Moodle, Zoom und weitere Dienste haben, die wir im Unterricht nutzen (Passwörter dabei haben etc.).
+ Kontaktieren Sie die IT-Abteilung bei technischen Probleme.
+- Für Präsenztermine: Bitte bringen Sie folgende IT-Geräte in jede Stunde mit: Laptop mit Stromkabel, Smartphone oder Tablett, Kopfhörer inkl. Mikrofon.
+- Für Präsenztermine: Ein langer Uni-Tag zehrt an der Batterie; nicht nur an Ihrer, sondern auch in Ihrem Laptop und Smartphone. Ggf. kann eine Zusatzbatterie (Akku-Pack) hilfreich sein.
+ Bei schlechter WLAN-Verbindung kann ein Hotspot über das Handy eine Lösung sein.
+- Bitte lesen Sie auch die Hinweise zur Software, die wir in diesem Modul benötigen.
+
+
+
+## Ich brauche Hilfe. Was soll ich tun?
+
+- Versuchen Sie erst selber, das Problem zu lösen. Manchmal hilft etwas Abstand (Pause, drüber schlafen), um ein Problem klarer zu sehen (oder es als nicht mehr so wichtig zu sehen).
+- Fragen Sie Kommilitonis.
+- Recherchen Sie (online) nach einer Lösung.
+- Posten Sie das Problem im Forum oder einem Online-Forum. Wichtig: Stellen Sie Ihrem Post ein [Erbie](https://data-se.netlify.app/2022/01/31/erbie-einfache-reproduzierbare-beispiele-ihres-problems-mit-r-syntax/) bei.
+- Besuchen Sie die Sprechstunde des Dozenten.
+- Schreiben Sie möglichst keine Email, da die meisten Fragen für Ihre Kommilitonis auch nützlich sein können (eine Ausnahme sind natürlich individuelle Angelegenheiten, die nicht den Stoff betreffen).
+
+
+
+## Videokonferenzen
+
+
+- -Für Videokonferenzen/Webinare in diesem Modul wird die Software Zoom verwendet.
+ Zur Einwahl benötigen Sie eine Zoom-Meeting-ID bzw. die dazu gehörige URL (Link); außerdem benötigen Sie ggf. ein zugehöriges Passwort. Diese Informationen werden Ihnen vom Dozenten zugestellt-.
+- Für die Teilnahme an der Videokonferenz können Sie einen internetfähigen Rechner oder Tablet/Smartphone verwenden. Alternativ können Sie den Zoom-Client auf Ihrem Computer installieren (die Installation auf dem Rechner ist zu empfehlen).
+- Ein paar Minuten vor Unterrichtsbeginn da sein, hilft beim Ankommen und um etwaige technische Probleme auszuräumen. 
+- -Wenn jede(r) Hintergrundgeräusche vermeidet (auch die Tastatur kann ziemlich laute Geräusche verursachen), verstehen wir uns alle gut. 
+- Das Mikro auszuschalten, wenn man gerade nichts sagen möchte, gibt Freiheit, doch nicht ganz leise zu sein, ohne die anderen zu stören. - Ein Headset ist hilfreich, um Rückkopplungsgeräusche (Echo) zu vermeiden. 
+- Eine einigermaßen schnelle Internetverbindung ist nötig.
+- Ich empfehle, eine Webcam anzuschließen (bzw. freigeben), so dass wir uns sehen können. Das ist der Qualität des Unterrichts zuträglich.
+- Hilfe zu Zoom findet sich hier: https://support.zoom.us/hc/de.
+- Zu bestimmten Seiten kann der Dienst (Zoom) überlastet sein, so dass das Webinar nur eingeschränkt oder nicht möglich ist. In diesem Fall erstellt der Dozent ein Video und stellt es im Nachgang über Moodle zur Verfügung.
+- Die Datenschutzhinweise von Zoom finden Sie [hier.](https://zoom.us/docs/en-us/privacy-and-security.html)
+- Prüfen Sie regelmäßig, ob Ihr Zoom-Client aktuell ist (sonst updaten).
+- Aus Gründen der Sicherheit der Teilnehmis kann der Dozent anonyme Teilnahme an Videokonferenzen untersagen.
+- Der Chat sollte nur für Themen des Unterrichts verwendet werden (nicht für private Themen).
+
+
+
+
+
+## Didaktik
+
+- Damit Sie vom Unterricht maximal profitieren, ist es essenziell, dass Sie aktiv mitarbeiten. Ein "Nur-Zuhören" nimmt Ihnen einen Gutteil des Nutzens des Unterrichts. Sie lernen nur zum kleinen Teil vom Zuhören; der größte Teil des Lernerfolgs kommt vom Selber-Erarbeiten!
+- Bitte stellen Sie Ihre Kamera (Webcam) an, wenn Sie einen Kommilitonen oder den Dozenten ansprechen. Das ist der Güte der Kommunikation zuträglich.
+
+
+
+## Umgangsformen
+
+- Freundlicher Umgang miteinander ist selbstverständlich.
+- Selbstverständlich sind auch die grundlegenden Formen der höflichen Miteinanders (Begrüßung, Ansprache mit Namen, bitte/danke sagen, Püntklichkeit, Verbindlichkeit, ...).
+- Bei Nichtwissen oder einem inhaltlichen Fehler wird niemand bloßgestellt oder lächerlich gemacht.
+- Um eine Wortmeldung in einer Videokonferenz anzuzeigen, bietet sich die Funktion des Handhebens an.
+- In Breakout-Sessions (in Zoom) sollte aktiv mitgearbeitet werden, wer das nicht möchte, betritt den Breaktout-Room nicht.
+- Beim Ansprechen in einer Videokonferenz sollte die Kamera angeschaltet sein.
+

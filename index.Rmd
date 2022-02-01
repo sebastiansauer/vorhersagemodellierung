@@ -87,18 +87,7 @@ In diesem Modul lernen Sie das Handwerk der Prognose: Auf Basis von Fakten (Date
 
 # Hinweise
 
-
-- Dieser Kurs ist lizensiert unter der [MIT Lizenz](https://github.com/sebastiansauer/bayes-start/blob/main/LICENSE). Das ist eine permissive Lizenz, die erlaubt, dass Sie diesen Kurs frei verwenden können. Sie haben (nur) die Verpflichtung, zu zitieren und auf die Lizenzart hinzuweisen.
-
-- [Installation von R und seinen Freunden ](https://data-se.netlify.app/2021/11/30/installation-von-r-und-seiner-freunde/)
-
-
-- Mitarbeit oder Verbesserungsvorschläge: am besten als [Github Issue](https://github.com/sebastiansauer/bayes-start/issues) einstellen.
-
-
-# Didaktik
-
-## Literatur
+# Literatur
 
 Zentrale Begleitlektüre ist `r RefManageR::Citet(bib, "sauer_moderne_2019")`.
 
@@ -112,6 +101,12 @@ Zentrale Begleitlektüre ist `r RefManageR::Citet(bib, "sauer_moderne_2019")`.
     - tidyverse
 
 
+
+## Daten
+
+- Saratoga Houses
+    - [Saratoga Houses CSV](https://vincentarelbundock.github.io/Rdatasets/csv/mosaicData/SaratogaHouses.csv)
+    - [Saratoga Houses Code Book/Documentation](https://vincentarelbundock.github.io/Rdatasets/doc/mosaicData/SaratogaHouses.html)
 
 
 # Themen
@@ -211,6 +206,17 @@ for (i in seq_along(titel)){
     cat("\n")
   }
   
+  fallstudien <-
+    modul_zsfg[[i]][["fallstudien"]]
+  
+  if (!is.null(fallstudien)){
+    cat("### Fallstudien \n\n")
+    for (p in fallstudien) {
+      cat(paste0("- ", p, "\n"))
+    }
+    cat("\n\n")
+  }
+  
   vertiefung <-
     modul_zsfg[[i]][["vertiefung"]]
   
@@ -237,14 +243,24 @@ for (i in seq_along(titel)){
 
 # Prüfung
 
+## Was ist das für eine Prüfung?
+
 Bei der Prüfung handelt es sich um einen *Prognosewettbewerb.*
+
+Vorhersagen sind eine praktische Sache, zumindest wenn Sie stimmen. Wenn Sie den DAX-Stand von morgen genau vorhersagen können, rufen Sie mich bitte sofort an. Genau das ist Ihre Aufgabe in dieser Prüfungsleistung: Sie sollen Werte vorhersagen. 
+
+Etwas konkreter: Stellen Sie sich ein paar Studentis vor; von allen wissen Sie, wie lange die Person für die Statistikklausur gelernt hat. Außerdem wissen Sie die Motivation jeder Person und vielleicht noch ein paar noten-relevante Infos. Und Sie wissen die Note jeder Person in der Statistikklausur. Auf dieser Basis fragt sie ein Student (Alois), der im kommenden Semester die Prüfung in Statistik schreiben ~~muss~~ will: "Sag mal, wenn ich 100 Stunden lerne und so mittel motiviert bin, welche Note kann ich dann erwarten?". Mit Hilfe Ihrer Analyse können Sie diese Frage beantworten. Natürlich könnten Sie es sich leicht machen und antworten: "Mei, der Notendurchschnitt war beim letzten Mal 2.7. Also ist das kein ganz doofer Tipp für deine Note." Ja, das keine doofe Antwort, aber man kann es besser machen. Da hilft Ihnen die Statistik (doch, wirklich). 
+
+Kurz gesagt gehen Sie so vor: Importieren Sie die Daten in R, starten Sie die nötigen R-Pakete und schauen Sie sich die Daten unter verschiedenen Blickwinkeln an. Dann nehmen Sie die vielversprechendsten Prädiktoren in ein Regressionsmodell und schauen sich an, wie gut die Vorhersage ist. Wiederholen Sie das ein paar Mal, bis Sie ein Modell haben, das Sie brauchbar finden. Mit diesem Modell sagen Sie dann die Noten der neuen Studis (Alois und Co.) vorher. Je genauer Ihre Vorhersage, desto besser ist Ihr Prüfungsergebnis.
+
+
 
 ## Hinweise zur Prüfung
 
-[Hinweise zur Prüfung](https://sebastiansauer.github.io/vorhersagemodellierung/Pruefung/Hinweise-Prognosewettbewerb.html)
-
-
-
+- [Hinweise zur Prüfung](https://sebastiansauer.github.io/vorhersagemodellierung/Pruefung/Hinweise-Prognosewettbewerb.html)
+- [Einfache, beispielhafte Vorhersagemodellierung (Video)](https://www.youtube.com/watch?v=5pBTHrnRIZY) 
+- Der gesamte Stoff, der im Unterricht behandelt bzw. für den Kurs bereitgestellt ist, ist prüfungsrelvant. Eine Ausnahme ist, wenn bestimmte Inhalte explizit als "nicht prüfungsrelevant" gekennzeichnet sind.
+- Denken Sie daran, sich rechtzeitig zu den Prüfungsleistungen anzumelden. Beachten Sie, dass die Fristen für Anmeldung und Abgabe (Hochladen der Prüfungsleistung) unterschiedlich sein können.
 
 # Literatur
 

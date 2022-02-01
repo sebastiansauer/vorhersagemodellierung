@@ -10,9 +10,10 @@ output: html_document
 ```{r message=FALSE}
 data(wo_men, package = "pradadata")
 library(tidyverse)
+library(nomnoml)
 ```
 
-
+# Diagramme
 
 ## p_signal_rauschen1
 
@@ -120,4 +121,78 @@ stats_test %>%
        caption = paste0("n = ", nrow(stats_test), " Studentis"))
 ```
 
+
+
+## p_learn2
+
+```{r}
+
+stats_test %>%
+  filter(study_time %in% 1:5) %>%
+  select(bestanden, study_time, score) %>%
+  na.omit() %>%
+  ggplot(aes(x = factor(study_time), y = score)) +
+  geom_jitter( alpha = .56) +
+  #geom_boxplot(alpha = .7) +
+  #geom_smooth(aes(group = 1), method = "lm", se = FALSE) +
+  theme_minimal() +
+  theme(legend.position = "bottom") +
+  labs(y = "Prozent richtiger Lösungen",
+       x = "Lernaufwand [gering bis hoch]",
+       title = "Mehr Lernen, bessere Noten",
+       subtitle = "Der Zusammenhang von Lernzeit und Klausurerfolg in der Statistik",
+       caption = paste0("n = ", nrow(stats_test), " Studentis"))
+```
+
+
+
+
+## p_uv_av
+
+
+```{nomnoml}
+[UV] -> [AV]
+[Ursache] -> [Wirkung]
+[Prädiktor] -> [Kriterium]
+[Input] -> [Output]
+
+```
+
+
+
+## p_skalenniveau
+
+
+```{nomnoml}
+#direction: down
+[Alle Variablen] -> [quantitativ/metrisch/numerisch]
+[Alle Variablen] -> [qualitativ/kategorial]
+[qualitativ/kategorial] -> [nominal]
+[qualitativ/kategorial] -> [ordinal]
+[quantitativ/metrisch/numerisch] -> [diskret]
+[quantitativ/metrisch/numerisch] -> [stetig]
+[nominal] -> [zweistufig]
+[nominal] -> [mehrstufig]
+```
+
+
+
+## tab_mtcars
+
+
+```{r}
+library(gt)
+mtcars %>% 
+  gt()  
+```
+
+
+```{r}
+sum_tab = data.frame(col1 = c("move up","no change", "move down", "move up", "no change","move down","move up","no change","move down"), 
+                     col2 = c(10,4,12,11,4,11,9,10,7), col3 = c(10,9,7,5,16,5,6,14,6))
+row.names(sum_tab) <- c(2,3,1,21,31,11,22,32,12)
+sum_tab
+library(sjPlot)
+tab_df(sum_tab)
+```
 
