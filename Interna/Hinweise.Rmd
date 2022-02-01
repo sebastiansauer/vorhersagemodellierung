@@ -54,7 +54,8 @@ editor_options:
 - Bitte meiden Sie datenhungrige Applikationen wie das Streamen von Filmen – Sie behindern den Unterricht und verärgern damit andere Studierende (in diesem oder anderen Kursen).
 - Ein Foliensatz kann kein Lehrbuch ersetzen; falls Sie bei einem Termin gefehlt haben oder Ihre Aufzeichnung lückenhaft ist, lesen Sie bitte in der Literatur nach oder bitten Sie eine/n Kommiliton/in um Hilfe. 
 - Beachten Sie die Hinweise der Hochschule (s. Moodle) wie die Orientierungshilfe, die Klausur- und Studiengangsordnungen. Dort finden Sie verbindliche Hinweise zu vielen organisatorischen Fragen.
-
+- Bitte prüfen Sie jetzt schon und in regelmäßigen Abständen die Modulseite auf neue Materialien. 
+- Nachdem eine Unterrichtseinheit abgeschlossen ist, ändert der Dozent grundsätzlich nichts mehr an den Materialien (in Ausnahmefällen wie etwa der Korrektur eines Fehler informiert der Dozent schriftlich).
 
 
 
@@ -65,7 +66,7 @@ editor_options:
 - Für die Inhalte von Links kann keine Haftung übernommen werden.
 - Aus Datenschutzgründen dürfen Studentis den Unterricht (Video, Ton, sonstige) nicht aufnehmen.
 
-## Aufnahme des Unterrichts
+# Aufnahme des Unterrichts
 
 - Einige Teile des Unterrichts werden u.U. aufgenommen. 
 - Die Aufnahme erfolgt nur nach vorheriger Information durch den Dozenten. 
@@ -92,8 +93,7 @@ editor_options:
 - Bitte lesen Sie auch die Hinweise zur Software, die wir in diesem Modul benötigen.
 
 
-
-## Ich brauche Hilfe. Was soll ich tun?
+# Ich brauche Hilfe. Was soll ich tun?
 
 - Versuchen Sie erst selber, das Problem zu lösen. Manchmal hilft etwas Abstand (Pause, drüber schlafen), um ein Problem klarer zu sehen (oder es als nicht mehr so wichtig zu sehen).
 - Fragen Sie Kommilitonis.
@@ -104,7 +104,7 @@ editor_options:
 
 
 
-## Videokonferenzen
+# Videokonferenzen
 
 
 - -Für Videokonferenzen/Webinare in diesem Modul wird die Software Zoom verwendet.
@@ -126,14 +126,19 @@ editor_options:
 
 
 
-## Didaktik
+# Didaktik
 
 - Damit Sie vom Unterricht maximal profitieren, ist es essenziell, dass Sie aktiv mitarbeiten. Ein "Nur-Zuhören" nimmt Ihnen einen Gutteil des Nutzens des Unterrichts. Sie lernen nur zum kleinen Teil vom Zuhören; der größte Teil des Lernerfolgs kommt vom Selber-Erarbeiten!
 - Bitte stellen Sie Ihre Kamera (Webcam) an, wenn Sie einen Kommilitonen oder den Dozenten ansprechen. Das ist der Güte der Kommunikation zuträglich.
+- Bereiten Sie den Stoff vor und arbeiten Sie ihn gewissenhaft nach.
+- Das gemeinsame Arbeiten in einer (virtuellen) Lerngruppe ist sehr nützlich.
+- Tauschen Sie sich im Diskussionsforum auf unserer Modulseite aus; gehen Sie in den Diskurs mit den Kommiliton/innen. Falls Sie (im Internet) nützliches Material gefunden haben, können Sie es auch in das Forum einstellen. 
+- Nutzen Sie das Diskussionsforum auch, um den Dozenten Fragen zu stellen. 
+- Meine Erfahrung zeigt mir, dass der Lernerfolg zwar auch von der Lehrperson abhängt, aber entscheidend ist der Wille eines/r Studierenden/r, selbst aktiv zu lernen. Ich glaube, dass Sie gut mit Material ausgestattet sind, um selbständig und mit Erfolg zu lernen.
+- Anbieter wie Google stellen (teilweise) kostenfreie Angebote zum kollaborativen Arbeiten zur Verfügung (Google Docs). Behalten Sie hier den Datenschutz im Blick.
 
 
-
-## Umgangsformen
+# Umgangsformen
 
 - Freundlicher Umgang miteinander ist selbstverständlich.
 - Selbstverständlich sind auch die grundlegenden Formen der höflichen Miteinanders (Begrüßung, Ansprache mit Namen, bitte/danke sagen, Püntklichkeit, Verbindlichkeit, ...).

@@ -87,9 +87,13 @@ In diesem Modul lernen Sie das Handwerk der Prognose: Auf Basis von Fakten (Date
 
 # Hinweise
 
+[Hinweise](https://sebastiansauer.github.io/vorhersagemodellierung/Interna/Hinweise.html)
+
+
 # Literatur
 
-Zentrale Begleitlektüre ist `r RefManageR::Citet(bib, "sauer_moderne_2019")`.
+- Zentrale Begleitlektüre ist `r RefManageR::Citet(bib, "sauer_moderne_2019")`.
+- Weiterführende Literatur (nicht zwingend nötig, aber ggf. nützlich): `r RefManageR::Citet(bib, "wickham_r_2018")` und `r RefManageR::Citet(bib, "cetinkaya-rundel_introduction_2021")`.
 
 
 # Vorbereitung vor dem Kurs
