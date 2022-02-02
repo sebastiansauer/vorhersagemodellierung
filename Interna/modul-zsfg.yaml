@@ -2,17 +2,33 @@ Grundbegriffe:
   lernziele:
     - Sie kennen zentrale Begriffe im Kontext der Datenanalyse.
     - Sie können den Unterschied zwischen Signal und Rauschen erklären.
+    - Sie können zentrale Kompetenzen im Berufsfeld Data Science nennen.
+  vorbereitung:
+    - Lesen Sie die Literatur.
+    - Sehen Sie sich ggf. das Video zum Folienskript an.
   literatur:
     MODAR: 1
   videos:
     - "[Playlist Lerntechniken](https://youtube.com/playlist?list=PLRR4REmBgpIFDcr72hs_Dp5lQbIPbDkz7)"
   folien: "[Folienskript Thema 1](https://docs.google.com/presentation/d/1RWUE8nq835JdHveTymFvcYPH16J_V7PaNMQJcTCkUSs/edit?usp=sharing)"
   syntax:
-    - "[Syntax zu den Folien von Thema 1]https://sebastiansauer.github.io/vorhersagemodellierung/Skript-Syntax/QM1-Thema1-Skript-Syntax.html"
+    - "[Syntax zu den Folien von Thema 1](https://sebastiansauer.github.io/vorhersagemodellierung/Skript-Syntax/QM1-Thema1-Skript-Syntax.html)"
+  vertiefung:
+    - "[Berufsbild Data Scientist]()"
+    - "[Video: Data Science vs. Statistics](https://www.youtube.com/watch?v=uHGlCi9jOWY)"
+    - "[Zehn unverzichtbare Fertigkeiten für jeden Data Scientist](https://www.tableau.com/de-de/learn/articles/data-science-skills)"
+    - "[Data Science Memes](https://data-se.netlify.app/2021/02/23/data-science-memes/)"
+    - "[Data Science und das Scharnier zwischen Theorie und Praxis](https://towardsdatascience.com/the-anatomy-of-a-data-science-use-case-4fba716eeb5a)"
+    - "[Data Science Skills](https://www.udacity.com/blog/2014/11/data-science-job-skills.html)"
+    - "[Anatomie von Data Science](https://www.sames.io/the-anatomy-of-data-science-2/)"
+    - "[Infografik Data Scientist](https://cdn-infographic.pressidium.com/wp-content/uploads/Data-Scientist.jpg)"
+    - "[Video: Learning from eight years of data science mistakes](https://www.youtube.com/watch?v=O5lP6XcopdQ&list=PL9HYL-VRX0oQchs7dqFICoxMgnvFO10tC&index=13&t=1s)"
+    - "[Hilfe zur Installation von R und RStudio](https://moderndive.com/1-getting-started.html#r-rstudio)"
 ERRRstkontakt:
   lernziele:
-    - Sie können R starten.
-    - Sie können grundlegende Operationen in R durchführen.
+    - Sie können R starten (installieren).
+    - Sie wissen, was R-Pakete sind und können sie installieren und starten.
+    - Sie können grundlegende Operationen in R durchführen, wie Variablen zuweisen und auslesen.
   literatur:
     MODAR: 2-4
   videos:
