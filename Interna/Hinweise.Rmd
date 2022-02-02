@@ -37,7 +37,7 @@ editor_options:
 
 
 
-## Übergreifende Lernziele
+# Übergreifende Lernziele
 
 - Die Studentis sind mit wesentlichen Methoden der explorativen Datenanalyse vertraut und können diese selbständig anwenden.
 
@@ -46,7 +46,7 @@ editor_options:
 
 
 
-## Organisatorisches
+# Organisatorisches
 
 - Bitte laden Sie sich rechtzeitig die Materialien herunter.
 - Beachten Sie die Vorbereitungshinweise zur ersten Unterrichtsstunde und für die einzelnen Termine.
@@ -128,8 +128,20 @@ editor_options:
 
 # Didaktik
 
+## Lehrkonzept
+- In der "Vorlesung" wird im Schwerpunkt *nicht* das Folienskript "vorgelesen". Dieser Vortrag steht vorab als Video zur Verfügung (s. Links im Themenüberblick).
+- Stattdessen steht in der "Vorlesung" die Durcharbeiten und Vertiefen des Stoffes im Vordergrund, nicht aber das Vortragen des Stoffes.
+- Warum wird die Literatur oder das Folienskript nicht im Unterricht vorgetragen? Zum einen können Sie das alleine besser (in eigener Geschwindigkeit, mit Pausen nach Gusto, zu beliebiger Zeit und beliebigem Ort, so oft wiederholt wie Sie mögen). Zum anderen ist der Lerngewinn beim passiven Zuhören gering. Das Durchdenken, Durcharbeiten, "Durchfragen" des Stoffes ist es, was Ihnen den meisten Gewinn beschwert. Entsprechend liegt auf dem aktiven, gemeinsamen Arbeiten der Schwerpunkt.
+- Das heißt nicht, dass es nie Vorträge vom Dozenten im Unterricht gäbe; manchmal schon. Aber aus genannten Gründen liegt der Fokus des Unterrichts im aktivierenden Arbeiten.
+- Natürlich können im Unterricht jederzeit die Fragen der Studentis zum Stoff besprochen werden. Seien Sie ausdrücklich ermuntert, Ihre Fragen im Unterricht zu formulieren, vorzugsweise im direkten Gespräch, aber alternativ anonym (wie Frag-Jetzt).
+- In der Übung liegt der Schwerpunkt zumeist auf dem Bearbeiten von Aufgaben.
+
+
+
+## Lerntipps
+
 - Damit Sie vom Unterricht maximal profitieren, ist es essenziell, dass Sie aktiv mitarbeiten. Ein "Nur-Zuhören" nimmt Ihnen einen Gutteil des Nutzens des Unterrichts. Sie lernen nur zum kleinen Teil vom Zuhören; der größte Teil des Lernerfolgs kommt vom Selber-Erarbeiten!
-- Bitte stellen Sie Ihre Kamera (Webcam) an, wenn Sie einen Kommilitonen oder den Dozenten ansprechen. Das ist der Güte der Kommunikation zuträglich.
+- Bitte stellen Sie Ihre Kamera (Webcam) an, wenn Sie Kommilitonis oder den Dozenten ansprechen. Das ist der Güte der Kommunikation zuträglich.
 - Bereiten Sie den Stoff vor und arbeiten Sie ihn gewissenhaft nach.
 - Das gemeinsame Arbeiten in einer (virtuellen) Lerngruppe ist sehr nützlich.
 - Tauschen Sie sich im Diskussionsforum auf unserer Modulseite aus; gehen Sie in den Diskurs mit den Kommiliton/innen. Falls Sie (im Internet) nützliches Material gefunden haben, können Sie es auch in das Forum einstellen. 
@@ -141,9 +153,9 @@ editor_options:
 # Umgangsformen
 
 - Freundlicher Umgang miteinander ist selbstverständlich.
-- Selbstverständlich sind auch die grundlegenden Formen der höflichen Miteinanders (Begrüßung, Ansprache mit Namen, bitte/danke sagen, Püntklichkeit, Verbindlichkeit, ...).
+- Selbstverständlich sind auch die grundlegenden Formen der höflichen Miteinanders (Begrüßung, Ansprache mit Namen, bitte/danke sagen, Pünktlichkeit, Verbindlichkeit, ...).
 - Bei Nichtwissen oder einem inhaltlichen Fehler wird niemand bloßgestellt oder lächerlich gemacht.
 - Um eine Wortmeldung in einer Videokonferenz anzuzeigen, bietet sich die Funktion des Handhebens an.
-- In Breakout-Sessions (in Zoom) sollte aktiv mitgearbeitet werden, wer das nicht möchte, betritt den Breaktout-Room nicht.
-- Beim Ansprechen in einer Videokonferenz sollte die Kamera angeschaltet sein.
+- In Breakout-Sessions (in Zoom) sollte aktiv mitgearbeitet werden, wer das nicht möchte, betritt den Breakout-Room nicht.
+- Spricht man eine Person in einer Videokonferenz an, sollte die Kamera angeschaltet sein.
 

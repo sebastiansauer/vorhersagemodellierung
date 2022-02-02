@@ -87,6 +87,8 @@ In diesem Modul lernen Sie das Handwerk der Prognose: Auf Basis von Fakten (Date
 
 # Hinweise
 
+Lesen Sie sich die folgenden Informationen bitte gut durch.
+
 [Hinweise](https://sebastiansauer.github.io/vorhersagemodellierung/Interna/Hinweise.html)
 
 
@@ -103,12 +105,14 @@ In diesem Modul lernen Sie das Handwerk der Prognose: Auf Basis von Fakten (Date
 - Installieren Sie [R und seine Freunde](https://data-se.netlify.app/2021/11/30/installation-von-r-und-seiner-freunde/).
 - Installieren Sie die folgende R-Pakete:
     - tidyverse
-    - weitere Pakete werden im Unterricht bekannt gegben (es schadet aber nichts, jetzt schon Pakete nach eigenem Ermessen zu installieren)
+    - weitere Pakete werden im Unterricht bekannt gegeben (es schadet aber nichts, jetzt schon Pakete nach eigenem Ermessen zu installieren)
 
 
 ## Lernhilfen
 
 -[R Syntax aus dem Unterricht](https://github.com/sebastiansauer/Lehre) findet sich im Github-Repo bzw. Ordner zum jeweiligen Semester.
+- [Frag-Jetzt-Raum zum anonymen Fragen stellen während des Unterrichts](https://frag.jetzt/home). Der Keycode wird Ihnen vom Dozenten bereitgestellt.
+- [Padlet](https://de.padlet.com/) zum einfachen (und anonymen) Hochladen von Arbeitsergebnissen der Studentis im Unterricht. Wir nutzen es als eine Art Pinwand zum Sammeln von Arbeitsbeiträgen. Die Zugangsdaten stellt Ihnen der Dozent bereit.
 
 
 
