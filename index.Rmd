@@ -94,8 +94,14 @@ Lesen Sie sich die folgenden Informationen bitte gut durch.
 
 # Modulliteratur
 
-- Zentrale Begleitlektüre ist `r RefManageR::Citet(bib, "sauer_moderne_2019")`.
+Ein Teil der Literatur ist über viele Hochschulbibliotheken als PDF herunterladen;
+andere Titel sind offen im Unternet verfügbar.
+Oft müssen Sie per VPN angemeldet sein für Volltextzugriff, wenn Sie nicht auf dem Campus sind.
+
+
+- Zentrale Begleitlektüre ist `r RefManageR::Citet(bib, "sauer_moderne_2019")`. 
 - Weiterführende Literatur (nicht zwingend nötig, aber ggf. nützlich): `r RefManageR::Citet(bib, "wickham_r_2018")` und `r RefManageR::Citet(bib, "cetinkaya-rundel_introduction_2021")`.
+- Um grundlegende Mathekenntnisse aufzufrischen ist `r RefManageR::Citet(bib, "knorrenschild_vorkurs_2021", after = ", Kap. 1-3 und 4.1-4.2")` empfehlenswert.
 
 
 # Vorbereitung vor dem Kurs
