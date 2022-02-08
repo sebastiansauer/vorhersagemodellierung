@@ -75,11 +75,13 @@ knitr::include_graphics("https://raw.github.com/allisonhorst/stats-illustrations
 [Allison Horst, CC-BY](https://github.com/allisonhorst/stats-illustrations)
 
 
-# tl;dr
+# Was Sie hier lernen und wozu das gut ist
 
 
 In diesem Modul lernen Sie das Handwerk der Prognose: Auf Basis von Fakten (Daten) den (noch unbekannten) Wert einer Zielvariablen vorherzusagen. Zum Beispiel wieviel Umsatz von einem Kunden mit einem bestimmten Profil im Schnitt zu erwarten ist. Damit lernen Sie die Grundkompetenzen zum Berufsbild Data Scientist – ein angesagtes Berufsbild unserer Zeit. Außerdem lernen Sie etwas Handwerkszeug der (quantitativen) Forschung; der überwältigend große Teil der Forschung basiert auf Ideen, von denen Sie ein paar in diesem Kurs lernen. 
 
+
+[Ansprache zur Motivation](https://youtu.be/jtNlzpcPr5Y)
 
 
 
@@ -95,13 +97,16 @@ Lesen Sie sich die folgenden Informationen bitte gut durch.
 # Modulliteratur
 
 Ein Teil der Literatur ist über viele Hochschulbibliotheken als PDF herunterladen;
-andere Titel sind offen im Unternet verfügbar.
+andere Titel sind offen im Internet verfügbar.
 Oft müssen Sie per VPN angemeldet sein für Volltextzugriff, wenn Sie nicht auf dem Campus sind.
 
 
 - Zentrale Begleitlektüre ist `r RefManageR::Citet(bib, "sauer_moderne_2019")`. 
 - Weiterführende Literatur (nicht zwingend nötig, aber ggf. nützlich): `r RefManageR::Citet(bib, "wickham_r_2018")` und `r RefManageR::Citet(bib, "cetinkaya-rundel_introduction_2021")`.
 - Um grundlegende Mathekenntnisse aufzufrischen ist `r RefManageR::Citet(bib, "knorrenschild_vorkurs_2021", after = ", Kap. 1-3 und 4.1-4.2")` empfehlenswert.
+- Ein Überblick über weitere, empfehlenswerte Literatur zum Einstieg in Statistik findet sich [hier](https://www.zotero.org/groups/4583286/einstieg-statistik).
+
+
 
 
 # Vorbereitung vor dem Kurs
@@ -116,10 +121,10 @@ Oft müssen Sie per VPN angemeldet sein für Volltextzugriff, wenn Sie nicht auf
 
 ## Lernhilfen
 
--[R Syntax aus dem Unterricht](https://github.com/sebastiansauer/Lehre) findet sich im Github-Repo bzw. Ordner zum jeweiligen Semester.
+- [R Syntax aus dem Unterricht](https://github.com/sebastiansauer/Lehre) findet sich im Github-Repo bzw. Ordner zum jeweiligen Semester.
 - [Frag-Jetzt-Raum zum anonymen Fragen stellen während des Unterrichts](https://frag.jetzt/home). Der Keycode wird Ihnen vom Dozenten bereitgestellt.
 - [Padlet](https://de.padlet.com/) zum einfachen (und anonymen) Hochladen von Arbeitsergebnissen der Studentis im Unterricht. Wir nutzen es als eine Art Pinwand zum Sammeln von Arbeitsbeiträgen. Die Zugangsdaten stellt Ihnen der Dozent bereit.
-
+- [Playlist mit Lerntechniken speziell für mathematisch orientierte Fächer](https://youtube.com/playlist?list=PLRR4REmBgpIFDcr72hs_Dp5lQbIPbDkz7)
 
 
 ## Daten

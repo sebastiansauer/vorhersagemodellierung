@@ -24,6 +24,7 @@ Grundbegriffe:
     - "[Infografik Data Scientist](https://cdn-infographic.pressidium.com/wp-content/uploads/Data-Scientist.jpg)"
     - "[Video: Learning from eight years of data science mistakes](https://www.youtube.com/watch?v=O5lP6XcopdQ&list=PL9HYL-VRX0oQchs7dqFICoxMgnvFO10tC&index=13&t=1s)"
     - "[Hilfe zur Installation von R und RStudio](https://moderndive.com/1-getting-started.html#r-rstudio)"
+
 ERRRstkontakt:
   lernziele:
     - Sie können R starten (installieren).
@@ -32,12 +33,12 @@ ERRRstkontakt:
   vorbereitung:
     - Lesen Sie die Literatur.
     - Sehen Sie sich ggf. das Video zum Folienskript an.
-      
   literatur:
     MODAR: 2-4
   videos:
     - "[Playlist ERRRstkontakt](https://youtube.com/playlist?list=PLRR4REmBgpIGlsCMQykiRsF6TH7PCqIIK)"
     - "[umfangreiche, teils fortgeschrittene Playlist zu R](https://youtube.com/playlist?list=PLRR4REmBgpIEaIyeNBgNGPgmhQJ_T1y8_)"
+
 Datenimport:
   lernziele:
     - Sie können Daten (verschiedener Formate) in R importieren.
@@ -45,26 +46,27 @@ Datenimport:
   vorbereitung:
     - Lesen Sie die Literatur.
     - Sehen Sie sich ggf. das Video zum Folienskript an.
-
   literatur:
     MODAR: "5-6"
     Paper1: "[Data Organization in Spreadsheets](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989)"
     Paper2: "[Good enough practices in scientific computing](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510)"
   videos:
     - "[Playlist Datenstrukturen in R](https://youtube.com/playlist?list=PLRR4REmBgpIGet_lcNf2wOd0W8j4c9hYN)"
+
 Datenjudo:
   lernziele:
     - Sie können Daten in R aufbereiten mit dem Tidyverse.
   vorbereitung:
     - Lesen Sie die Literatur.
     - Sehen Sie sich ggf. das Video zum Folienskript an.
-
   literatur:
     MODAR: 7
   videos:
     - "[Playlist Datenjudo](https://youtube.com/playlist?list=PLRR4REmBgpIGet_lcNf2wOd0W8j4c9hYN)"
   vertiefung:
     - "[Kurs bei datacamp zum Tidyverse](https://www.datacamp.com/courses/introduction-to-the-tidyverse)"
+    - "[learnr-Tutorial zu dplyr](https://allisonhorst.shinyapps.io/dplyr-learnr/)"
+
 Deskriptive Statistik:
   lernziele:
     - Sie beherrschen grundlegende Operationen der univariaten deskriptiven Statistik sowohl für Lage- als auch Streuungsmaße.
@@ -82,13 +84,13 @@ Praxisprobleme der Datenaufbereitung:
   vorbereitung:
     - Lesen Sie die Literatur.
     - Sehen Sie sich ggf. das Video zum Folienskript an.
-
   literatur:
     MODAR: 9
   videos:
     - "[Playlist Praxisprobleme der Datenanalyse](https://youtube.com/playlist?list=PLRR4REmBgpIEEt2fWPz_UovZsXFfr5HJT)"
+
 Datenvisualisierung:
-  lernziele: 
+  lernziele:
     - Sie können Daten visualisieren, um wesentliche Einsichten zu vermitteln.
   literatur:
     MODAR: 11
@@ -96,18 +98,17 @@ Datenvisualisierung:
   vorbereitung:
     - Lesen Sie die Literatur.
     - Sehen Sie sich ggf. das Video zum Folienskript an.
-
   videos:
     - "[Playlist Data-Viz/ggplot](https://youtube.com/playlist?list=PLRR4REmBgpIHzLSsI45bCoiBWOqXgD6Dy)"
   Vertiefung:
     - "[From Data to Viz](https://www.data-to-viz.com/)"
     - "[The R Graph Gallery](https://www.r-graph-gallery.com/index.html)"
+
 Fallstudie-EDA:
-  lernziele: 
+  lernziele:
     - Sie können die gelernten Techniken der explorativen Datenanalyse praktisch anwenden.
   vorbereitung:
     - Sehen Sie sich ggf. das Video zum Folienskript an.
-
   literatur:
     NA: NA
   videos:
@@ -117,6 +118,7 @@ Fallstudie-EDA:
     - "[OECD Wellbeing](https://data-se.netlify.app/2021/02/11/explorative-datenanalyse-zum-datensatz-oecd-wellbeing/)"
     - "[IMDB Filmbewertungen](https://minimaxir.com/2018/07/imdb-data-analysis/)"
     - "[Women in Parliament](https://github.com/saghirb/WiP-tidyverse/blob/master/doc/WiP-tidyverse.pdf)  "
+
 Modellieren:
   lernziele:
     - Sie verstehen die Methoden des Modellierens.
@@ -134,11 +136,11 @@ Regression:
   vorbereitung:
     - Lesen Sie die Literatur.
     - Sehen Sie sich ggf. das Video zum Folienskript an.
-
   videos:
     - "[Playlist Vorhersage-Modellierung](https://youtube.com/playlist?list=PLRR4REmBgpIH6uG8LZWPTSMReX1OFxfUx)"
+
 Klassifikation:
-  lernziele: 
+  lernziele:
     - Sie verstehen die Grundkonzepte der logistischen Regression und können diese in R anwenden.
   literatur:
     MODAR: 19
@@ -149,10 +151,8 @@ Klassifikation:
 Fallstudie-Regression:
   lernziele:
     - Sie können die gelernten Techniken der Regressionsanalyse praktisch anwenden.
-
   vorbereitung:
     - Sehen Sie sich ggf. das Video zum Folienskript an.
-
   literatur:
     NA: NA
   videos:
@@ -160,14 +160,14 @@ Fallstudie-Regression:
   fallstudien:
     - "[Movies](https://data-se.netlify.app/2020/11/13/fallstudie-zur-regressionsanalyse-ggplot2movies/)"
     - ""
+
 Fallstudie-Modellieren:
-  lernziele: 
+  lernziele:
     - Sie können die gelernten Techniken de Modellierens in der Statistik praktisch anwenden.
   literatur:
     NA: NA
   vorbereitung:
     - Sehen Sie sich ggf. das Video zum Folienskript an.
-
   videos:
     - "[Playlist YACSDAs](https://youtube.com/playlist?list=PLRR4REmBgpIGet_lcNf2wOd0W8j4c9hYN)"
 
