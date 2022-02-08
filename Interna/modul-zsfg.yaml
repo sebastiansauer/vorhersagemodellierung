@@ -13,6 +13,12 @@ Grundbegriffe:
   folien: "[Folienskript Thema 1](https://docs.google.com/presentation/d/1RWUE8nq835JdHveTymFvcYPH16J_V7PaNMQJcTCkUSs/edit?usp=sharing)"
   syntax:
     - "[Syntax zu den Folien von Thema 1](https://sebastiansauer.github.io/vorhersagemodellierung/Skript-Syntax/QM1-Thema1-Skript-Syntax.html)"
+  aufgaben:
+    - "Stellen Sie das Berufsbild 'Data Scientist' vor!"
+    - "Erstellen Sie ein Meme zum Thema Statistik bzw. Data Science!"
+    - "Erklären Sie die Installation von R (und seiner Freunde)!"
+    - "Erklären Sie, was man in der Mathe unter einer Funktion versteht!"
+    - "Fassen Sie die Literatur zum heutigen Thema zusammen (z.B. im Rahmen eines Mindmaps oder einer geteilten Dokuments)!"
   vertiefung:
     - "[Berufsbild Data Scientist]()"
     - "[Video: Data Science vs. Statistics](https://www.youtube.com/watch?v=uHGlCi9jOWY)"
