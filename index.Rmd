@@ -160,7 +160,7 @@ for (i in seq_along(titel)){
   this_title <- titel[i]
   cat("##", this_title, "\n")
   cat("\n")
-
+  
   # Lernziele:
   lernziele <- modul_zsfg[[i]][["lernziele"]]
   
@@ -193,88 +193,101 @@ for (i in seq_along(titel)){
     cat("\n")
   }
   
-      folien <-
-      modul_zsfg[[i]][["folien"]]
   
-      # Folien:
-      if (!is.null(folien)){
-        cat("### Folien \n\n")
-        cat(paste0("- ", folien, "\n"))
-        
-        cat("\n")
-        cat("\n")
-      }
-      
-      # Videos:    
-      videos <- 
-        modul_zsfg[[i]][["videos"]]
-      
-      
-      if (!is.null(videos)){
-        cat("### Videos \n\n")
-        for (l in videos) {
-          cat(paste0("- ", l, "\n"))
-        }
-        
-        cat("\n")
-        cat("\n")
-      }
-      
-      # Syntax:  
-      syntax <-
-        modul_zsfg[[i]][["syntax"]]
-      
-      if (!is.null(syntax)){
-        cat("### Syntax \n\n")
-        for (o in syntax){
-          cat(paste0("- ", o, "\n"))
-        }
-        
-        cat("\n")
-        cat("\n")
-      }
-      
-      
-      # Aufgaben:
-      aufgaben <- modul_zsfg[[i]][["aufgaben"]]
-      
-      if (!is.null(aufgaben)){
-        cat("### Aufgaben \n\n")
-        for (q in aufgaben) {
-          cat(paste0("- ", q, "\n"))
-        }
-        cat("\n\n")
-      }
-      
-      
-      # Fallstudien:
-      fallstudien <-
-        modul_zsfg[[i]][["fallstudien"]]
-      
-      if (!is.null(fallstudien)){
-        cat("### Fallstudien \n\n")
-        for (p in fallstudien) {
-          cat(paste0("- ", p, "\n"))
-        }
-        cat("\n\n")
-      }
-      
-      
-      # Vertiefung:
-      vertiefung <-
-        modul_zsfg[[i]][["vertiefung"]]
-      
-      if (!is.null(vertiefung)) {
-        cat("### Vertiefung \n\n")
-        for (m in vertiefung) {
-          cat(paste0("- ", m, "\n"))
-        }
-      }
-      
-      # Leerzeilen, bevor neues Thema anfängt
-      cat("\n")
-      cat("\n")
-      
+  # Vorbereitung:
+  vorbereitung <- 
+    modul_zsfg[[i]][["vorbereitung"]]
+  
+  if (!is.null(vorbereitung)) {
+    cat("### Vorbereitung \n\n")
+    cat("(zu erledigen vor dem Unterricht) \n\n")
+    for (r in vorbereitung) cat(paste0("- ",r, "\n"))
+  }
+
+  cat("\n\n")
+  
+  # Folien:  
+  folien <-
+    modul_zsfg[[i]][["folien"]]
+
+  if (!is.null(folien)){
+    cat("### Folien \n\n")
+    cat(paste0("- ", folien, "\n"))
+    
+    cat("\n")
+    cat("\n")
+  }
+  
+  
+  # Videos:    
+  videos <- 
+    modul_zsfg[[i]][["videos"]]
+  
+  if (!is.null(videos)){
+    cat("### Videos \n\n")
+    for (l in videos) {
+      cat(paste0("- ", l, "\n"))
+    }
+    
+    cat("\n")
+    cat("\n")
+  }
+  
+  # Syntax:  
+  syntax <-
+    modul_zsfg[[i]][["syntax"]]
+  
+  if (!is.null(syntax)){
+    cat("### Syntax \n\n")
+    for (o in syntax){
+      cat(paste0("- ", o, "\n"))
+    }
+    
+    cat("\n")
+    cat("\n")
+  }
+  
+  
+  # Aufgaben:
+  aufgaben <- modul_zsfg[[i]][["aufgaben"]]
+  
+  if (!is.null(aufgaben)){
+    cat("### Aufgaben \n\n")
+    for (q in aufgaben) {
+      cat(paste0("- ", q, "\n"))
+    }
+    cat("\n\n")
+  }
+  
+  
+  # Fallstudien:
+  fallstudien <-
+    modul_zsfg[[i]][["fallstudien"]]
+  
+  if (!is.null(fallstudien)){
+    cat("### Fallstudien \n\n")
+    for (p in fallstudien) {
+      cat(paste0("- ", p, "\n"))
+    }
+    cat("\n\n")
+  }
+  
+  
+  # Vertiefung:
+  vertiefung <-
+    modul_zsfg[[i]][["vertiefung"]]
+  
+  if (!is.null(vertiefung)) {
+    cat("### Vertiefung \n\n")
+    for (m in vertiefung) {
+      cat(paste0("- ", m, "\n"))
+    }
+  }
+  
+  # Leerzeilen, bevor neues Thema anfängt
+  cat("\n")
+  cat("\n")
+  
 }
 ```
 
