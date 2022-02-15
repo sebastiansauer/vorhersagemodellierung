@@ -77,7 +77,7 @@ editor_options:
 - Die Aufnahmen werden im Internet (z.B. YouTube) frei veröffentlicht. Solche offenen Beiträge im Internet können u.U. in Zukunft nicht kontrolliert werden, insbesondere können sie unkontrolliert verbreitet und kommentiert werden. 
 - Der Dozent hat u.U. keinen Einfluss auf Verbreitung, Kommentare oder sonstige Weiterverwendung. 
 - Alle Rechte an den Aufnahmen liegen beim Dozenten. 
-- Aufnahme durch die Studentis sind nicht erlaubt.
+- Aufnahmen des Unterrichts durch die Studentis sind nicht erlaubt.
 
 
 # IT
