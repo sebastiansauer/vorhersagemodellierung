@@ -42,6 +42,10 @@ library(tidyverse)
 ```
 
 
+```{r}
+source("funs/render-course-outline2.R")
+```
+
 
 
 
@@ -83,6 +87,16 @@ In diesem Modul lernen Sie das Handwerk der Prognose: Auf Basis von Fakten (Date
 
 [Ansprache zur Motivation](https://youtu.be/jtNlzpcPr5Y)
 
+
+
+# Modulüberblick
+
+```{r render-outline-course-small-table, results = "asis", echo = FALSE, message = FALSE}
+
+d <- read_rds("Interna/course-master-table.rds")
+
+render_course_outline2(d, small_table = TRUE)
+```
 
 
 
@@ -149,16 +163,14 @@ Auf [meinem YouTube-Kanal](https://www.youtube.com/channel/UCkvdtj8maE7g-SOCh4aD
 
 
 
-
-
-
-
 ```{r render-outline-course, results = "asis", echo = FALSE, message = FALSE}
-source(paste0(here::here(),"/funs/render-course-outline.R"))
-yml_file <- "Interna/modul-zsfg.yaml"
 
-render_course_outline(yml_file)
+d <- read_rds("Interna/course-master-table.rds")
+
+render_course_outline2(d)
 ```
+
+
 
 
 
@@ -199,4 +211,6 @@ Einige möchte ich herausgreifen, um Danke zu sagen:
 
 - Kollegis wie Karsten Lübke, von denen ich viel gelernt habe.
 - Alle Open-Source-Entwickler, die Projekte wie dieses überhaupt erst möglichen machen. 💌
+
+
 

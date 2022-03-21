@@ -81,6 +81,11 @@ Thema2:
     - "[Warum kann man mit dieser (Excel-)Tabelle schlecht arbeiten, obwohl sie schön anzuschauen ist?](https://miro.medium.com/max/1400/1*-dgXuTPTQGXMQNrvgVa5UA.png)"
     - "[Wie Excel nicht zur Hölle wird](https://github.com/datascibc/Data-Science-for-Docs/wiki/Excel-hell)"
     - "[Good enough practices in scientific computing](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510)"
+  Skript:
+  Syntax:
+  Aufgaben:
+  Hinweise:
+
 
 
 Thema3:
@@ -100,15 +105,18 @@ Thema3:
     - "[Kurs bei datacamp zum Tidyverse](https://www.datacamp.com/courses/introduction-to-the-tidyverse)"
     - "[learnr-Tutorial zu dplyr](https://allisonhorst.shinyapps.io/dplyr-learnr/)"
     - "[R4DS, Kap. 5](https://r4ds.had.co.nz/transform.html)"
+  Skript:
+  Syntax:
+  Aufgaben:
+  Hinweise:
 
 
 
 
 Thema5:
-  Titel: Deskriptive Statistik
+  Titel: Deskriptive Statistik, Teil 1
   Lernziele:
     - Sie beherrschen grundlegende Operationen der univariaten deskriptiven Statistik sowohl für Lage- als auch Streuungsmaße.
-    - Sie verstehen die Grundkonzepte der Korrelation und können diese in R berechnen.
   Literatur:
     - MODAR, Kap. 8
   Vorbereitung:
@@ -121,6 +129,33 @@ Thema5:
   Videos:
     - "[Playlist zur deskriptiven Statistik](https://www.youtube.com/playlist?list=PLRR4REmBgpIFLDj6SFpwOKnfGVbkoI9JI)"
     - "[Playlist Explorative Datenenanalyse (EDA)](https://youtube.com/playlist?list=PLRR4REmBgpIFFmLRZvyPcI07CPn7OnmqH)"
+  Skript:
+  Syntax:
+  Aufgaben:
+  Vertiefung:
+
+
+Thema5a:
+  Titel: Deskriptive Statistik, Teil 2
+  Lernziele:
+    - Sie verstehen die Grundkonzepte der Korrelation und können diese in R berechnen.
+  Literatur:
+    - MODAR, Kap. 8
+  Vorbereitung:
+    - Lesen Sie die Literatur.
+    - Sehen Sie sich ggf. das Video zum Folienskript an.
+  Kalenderwoche: 15
+  Datum: 11.4.-15.4.
+  Hinweise:
+    -
+  Videos:
+    - "[Playlist zur deskriptiven Statistik](https://www.youtube.com/playlist?list=PLRR4REmBgpIFLDj6SFpwOKnfGVbkoI9JI)"
+    - "[Playlist Explorative Datenenanalyse (EDA)](https://youtube.com/playlist?list=PLRR4REmBgpIFFmLRZvyPcI07CPn7OnmqH)"
+  Skript:
+  Syntax:
+  Aufgaben:
+  Vertiefung:
+
 
 
 Thema6:
@@ -132,7 +167,12 @@ Thema6:
   Datum: 18.4.-22.4
   Hinweise:
     - In dieser Woche fällt die Vorlesung aus (Ostern).
-
+  Skript:
+  Syntax:
+  Aufgaben:
+  Vertiefung:
+  Literatur:
+  Vorbereitung:
 
 
 
@@ -150,6 +190,11 @@ Thema7:
     - "[Playlist Praxisprobleme der Datenanalyse](https://youtube.com/playlist?list=PLRR4REmBgpIEEt2fWPz_UovZsXFfr5HJT)"
   Kalenderwoche: 17
   Datum: 25.4.-29.4
+  Skript:
+  Syntax:
+  Aufgaben:
+  Vertiefung:
+  Hinweise:
 
 
 Thema8:
@@ -169,6 +214,10 @@ Thema8:
     - "[The R Graph Gallery](https://www.r-graph-gallery.com/index.html)"
   Kalenderwoche: 18
   Datum: 2.5.-6.5.
+  Skript:
+  Syntax:
+  Aufgaben:
+  Hinweise:
 
 
 Thema9:
@@ -181,13 +230,17 @@ Thema9:
     NA: NA
   Videos:
     - "[Playlist YACSDAs](https://youtube.com/playlist?list=PLRR4REmBgpIGet_lcNf2wOd0W8j4c9hYN)"
-  Fallstudien:
+  Aufgaben:
     - "[TopGear](https://data-se.netlify.app/2021/02/11/yacda-topgear/)"
     - "[OECD Wellbeing](https://data-se.netlify.app/2021/02/11/explorative-datenanalyse-zum-datensatz-oecd-wellbeing/)"
     - "[IMDB Filmbewertungen](https://minimaxir.com/2018/07/imdb-data-analysis/)"
     - "[Women in Parliament](https://github.com/saghirb/WiP-tidyverse/blob/master/doc/WiP-tidyverse.pdf)  "
   Kalenderwoche: 19
   Datum: 9.5.-13.5.
+  Skript:
+  Syntax:
+  Vertiefung:
+  Hinweise:
 
 
 Thema10:
@@ -203,6 +256,11 @@ Thema10:
   Datum: 16.5.-20.5.
   Videos:
     - "[Playlist zum statistischen Modellieren](https://www.youtube.com/playlist?list=PLRR4REmBgpIGWcSjrtt0m36aXHLaiTgdF)"
+  Skript:
+  Syntax:
+  Aufgaben:
+  Vertiefung:
+  Hinweise:
 
 
 Thema11:
@@ -226,7 +284,13 @@ Thema11:
     - "[Playlist von OpenIntro zur Regression](https://www.youtube.com/playlist?list=PLkIselvEzpM63ikRfN41DNIhSgzboELOM)"
     - "[Studie auf Basis einer Regressionsanalyse zu Vorurteilen bei Corona](https://journals.sagepub.com/doi/10.1177/1090198120957949)"
     - "[Korrelationen raten](https://gallery.shinyapps.io/correlation_game/)"
+  Skript: NA
+  Syntax: NA
+  Aufgaben: NA
 
+
+Thema11a:
+  Titel: KEIN UNTERRICHT in dieser Woche
 
 
 Thema12:
@@ -237,6 +301,13 @@ Thema12:
   Datum: 6.6.-10.6.
   Hinweise:
     - In dieser Woche fällt die Vorlesung aus (Pfingsten).
+  Skript:
+  Syntax:
+  Aufgaben:
+  Vertiefung:
+  Literatur:
+  Vorbereitung:
+  Videos:
 
 
 
@@ -252,12 +323,15 @@ Thema13:
     NA: NA
   Videos:
     - "[Playlist YACSDAs](https://youtube.com/playlist?list=PLRR4REmBgpIGet_lcNf2wOd0W8j4c9hYN)"
-  Fallstudien:
+  Aufgaben:
     - "[Movies](https://data-se.netlify.app/2020/11/13/fallstudie-zur-regressionsanalyse-ggplot2movies/)"
     - "[Playlist YACSDAs](https://youtube.com/playlist?list=PLRR4REmBgpIGet_lcNf2wOd0W8j4c9hYN)"
   Kalenderwoche: 24
   Datum: 13.6.-17.6.
-
+  Skript:
+  Syntax:
+  Vertiefung:
+  Hinweise:
 
 
 
@@ -272,7 +346,12 @@ Thema14:
     - Sehen Sie sich ggf. das Video zum Folienskript an.
   Kalenderwoche: 25
   Datum: 20.6.-24.6.
-
+  Skript:
+  Syntax:
+  Aufgaben:
+  Vertiefung:
+  Hinweise:
+  Videos:
 
 Thema15:
   Titel: Vertiefung
@@ -282,6 +361,14 @@ Thema15:
   Datum: 27.6.-1.7.
   Hinweise:
     - Nach dieser Woche endet der Unterricht.
+  Skript:
+  Syntax:
+  Aufgaben:
+  Vertiefung:
+  Literatur:
+  Videos:
+  Vorbereitung:
+
 
 
 

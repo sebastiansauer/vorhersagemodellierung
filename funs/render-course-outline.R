@@ -1,4 +1,4 @@
-render_course_outline <- function(yml_file, header_level = 2){
+render_course_outline <- function(yml_file, course_dates, header_level = 2){
 
 
   render_section <- function(d = modul_zsfg, name){
