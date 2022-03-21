@@ -153,7 +153,7 @@ Auf [meinem YouTube-Kanal](https://www.youtube.com/channel/UCkvdtj8maE7g-SOCh4aD
 
 
 
-```{r render-outline, results = "asis", echo = FALSE, message = FALSE}
+```{r render-outline-course, results = "asis", echo = FALSE, message = FALSE}
 source(paste0(here::here(),"/funs/render-course-outline.R"))
 yml_file <- "Interna/modul-zsfg.yaml"
 
@@ -183,7 +183,7 @@ Bei der Prüfung handelt es sich um einen *Prognosewettbewerb.*
 
 # Literaturverzeichnis
 
-```{r Hinweise-1, results='asis', echo=FALSE, cache=FALSE}
+```{r print-bib, results='asis', echo=FALSE, cache=FALSE}
 RefManageR::PrintBibliography(bib)
 ```
 

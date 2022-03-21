@@ -1,19 +1,28 @@
 Thema1:
-  Titel: Grundbegriffe
+  Titel: ERRRstkontakt
   Lernziele:
     - Sie kennen zentrale Begriffe im Kontext der Datenanalyse.
     - Sie können den Unterschied zwischen Signal und Rauschen erklären.
     - Sie können zentrale Kompetenzen im Berufsfeld Data Science nennen.
+    - Sie können R starten (installieren).
+    - Sie wissen, was R-Pakete sind und können sie installieren und starten.
+    - Sie können grundlegende Operationen in R durchführen, wie Variablen zuweisen und auslesen.
   Kalenderwoche: 11
   Datum: 14.-18.3.22
   Vorbereitung:
-    - Lesen Sie die Literatur zum aktuellen Thema.
-    - Sehen Sie sich ggf. das Video zum Folienskript an (zum aktuellen Thema).
+    - Lesen Sie die Literatur.
+    - Sehen Sie sich ggf. die Videos an.
+    - Installieren Sie R, RStudio und die benötigten Pakete, falls noch nicht getan. Alternativ können Sie sich ein Konto bei RStudio Cloud anlegen und das RStudio Cloud Projekt zu diesem Modul nutzen (dann benötigen Sie keine Installation von R auf Ihrem Computer).
+
   Literatur:
-    - MODAR, Kap. 1
+    - MODAR, Kap. 1-4
   Videos:
     - "[Playlist Lerntechniken](https://youtube.com/playlist?list=PLRR4REmBgpIFDcr72hs_Dp5lQbIPbDkz7)"
-  folien: "[Folienskript Thema 1](https://docs.google.com/presentation/d/1RWUE8nq835JdHveTymFvcYPH16J_V7PaNMQJcTCkUSs/edit?usp=sharing)"
+    - "[Playlist ERRRstkontakt](https://youtube.com/playlist?list=PLRR4REmBgpIGlsCMQykiRsF6TH7PCqIIK)"
+    - "[umfangreiche, teils fortgeschrittene Playlist zu R](https://youtube.com/playlist?list=PLRR4REmBgpIEaIyeNBgNGPgmhQJ_T1y8_)"
+
+  Skript:
+    - "[Folienskript Thema 1](https://docs.google.com/presentation/d/1RWUE8nq835JdHveTymFvcYPH16J_V7PaNMQJcTCkUSs/edit?usp=sharing)"
   Syntax:
     - "[Syntax zu den Folien von Thema 1](https://sebastiansauer.github.io/vorhersagemodellierung/Skript-Syntax/QM1-Thema1-Skript-Syntax.html)"
   Aufgaben:
@@ -34,30 +43,7 @@ Thema1:
     - "[Video: Learning from eight years of data science mistakes](https://www.youtube.com/watch?v=O5lP6XcopdQ&list=PL9HYL-VRX0oQchs7dqFICoxMgnvFO10tC&index=13&t=1s)"
     - "[Verdienst einer deutschen Data Scientistin](https://www.zeit.de/arbeit/2020-10/data-scientist-gehalt-geldanlage-programmieren-kontoauszug)"
     - "[Hilfe zur Installation von R und RStudio](https://moderndive.com/1-getting-started.html#r-rstudio)"
-  Hinweise:
-    - "Bitte beachten Sie die Hinweise zum Präsenzunterricht und der Streamingoption."
-    - "Bitte stellen Sie sicher, dass Sie einen einsatzbereiten Computer haben und dass die angegebene Software läuft."
-
-
-
-Thema2:
-  Titel: ERRRstkontakt
-  Lernziele:
-    - Sie können R starten (installieren).
-    - Sie wissen, was R-Pakete sind und können sie installieren und starten.
-    - Sie können grundlegende Operationen in R durchführen, wie Variablen zuweisen und auslesen.
-  Vorbereitung:
-    - Lesen Sie die Literatur.
-    - Sehen Sie sich ggf. die Videos an.
-    - Installieren Sie R, RStudio und die benötigten Pakete, falls noch nicht getan. Alternativ können Sie sich ein Konto bei RStudio Cloud anlegen und das RStudio Cloud Projekt zu diesem Modul nutzen (dann benötigen Sie keine Installation von R auf Ihrem Computer).
-  Kalenderwoche: 12
-  Datum: 21.3.-25.3.
-  Literatur:
-    -  MODAR, Kap. 2-4
-  Videos:
-    - "[Playlist ERRRstkontakt](https://youtube.com/playlist?list=PLRR4REmBgpIGlsCMQykiRsF6TH7PCqIIK)"
-    - "[umfangreiche, teils fortgeschrittene Playlist zu R](https://youtube.com/playlist?list=PLRR4REmBgpIEaIyeNBgNGPgmhQJ_T1y8_)"
-  Vertiefung:
+    - "[Einstieg in R mit dem 'R-Blitzkurs'](https://sebastiansauer.github.io/r-blitzkurs/)"
     - "[Einführung in R von OpenIntro](http://openintrostat.github.io/oilabs-tidy/01_intro_to_r/intro_to_r.html)"
     - "[Installationsanleitung für R und RStudio von ModernDive](https://moderndive.com/1-getting-started.html#r-rstudio)"
     - "[Was sind R-Pakete? (ModernDive)](https://moderndive.com/1-getting-started.html#packages)"
@@ -65,30 +51,39 @@ Thema2:
     - "[Tiefer gehender Online-Kurs zu R via Coursera (Johns Hopkins University)](https://www.coursera.org/learn/r-programming-environment#syllabus)"
 
 
+  Hinweise:
+    - "Bitte beachten Sie die Hinweise zum Präsenzunterricht und der Streamingoption."
+    - "Bitte stellen Sie sicher, dass Sie einen einsatzbereiten Computer haben und dass die angegebene Software läuft."
 
 
-Thema3:
+
+
+
+
+Thema2:
   Titel: Datenimport
-  Kalenderwoche: 13
-  Datum: 28.3.-1.4.
+  Kalenderwoche: 12
+  Datum: 21.3.-25.3.
   Lernziele:
     - Sie können Daten (verschiedener Formate) in R importieren.
     - Sie kennen einige Datenstrukturen in R.
+    - "Sie wissen, was 'tidy Data' ist."
+    - "Sie können 'unaufgeräumte' Datensätze bereinigen."
   Vorbereitung:
     - Lesen Sie die Literatur.
     - Sehen Sie sich ggf. die Videos an.
   Literatur:
     - MODAR, Kap. 5-6
-    - Paper1: "[Data Organization in Spreadsheets](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989)"
-    - Paper2: "[Good enough practices in scientific computing](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510)"
+    - "[Data Organization in Spreadsheets](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989)"
   Videos:
     - "[Playlist Datenstrukturen in R](https://youtube.com/playlist?list=PLRR4REmBgpIGet_lcNf2wOd0W8j4c9hYN)"
   Vertiefung:
     - "[Warum kann man mit dieser (Excel-)Tabelle schlecht arbeiten, obwohl sie schön anzuschauen ist?](https://miro.medium.com/max/1400/1*-dgXuTPTQGXMQNrvgVa5UA.png)"
     - "[Wie Excel nicht zur Hölle wird](https://github.com/datascibc/Data-Science-for-Docs/wiki/Excel-hell)"
+    - "[Good enough practices in scientific computing](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510)"
 
 
-Thema4:
+Thema3:
   Titel: Datenjudo
   Lernziele:
     - Sie können Daten in R aufbereiten mit dem Tidyverse.
@@ -96,7 +91,7 @@ Thema4:
     - Lesen Sie die Literatur.
     - Sehen Sie sich ggf. das Video zum Folienskript an.
   Kalenderwoche: 14
-  Datum: 4.4.-8.4.
+  Datum: 28.3.-1.4.
   Literatur:
     - MODAR, Kap. 7
   Videos:
@@ -124,8 +119,8 @@ Thema5:
   Hinweise:
     - In dieser Woche fällt die Übung aus (Ostern)
   Videos:
-    - [Playlist zur deskriptiven Statistik](https://www.youtube.com/playlist?list=PLRR4REmBgpIFLDj6SFpwOKnfGVbkoI9JI)
-    - [Playlist Explorative Datenenanalyse (EDA)](https://youtube.com/playlist?list=PLRR4REmBgpIFFmLRZvyPcI07CPn7OnmqH), umfangreiche Sammlung
+    - "[Playlist zur deskriptiven Statistik](https://www.youtube.com/playlist?list=PLRR4REmBgpIFLDj6SFpwOKnfGVbkoI9JI)"
+    - "[Playlist Explorative Datenenanalyse (EDA)](https://youtube.com/playlist?list=PLRR4REmBgpIFFmLRZvyPcI07CPn7OnmqH)"
 
 
 Thema6:
@@ -163,7 +158,7 @@ Thema8:
     - Sie können Daten visualisieren, um wesentliche Einsichten zu vermitteln.
   Literatur:
     - MODAR, Kap. 11
-    - Wilke: "[Fundamentals of Data Visualization](https://clauswilke.com/dataviz/)"
+    - "Wilke: [Fundamentals of Data Visualization](https://clauswilke.com/dataviz/)"
   Vorbereitung:
     - Lesen Sie die Literatur.
     - Sehen Sie sich ggf. das Video zum Folienskript an.
@@ -207,7 +202,7 @@ Thema10:
   Kalenderwoche: 20
   Datum: 16.5.-20.5.
   Videos:
-    - [Playlist zum statistischen Modellieren](https://www.youtube.com/playlist?list=PLRR4REmBgpIGWcSjrtt0m36aXHLaiTgdF)
+    - "[Playlist zum statistischen Modellieren](https://www.youtube.com/playlist?list=PLRR4REmBgpIGWcSjrtt0m36aXHLaiTgdF)"
 
 
 Thema11:
