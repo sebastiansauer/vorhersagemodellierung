@@ -34,11 +34,20 @@ lang: de-De
   fig.show = "hold")
 ```
 
+# Prüfungleistung
+
+Prüfungsleistungen:
+
+- Prognosewettbewerb (100%)
 
 
 
-```{r hinweise, results='asis'}
-url <- "https://raw.githubusercontent.com/sebastiansauer/Lehre/main/Hinweise/Hinweise-Pruefung-Prognosewettbewerb.Rmd"
+# Hinweise
+
+
+
+```{r hinweise-prognosewettbewerb, results='asis', echo = FALSE}
+url <- "https://raw.githubusercontent.com/sebastiansauer/Lehre/main/Hinweise/Hinweise-Pruefung-Prognosewettbewerb-child.Rmd"
 childtext <- readLines(url)
 cat(childtext, sep="\n")
 ```
