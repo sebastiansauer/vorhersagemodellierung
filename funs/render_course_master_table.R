@@ -11,7 +11,7 @@ course_topics <-
   ) %>%
   mutate(Titel = modul_zsfg %>% map_chr("Titel")) %>%
   mutate(Lernziele = list(modul_zsfg %>% map("Lernziele"))) %>%
-  mutate(Vorbereitung = list(modul_zsfg %>% map("Vorbereutng"))) %>%
+  mutate(Vorbereitung = list(modul_zsfg %>% map("Vorbereitung"))) %>%
   mutate(Literatur = list(modul_zsfg %>% map("Literatur"))) %>%
   mutate(Videos = list(modul_zsfg %>% map("Videos"))) %>%
   mutate(Skript = list(modul_zsfg %>% map("Skript"))) %>%
