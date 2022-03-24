@@ -9,15 +9,15 @@ course_topics <-
   tibble(
     ID = map_dbl(course_topics_l, "id")
   ) %>%
-  mutate(Titel = modul_zsfg %>% map_chr("Titel")) %>%
-  mutate(Lernziele = list(modul_zsfg %>% map("Lernziele"))) %>%
-  mutate(Vorbereitung = list(modul_zsfg %>% map("Vorbereitung"))) %>%
-  mutate(Literatur = list(modul_zsfg %>% map("Literatur"))) %>%
-  mutate(Videos = list(modul_zsfg %>% map("Videos"))) %>%
-  mutate(Skript = list(modul_zsfg %>% map("Skript"))) %>%
-  mutate(Aufgaben = list(modul_zsfg %>% map("Aufgaben"))) %>%
-  mutate(Vertiefung = list(modul_zsfg %>% map("Vertiefung"))) %>%
-  mutate(Hinweise = list(modul_zsfg %>% map("Hinweise")))
+  mutate(Titel = course_topics_l %>% map_chr("Titel")) %>%
+  mutate(Lernziele = list(course_topics_l %>% map("Lernziele"))) %>%
+  mutate(Vorbereitung = list(course_topics_l %>% map("Vorbereitung"))) %>%
+  mutate(Literatur = list(course_topics_l %>% map("Literatur"))) %>%
+  mutate(Videos = list(course_topics_l %>% map("Videos"))) %>%
+  mutate(Skript = list(course_topics_l %>% map("Skript"))) %>%
+  mutate(Aufgaben = list(course_topics_l %>% map("Aufgaben"))) %>%
+  mutate(Vertiefung = list(course_topics_l %>% map("Vertiefung"))) %>%
+  mutate(Hinweise = list(course_topics_l %>% map("Hinweise")))
 
 
 master_table <-
