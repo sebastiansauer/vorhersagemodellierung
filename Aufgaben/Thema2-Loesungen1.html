@@ -1,0 +1,433 @@
+
+<html>
+
+<head>
+<title>Lösungen</title>
+<style type="text/css">
+body{font-family: Arial, Helvetica, Sans;}
+</style>
+
+<meta charset="UTF-8">
+
+<script type="text/javascript"   src="https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+</head>
+
+<body>
+<h2>Lösungen zu den Aufgaben</h2>
+
+<ol>
+<li>
+<h4>Aufgabe</h4>
+<p>Korrigieren Sie den Fehler in der Syntax:</p>
+<pre class="text"><code>mean(x = c(1, 5, 10, 52)</code></pre>
+<p>Ändern Sie <em>nur</em> diejenigen Teile der Syntax, die zwingend
+geändert werden müssen, damit der Fehler korrigiert wird.</p>
+<br/>
+<h4>Lösung</h4>
+<pre class="text"><code>mean(x = c(1, 5, 10, 52))</code></pre>
+<pre><code>## [1] 17</code></pre>
+<p>Die Antwort lautet: <code>mean(x = c(1, 5, 10, 52))</code>.</p>
+<br/>
+</li>
+<li>
+<h4>Aufgabe</h4>
+<p>R gibt folgende Fehlermeldung aus:</p>
+<p><code>(Fehler in library(XXX): es gibt kein Paket namens 'XXX')</code>,</p>
+<p>wobei für <code>XXX</code> ein Paketname wie <code>tidyverse</code>
+angeführt wird.</p>
+<p>Wählen Sie die plausibelste Ursache aus!</p>
+<br/>
+<ol type="a">
+<li>
+Das Paket <code>XXX</code> ist nicht installiert auf dem aktuellen
+Rechner.
+</li>
+<li>
+Das Paket <code>XXX</code> ist nicht verfügbar genau für dieses
+Betriebssystem.
+</li>
+<li>
+Es existiert kein Paket mit Namen <code>XXX</code>.
+</li>
+<li>
+Das Paket <code>XXX</code> ist nicht geladen.
+</li>
+<li>
+Das Paket <code>XXX</code> ist defekt.
+</li>
+</ol>
+<br/>
+<h4>Lösung</h4>
+<p>Das Paket <code>XXX</code> ist nicht installiert auf dem aktuellen
+Rechner.</p>
+<br/>
+<ol type="a">
+<li>
+Richtig.
+</li>
+<li>
+Falsch.
+</li>
+<li>
+Falsch.
+</li>
+<li>
+Falsch.
+</li>
+<li>
+Falsch.
+</li>
+</ol>
+<br/>
+</li>
+<li>
+<h4>Aufgabe</h4>
+<p>Gegeben sei diese Syntax:</p>
+<pre class="text"><code>x &lt;- 42
+Y &lt;- 1</code></pre>
+<p>Lässt man folgende Syntax laufen, so kommt eine Fehlermeldung:</p>
+<pre class="text"><code>X + Y</code></pre>
+<pre><code>## Error in eval(expr, envir, enclos): object &#39;X&#39; not found</code></pre>
+<p>Geben Sie die korrekte Syntax ein (zur Berechnung der Summe), die
+<em>nicht</em> zu einer Fehlermeldung führt!</p>
+<p>Bitte verwenden Sie <em>keine</em> Leerzeichen bei Ihrer Eingabe.</p>
+<br/>
+<h4>Lösung</h4>
+<pre class="text"><code>x+Y</code></pre>
+<pre><code>## [1] 43</code></pre>
+<p>Die Antwort lautet: <code>x+Y</code>.</p>
+<br/>
+</li>
+<li>
+<h4>Aufgabe</h4>
+<p>Gegeben sei diese Syntax, die einen Fehlermeldung ausgibt:</p>
+<pre class="text"><code>mean(c(1,2,3,4). na.rm = TRUE)</code></pre>
+<pre><code>## Error: &lt;text&gt;:1:16: unexpected symbol
+## 1: mean(c(1,2,3,4).
+##                    ^</code></pre>
+<p>Geben Sie die korrekte Syntax ein, die <em>nicht</em> zu einer
+Fehlermeldung führt!</p>
+<p>Bitte verwenden Sie <em>keine</em> Leerzeichen bei Ihrer Eingabe.</p>
+<br/>
+<h4>Lösung</h4>
+<pre class="text"><code>mean(c(1,2,3,4), na.rm = TRUE)</code></pre>
+<pre><code>## [1] 2.5</code></pre>
+<pre class="text"><code>sol &lt;- &quot;mean(c(1,2,3,4),na.rm=TRUE)&quot;</code></pre>
+<p>Die Antwort lautet: <code>mean(c(1,2,3,4),na.rm=TRUE)</code>.</p>
+<br/>
+</li>
+<li>
+<h4>Aufgabe</h4>
+<p>Gegeben sei diese Syntax, die einen Fehlermeldung ausgibt:</p>
+<pre class="text"><code>notendaten_url &lt;- &quot;https://vincentarelbundock.github.io/Rdatasets/csv/MASS/nlschools.csv&quot;
+
+noten &lt;- read_csv(notendaten_url)
+
+filter(noten, IQ = 10)</code></pre>
+<pre><code>## Error in `filter()`:
+## ! We detected a named
+##   input.
+## ℹ This usually means that
+##   you&#39;ve used `=` instead of
+##   `==`.
+## ℹ Did you mean `IQ == 10`?</code></pre>
+<p>Der Datensatz stammt aus <a
+href="https://vincentarelbundock.github.io/Rdatasets/doc/MASS/nlschools.html">dieser
+Quelle</a>.</p>
+<p>Geben Sie die korrekte Syntax ein in der Zeile mit
+<code>filter()</code>, die <em>nicht</em> zu einer Fehlermeldung
+führt!</p>
+<p>Es sollen nur die Schüler im Datensatz verbleiben, die im IQ-Test
+einen Wert von <code>10</code> aufweisen.</p>
+<p>Bite verwenden Sie <em>keine</em> Leerzeichen bei Ihrer Eingabe.</p>
+<br/>
+<h4>Lösung</h4>
+<pre class="text"><code>filter(noten, IQ == 10)</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="right">…1</th>
+<th align="right">lang</th>
+<th align="right">IQ</th>
+<th align="right">class</th>
+<th align="right">GS</th>
+<th align="right">SES</th>
+<th align="right">COMB</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">15</td>
+<td align="right">33</td>
+<td align="right">10</td>
+<td align="right">180</td>
+<td align="right">29</td>
+<td align="right">10</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="right">24</td>
+<td align="right">21</td>
+<td align="right">10</td>
+<td align="right">180</td>
+<td align="right">29</td>
+<td align="right">10</td>
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="right">25</td>
+<td align="right">42</td>
+<td align="right">10</td>
+<td align="right">180</td>
+<td align="right">29</td>
+<td align="right">10</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="right">46</td>
+<td align="right">37</td>
+<td align="right">10</td>
+<td align="right">1280</td>
+<td align="right">31</td>
+<td align="right">20</td>
+<td align="right">1</td>
+</tr>
+<tr class="odd">
+<td align="right">59</td>
+<td align="right">41</td>
+<td align="right">10</td>
+<td align="right">1580</td>
+<td align="right">35</td>
+<td align="right">30</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="right">89</td>
+<td align="right">18</td>
+<td align="right">10</td>
+<td align="right">1880</td>
+<td align="right">28</td>
+<td align="right">35</td>
+<td align="right">0</td>
+</tr>
+</tbody>
+</table>
+<p>Die Antwort lautet: <code>filter(noten,IQ==10)</code>.</p>
+<br/>
+</li>
+<li>
+<h4>Aufgabe</h4>
+<p>Betrachten Sie folgende R-Syntax, für die R eine Fehlermeldung
+ausgibt:</p>
+<pre class="text"><code>sum(square(mean(x = c(1,2,3)) - x)))</code></pre>
+<pre><code>## Error: &lt;text&gt;:1:36: unexpected &#39;)&#39;
+## 1: sum(square(mean(x = c(1,2,3)) - x)))
+##                                        ^</code></pre>
+<p>Geben Sie die korrekte Syntax an! Ändern Sie <em>nur</em> die
+<em>notwendigen</em> Zeichen an der Syntax oben. Gehen Sie davon aus,
+dass die aufgerufenen Funktionen existieren.</p>
+<br/>
+<h4>Lösung</h4>
+<p>Hinten ist eine (schließende) Klammer zu viel, die muss weg:</p>
+<pre class="text"><code>square &lt;- function(x) `^`(x, 2)  # Funktion `square` definieren
+
+sum(square(mean(x = c(1,2,3)) - x))  # so geht&#39;s</code></pre>
+<pre><code>## Error in square(mean(x = c(1, 2, 3)) - x): object &#39;x&#39; not found</code></pre>
+<p>Die Antwort lautet:
+<code>sum(square(mean(x = c(1,2,3)) - x))</code>.</p>
+<br/>
+</li>
+<li>
+<h4>Aufgabe</h4>
+<p>Sie möchten in R eine Textvariable (String-, Charaktervariable)
+definieren und zwar soll die Variable <code>gruss</code> mit dem Wert
+“Hallo” “befüllt” werden.</p>
+<p>Sie geben in der Konsole folgende Syntax ein:</p>
+<pre class="text"><code>gruess &lt;- &quot;hall </code></pre>
+<p>Das quittert R folgendermaßen:</p>
+<pre><code>&gt; gruss &lt;- &quot;hallo
++</code></pre>
+<p>Wie ist diese Reaktion von R zu interpretieren bzw. was ist zu
+tun?</p>
+<br/>
+<ol type="a">
+<li>
+R ist abgestürzt; am besten neu starten.
+</li>
+<li>
+R verträgt im Standard nur Grüße in englischer Sprache. Sprachpakete
+updaten.
+</li>
+<li>
+R wartet auf das Ende der Text-Auszeichnung, also auf das schließende
+Anführungszeichen. Das muss noch eingegeben werden. Alternativ kann man
+“Escape” drücken.
+</li>
+<li>
+Es gibt kein Problem; man kann einfach den nächsten Befehl
+eingeben.
+</li>
+<li>
+R hat gewartet auf das Ende der Text-Auszeichnung, also auf das
+schließende Anführungszeichen. Jetzt ist R abgestürzt und muss neu
+gestartet werden.
+</li>
+</ol>
+<br/>
+<h4>Lösung</h4>
+<ol type="a">
+<li>
+Falsch
+</li>
+<li>
+Falsch
+</li>
+<li>
+Richtig
+</li>
+<li>
+Falsch
+</li>
+<li>
+Falsch
+</li>
+</ol>
+<br/>
+</li>
+<li>
+<h4>Aufgabe</h4>
+<p>Eine Dozentin überprüft Klausurnoten. Diese seien im Vektor
+<code>noten</code> gespeichert:</p>
+<p>Sie möchte nun alle Noten auslesen, die schlechter als 3.3 sind.
+Geben Sie die passende R-Syntax dazu sein. Die Syntax soll nur aus einem
+Befehl bestehen und muss ohne Zusatzpakete lauffähig sein.</p>
+<br/>
+<h4>Lösung</h4>
+<p>Die Antwort lautet: <code>noten[noten&gt;3.3]</code>.</p>
+<br/>
+</li>
+<li>
+<h4>Aufgabe</h4>
+<p>Welchen Wert bzw. welches Ergebnis liefert folgende R-Syntax für
+<code>ergebnis</code> zurück?</p>
+<p><code>x</code> hat zu Beginn den Wert 24.</p>
+<p><em>Hinweis</em>: <code>sqrt(x)</code> liefert die Quadratwurzel von
+<code>x</code> zurück.</p>
+<br/>
+<h4>Lösung</h4>
+<p>Es wird 5 zurückgeliefert.</p>
+<br/>
+</li>
+<li>
+<h4>Aufgabe</h4>
+<p>Welchen Wert bzw. welches Ergebnis liefert folgende R-Syntax für
+<code>ergebnis</code> zurück?</p>
+<p><code>x</code> hat zu Beginn den Wert 24.</p>
+<p><em>Hinweise</em>:</p>
+<ul>
+<li><code>sqrt(x)</code> liefert die (positive) Quadratwurzel von
+<code>x</code> zurück.</li>
+<li><code>x^2</code> liefert die zweite Potenz von <code>x</code>
+zurück.</li>
+</ul>
+<br/>
+<h4>Lösung</h4>
+<p>Es wird 25 zurückgeliefert.</p>
+<br/>
+</li>
+<li>
+<h4>Aufgabe</h4>
+<p>Geben Sie die R-Syntax ein, um zu prüfen, dass die Variable
+<code>loesung</code> den Wert <code>42</code> hat.</p>
+<p><em>Hinweis</em>: Geben Sie Ihre Lösung <em>ohne</em> Leerzeichen an,
+da sonst eine richtige Lösung nicht erkannt werden kann.</p>
+<br/>
+<h4>Lösung</h4>
+<p><code>loesung==42</code></p>
+<br/>
+</li>
+<li>
+<h4>Aufgabe</h4>
+<p>Wählen Sie die syntaktisch korrekten Varianten aus, um einer
+Variablen den Wert (Zahl) <code>42</code> zuzuweisen.</p>
+<br/>
+<ol type="a">
+<li>
+<code>loesung &lt;-42</code>
+</li>
+<li>
+<code>loesung &lt; - 42</code>
+</li>
+<li>
+<code>loesung-&gt;42</code>
+</li>
+<li>
+<code>loesung==42</code>
+</li>
+<li>
+<code>loesung&lt;-"42"</code>
+</li>
+</ol>
+<br/>
+<h4>Lösung</h4>
+<p>Die Antwort lautet: <code>loesung &lt;-42</code>.</p>
+<br/>
+<ol type="a">
+<li>
+Richtig
+</li>
+<li>
+Falsch
+</li>
+<li>
+Falsch
+</li>
+<li>
+Falsch
+</li>
+<li>
+Falsch
+</li>
+</ol>
+<br/>
+</li>
+<li>
+<h4>Aufgabe</h4>
+<p>Weisen Sie dem Objekt <code>loesung</code> den Wert <code>42</code>
+zu. Geben Sie den korrekten R-Code dafür ein.</p>
+<p><em>Hinweis</em>: Verzichten Sie <em>jegliche Leerzeichen</em> in
+Ihrer Eingabe, da sonst die Eingabe nicht als korrekt erkannt werden
+kann.</p>
+<br/>
+<h4>Lösung</h4>
+<p>loesung&lt;-42</p>
+<br/>
+</li>
+<li>
+<h4>Aufgabe</h4>
+<p>Recherchieren Sie den Datensatz “Palmer Penguins” als CSV-Datei im
+Internet.</p>
+<ol style="list-style-type: decimal">
+<li>Importieren Sie die Datendatei in R von der Online-Quelle.</li>
+<li>Laden Sie die Datendatei herunter, speichern Sie Sie in den Ordner
+Ihres aktuellen RStudio-Projekts. Dann importieren Sie die Datendatei in
+R von diesem Ort.</li>
+</ol>
+<br/>
+<h4>Lösung</h4>
+<p>Ad 1)</p>
+<pre class="text"><code>penguins_url &lt;- &quot;https://vincentarelbundock.github.io/Rdatasets/csv/palmerpenguins/penguins.csv&quot;
+
+d &lt;- read_csv(penguins_url)</code></pre>
+<pre><code>## Error in gt(.): could not find function &quot;gt&quot;</code></pre>
+<p>Ad 2)</p>
+<p>Wenn Sie die Datei heruntergeladen haben und in Ihrem (aktuellen)
+RStudio-Projektordner abgespeichert haben, können Sie sie ohne Angabe
+eines Pfades in R importieren:</p>
+<pre class="text"><code>d &lt;- read_csv(&quot;penguins.csv&quot;)  # die Datei muss im aktuellen Verzeichnis liegen</code></pre>
+<br/>
+</li>
+</ol>
+
+</body>
+</html>
