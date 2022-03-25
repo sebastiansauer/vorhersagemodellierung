@@ -66,6 +66,7 @@ render_course_outline2 <- function(master_table, header_level = 2, small_table =
       render_section(name = "Aufgaben", id = i)
       render_section(name = "Vertiefung", id = i)
       render_section(name = "Hinweise", id = i)
+      render_section(name = "Uebung", id = i)
 
 
       # Leerzeilen, bevor neues Thema anfängt
