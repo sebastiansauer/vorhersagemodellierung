@@ -1,4 +1,4 @@
-render_course_outline2 <- function(master_table, header_level = 2, small_table = FALSE){
+render_course_outline2 <- function(course_dates_file, content_file, header_level = 2, small_table = FALSE){
 
 
   render_section <- function(d = master_table, name, id){
@@ -36,10 +36,39 @@ render_course_outline2 <- function(master_table, header_level = 2, small_table =
   }
 
 
+
+  course_dates <- read_csv(course_dates_file,)
+  course_topics_l <- yaml::read_yaml(content_file)
+
+
+  course_topics <-
+    tibble(
+      ID = map_dbl(course_topics_l, "id")
+    ) %>%
+    mutate(Titel = course_topics_l %>% map_chr("Titel")) %>%
+    mutate(Lernziele = list(course_topics_l %>% map("Lernziele"))) %>%
+    mutate(Vorbereitung = list(course_topics_l %>% map("Vorbereitung"))) %>%
+    mutate(Literatur = list(course_topics_l %>% map("Literatur"))) %>%
+    mutate(Videos = list(course_topics_l %>% map("Videos"))) %>%
+    mutate(Skript = list(course_topics_l %>% map("Skript"))) %>%
+    mutate(Aufgaben = list(course_topics_l %>% map("Aufgaben"))) %>%
+    mutate(Vertiefung = list(course_topics_l %>% map("Vertiefung"))) %>%
+    mutate(Hinweise = list(course_topics_l %>% map("Hinweise")))
+
+
+  master_table <-
+    course_dates %>%
+    left_join(course_topics, by = "ID")
+
+
   chapters <-
     master_table %>%
     pull(Titel) %>%
     simplify()
+
+  subsections <-
+    master_table %>%
+    names()
 
   if (small_table == FALSE){
 
@@ -52,21 +81,14 @@ render_course_outline2 <- function(master_table, header_level = 2, small_table =
 
 
       # unterabschnitte, eine Ebene tiefer:
-      render_section(name = "KW", id = i)
-      render_section(name = "ID", id = i)
-      render_section(name = "Kurswoche", id = i)
-      render_section(name = "Wochenbeginn_Datum", id = i)
-      render_section(name = "Lernziele", id = i)
-      render_section(name = "Vorbereitung", id = i)
-      render_section(name = "Literatur", id = i)
-      render_section(name = "Skript", id = i)
-      render_section(name = "Videos", id = i)
-      render_section(name = "Syntax", id = i)
-      render_section(name = "Fallstudien", id = i)
-      render_section(name = "Aufgaben", id = i)
-      render_section(name = "Vertiefung", id = i)
-      render_section(name = "Hinweise", id = i)
-      render_section(name = "Uebung", id = i)
+
+
+      for (j in subsections){
+
+        render_section(d = master_table,
+                       name = j,
+                       id = i)
+      }
 
 
       # Leerzeilen, bevor neues Thema anfängt
