@@ -43,7 +43,7 @@ library(tidyverse)
 
 
 ```{r}
-source("funs/render-course-outline2.R")
+source("https://raw.githubusercontent.com/sebastiansauer/Lehre/main/R-Code/render-course-sections.R")
 ```
 
 
@@ -93,10 +93,14 @@ In diesem Modul lernen Sie das Handwerk der Prognose: Auf Basis von Fakten (Date
 
 ```{r render-outline-course-small-table, results = "asis", echo = FALSE, message = FALSE}
 
-course_dates_file <- here::here("Interna/course_dates.csv")
+course_dates_file <- here::here("Interna/course-dates.yaml")
 content_file <- here::here("Interna/modul-inhalte.yaml")
 
-render_course_outline2(course_dates_file, content_file, small_table = TRUE)
+stopifnot(file.exists(course_dates_file))
+stopifnot(file.exists(content_file))
+
+#debug(render_course_outline)
+render_course_outline(course_dates_file, content_file, small_table = TRUE)
 ```
 
 
@@ -166,10 +170,8 @@ Auf [meinem YouTube-Kanal](https://www.youtube.com/channel/UCkvdtj8maE7g-SOCh4aD
 
 ```{r render-outline-course, results = "asis", echo = FALSE, message = FALSE}
 
-course_dates_file <- here::here("Interna/course_dates.csv")
-content_file <- here::here("Interna/modul-inhalte.yaml")
 
-render_course_outline2(course_dates_file, content_file)
+render_course_outline(course_dates_file, content_file)
 ```
 
 

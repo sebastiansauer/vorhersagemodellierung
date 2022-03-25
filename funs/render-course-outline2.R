@@ -1,4 +1,4 @@
-render_course_outline2 <- function(course_dates_file, content_file, header_level = 2, small_table = FALSE){
+render_course_outline <- function(course_dates_file, content_file, header_level = 2, small_table = FALSE){
 
 
   render_section <- function(d = master_table, name, id){
@@ -43,9 +43,7 @@ render_course_outline2 <- function(course_dates_file, content_file, header_level
 
   course_topics <-
     tibble(
-      ID = map_dbl(course_topics_l, "id")
-    ) %>%
-    mutate(Titel = course_topics_l %>% map_chr("Titel")) %>%
+      Titel = course_topics_l %>% map_chr("Titel")) %>%
     mutate(Lernziele = list(course_topics_l %>% map("Lernziele"))) %>%
     mutate(Vorbereitung = list(course_topics_l %>% map("Vorbereitung"))) %>%
     mutate(Literatur = list(course_topics_l %>% map("Literatur"))) %>%
