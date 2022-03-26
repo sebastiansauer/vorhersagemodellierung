@@ -167,17 +167,22 @@ Auf [meinem YouTube-Kanal](https://www.youtube.com/channel/UCkvdtj8maE7g-SOCh4aD
 
 
 
-
 ```{r render-outline-course, results = "asis", echo = FALSE, message = FALSE}
 
+course_dates_file <- here::here("Interna/course-dates.yaml")
+content_file <- here::here("Interna/modul-inhalte.yaml")
 
-render_course_outline(course_dates_file, content_file)
+stopifnot(file.exists(course_dates_file))
+stopifnot(file.exists(content_file))
+
+descriptors <- c("KW", "Kurswoche", "Datum_Beginn", "Titel", "Lernziele", "Vorbereitung", "Aufgaben", "Vertiefung", "Hinweise")
+
+#debug(render_course_outline)
+render_course_outline(course_dates_file, content_file, 
+                      small_table = FALSE, 
+                      descriptors = descriptors,
+                      header_level = 2)
 ```
-
-
-
-
-
 
 
 

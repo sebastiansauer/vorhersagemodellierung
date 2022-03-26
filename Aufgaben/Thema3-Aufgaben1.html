@@ -1,0 +1,99 @@
+
+<html>
+
+<head>
+<title>Aufgaben</title>
+<style type="text/css">
+body{font-family: Arial, Helvetica, Sans;}
+</style>
+
+<meta charset="UTF-8">
+
+<script type="text/javascript"   src="https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+</head>
+
+<body>
+<h2>Aufgaben</h2>
+
+<ol>
+<li>
+<h4>Aufgabe</h4>
+<p>Laden Sie die folgende Tabellen mit folgendem Befehl aus dem Paket
+<code>tidyverse</code>:</p>
+<p>Insgesamt sollten Sie als folgende Tabellen in Ihrem
+<code>environment</code> verfügbar haben:</p>
+<ul>
+<li>table1</li>
+<li>table2</li>
+<li>table3</li>
+<li>table4</li>
+<li>table5</li>
+</ul>
+<p>Welche der Tabellen ist in der Normalform?</p>
+<br/>
+<ol type="a">
+<li>
+table1
+</li>
+<li>
+table2
+</li>
+<li>
+table3
+</li>
+<li>
+table4
+</li>
+<li>
+table5
+</li>
+</ol>
+<br/>
+</li>
+<li>
+<h4>Aufgabe</h4>
+<p>Laden Sie den Datensatz <code>affairs</code>:</p>
+<pre class="text"><code>affairs_path &lt;- &quot;https://vincentarelbundock.github.io/Rdatasets/csv/AER/Affairs.csv&quot;</code></pre>
+<pre class="text"><code>affairs &lt;- read_csv(affairs_path)</code></pre>
+<p>Lesen Sie das <em>Data Dictionnary</em> <a
+href="https://vincentarelbundock.github.io/Rdatasets/doc/AER/Affairs.html">hier</a>.</p>
+<p>Wir definieren als “Halodrie” eine Person mit mindestens einer Affäre
+(laut Datensatz).</p>
+<p>Bearbeiten Sie folgende Aufgaben:</p>
+<ol style="list-style-type: decimal">
+<li>Filtern Sie mal nach Halodries!</li>
+<li>Sortieren Sie (absteigend) nach Anzahl der Affären!</li>
+<li>Wählen Sie die Spalten zu Anzahl der Affären, ob es Kinder in der
+Ehe gibt und die Zufriedenheit mit der Ehe. Dann sortieren Sie dann nach
+Anzahl der Kinder und <em>danach</em> nach der Anzahl der Affären.</li>
+<li>Berechnen Sie die mittlere Anzahl der Affären!</li>
+<li>Berechnen Sie die mittlere Anzahl der Affären pro Geschlecht und
+aufgeteilt auf Partnerschaften mit bzw. ohne Kinder.</li>
+<li>Geben Sie für jede Person die höhere der zwei Zahlen von
+Religiösität und Ehezufriedenheit aus!</li>
+<li>Berechnen Sie jeweils das Heiratsalter!</li>
+</ol>
+<br/>
+</li>
+<li>
+<h4>Aufgabe</h4>
+<p>Importieren Sie den folgenden Datensatz in R:</p>
+<pre class="text"><code>mtcars &lt;- read_csv(&quot;https://vincentarelbundock.github.io/Rdatasets/csv/datasets/mtcars.csv&quot;)</code></pre>
+<p>Übersetzen Sie dann die folgende R-Sequenz ins Deutsche:</p>
+<pre class="text"><code>mtcars %&gt;% 
+  drop_na() %&gt;% 
+  select(mpg, hp, cyl) %&gt;% 
+  filter(hp &gt; 100, cyl &gt;= 6) %&gt;% 
+  group_by(cyl) %&gt;% 
+  summarise(mpg_mean = mean(mpg))</code></pre>
+<pre><code>## # A tibble: 2 × 2
+##     cyl mpg_mean
+##   &lt;dbl&gt;    &lt;dbl&gt;
+## 1     6     19.7
+## 2     8     15.1</code></pre>
+<br/>
+</li>
+</ol>
+
+</body>
+</html>

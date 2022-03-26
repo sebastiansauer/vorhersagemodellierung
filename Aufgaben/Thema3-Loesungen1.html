@@ -1,0 +1,262 @@
+
+<html>
+
+<head>
+<title>Lösungen</title>
+<style type="text/css">
+body{font-family: Arial, Helvetica, Sans;}
+</style>
+
+<meta charset="UTF-8">
+
+<script type="text/javascript"   src="https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+</head>
+
+<body>
+<h2>Lösungen zu den Aufgaben</h2>
+
+<ol>
+<li>
+<h4>Aufgabe</h4>
+<p>Laden Sie die folgende Tabellen mit folgendem Befehl aus dem Paket
+<code>tidyverse</code>:</p>
+<p>Insgesamt sollten Sie als folgende Tabellen in Ihrem
+<code>environment</code> verfügbar haben:</p>
+<ul>
+<li>table1</li>
+<li>table2</li>
+<li>table3</li>
+<li>table4</li>
+<li>table5</li>
+</ul>
+<p>Welche der Tabellen ist in der Normalform?</p>
+<br/>
+<ol type="a">
+<li>
+table1
+</li>
+<li>
+table2
+</li>
+<li>
+table3
+</li>
+<li>
+table4
+</li>
+<li>
+table5
+</li>
+</ol>
+<br/>
+<h4>Lösung</h4>
+<p>Laden wir noch die übrigen Tabellen</p>
+<p>Betrachten wir alle fünf Tabellen:</p>
+<pre><code>## # A tibble: 6 × 4
+##   country      year  cases population
+##   &lt;chr&gt;       &lt;dbl&gt;  &lt;dbl&gt;      &lt;dbl&gt;
+## 1 Afghanistan  1999    745   19987071
+## 2 Afghanistan  2000   2666   20595360
+## 3 Brazil       1999  37737  172006362
+## 4 Brazil       2000  80488  174504898
+## 5 China        1999 212258 1272915272
+## 6 China        2000 213766 1280428583</code></pre>
+<pre><code>## # A tibble: 12 × 4
+##   country      year type          count
+##   &lt;chr&gt;       &lt;dbl&gt; &lt;chr&gt;         &lt;dbl&gt;
+## 1 Afghanistan  1999 cases           745
+## 2 Afghanistan  1999 population 19987071
+## 3 Afghanistan  2000 cases          2666
+## 4 Afghanistan  2000 population 20595360
+## 5 Brazil       1999 cases         37737
+## # … with 7 more rows</code></pre>
+<pre><code>## # A tibble: 6 × 3
+##   country      year rate             
+##   &lt;chr&gt;       &lt;dbl&gt; &lt;chr&gt;            
+## 1 Afghanistan  1999 745/19987071     
+## 2 Afghanistan  2000 2666/20595360    
+## 3 Brazil       1999 37737/172006362  
+## 4 Brazil       2000 80488/174504898  
+## 5 China        1999 212258/1272915272
+## 6 China        2000 213766/1280428583</code></pre>
+<pre><code>## # A tibble: 3 × 3
+##   country     `1999` `2000`
+##   &lt;chr&gt;        &lt;dbl&gt;  &lt;dbl&gt;
+## 1 Afghanistan    745   2666
+## 2 Brazil       37737  80488
+## 3 China       212258 213766</code></pre>
+<pre><code>## # A tibble: 6 × 4
+##   country     century year  rate             
+##   &lt;chr&gt;         &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;            
+## 1 Afghanistan      19 99    745/19987071     
+## 2 Afghanistan      20 00    2666/20595360    
+## 3 Brazil           19 99    37737/172006362  
+## 4 Brazil           20 00    80488/174504898  
+## 5 China            19 99    212258/1272915272
+## 6 China            20 00    213766/1280428583</code></pre>
+<p>Man sieht, dass nur Tabelle 1 “tidy” ist.</p>
+<p><a href="http://garrettgman.github.io/tidying/">Quelle</a></p>
+<br/>
+<ol type="a">
+<li>
+Wahr
+</li>
+<li>
+Falsch
+</li>
+<li>
+Falsch
+</li>
+<li>
+Falsch
+</li>
+<li>
+Falsch
+</li>
+</ol>
+<br/>
+</li>
+<li>
+<h4>Aufgabe</h4>
+<p>Laden Sie den Datensatz <code>affairs</code>:</p>
+<pre class="text"><code>affairs_path &lt;- &quot;https://vincentarelbundock.github.io/Rdatasets/csv/AER/Affairs.csv&quot;</code></pre>
+<pre class="text"><code>affairs &lt;- read_csv(affairs_path)</code></pre>
+<p>Lesen Sie das <em>Data Dictionnary</em> <a
+href="https://vincentarelbundock.github.io/Rdatasets/doc/AER/Affairs.html">hier</a>.</p>
+<p>Wir definieren als “Halodrie” eine Person mit mindestens einer Affäre
+(laut Datensatz).</p>
+<p>Bearbeiten Sie folgende Aufgaben:</p>
+<ol style="list-style-type: decimal">
+<li>Filtern Sie mal nach Halodries!</li>
+<li>Sortieren Sie (absteigend) nach Anzahl der Affären!</li>
+<li>Wählen Sie die Spalten zu Anzahl der Affären, ob es Kinder in der
+Ehe gibt und die Zufriedenheit mit der Ehe. Dann sortieren Sie dann nach
+Anzahl der Kinder und <em>danach</em> nach der Anzahl der Affären.</li>
+<li>Berechnen Sie die mittlere Anzahl der Affären!</li>
+<li>Berechnen Sie die mittlere Anzahl der Affären pro Geschlecht und
+aufgeteilt auf Partnerschaften mit bzw. ohne Kinder.</li>
+<li>Geben Sie für jede Person die höhere der zwei Zahlen von
+Religiösität und Ehezufriedenheit aus!</li>
+<li>Berechnen Sie jeweils das Heiratsalter!</li>
+</ol>
+<br/>
+<h4>Lösung</h4>
+<p>Ad 1.</p>
+<pre class="text"><code>affairs %&gt;% 
+  filter(affairs &gt; 0)</code></pre>
+<pre><code>## # A tibble: 150 × 10
+##    ...1 affairs gender   age yearsmarried children religiousness education
+##   &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt;  &lt;dbl&gt;        &lt;dbl&gt; &lt;chr&gt;            &lt;dbl&gt;     &lt;dbl&gt;
+## 1     6       3 male      27        1.5   no                   3        18
+## 2    12       3 female    27        4     yes                  3        17
+## 3    43       7 male      37       15     yes                  5        18
+## 4    53      12 female    32       10     yes                  3        17
+## 5    67       1 male      22        0.125 no                   4        16
+## # … with 145 more rows, and 2 more variables: occupation &lt;dbl&gt;, rating &lt;dbl&gt;</code></pre>
+<p>Ad 2.</p>
+<pre class="text"><code>affairs %&gt;% 
+  arrange(-affairs)</code></pre>
+<pre><code>## # A tibble: 601 × 10
+##    ...1 affairs gender   age yearsmarried children religiousness education
+##   &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt;  &lt;dbl&gt;        &lt;dbl&gt; &lt;chr&gt;            &lt;dbl&gt;     &lt;dbl&gt;
+## 1    53      12 female    32           10 yes                  3        17
+## 2   122      12 male      37           15 yes                  4        14
+## 3   174      12 female    42           15 yes                  5         9
+## 4   176      12 male      37           10 yes                  2        20
+## 5   181      12 female    32           15 yes                  3        14
+## # … with 596 more rows, and 2 more variables: occupation &lt;dbl&gt;, rating &lt;dbl&gt;</code></pre>
+<p>Ad 3.</p>
+<pre class="text"><code>affairs %&gt;% 
+  select(affairs, rating, children) %&gt;% 
+  arrange(children, affairs)</code></pre>
+<pre><code>## # A tibble: 601 × 3
+##   affairs rating children
+##     &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;   
+## 1       0      4 no      
+## 2       0      4 no      
+## 3       0      3 no      
+## 4       0      5 no      
+## 5       0      3 no      
+## # … with 596 more rows</code></pre>
+<p>Ad 4.</p>
+<pre class="text"><code>affairs %&gt;% 
+  summarise(affairs_mean = mean(affairs))</code></pre>
+<pre><code>## # A tibble: 1 × 1
+##   affairs_mean
+##          &lt;dbl&gt;
+## 1         1.46</code></pre>
+<p>Ad 5.</p>
+<pre class="text"><code>affairs %&gt;% 
+  group_by(gender, children) %&gt;% 
+  summarise(affairs_mean = mean(affairs))</code></pre>
+<pre><code>## # A tibble: 4 × 3
+## # Groups:   gender [2]
+##   gender children affairs_mean
+##   &lt;chr&gt;  &lt;chr&gt;           &lt;dbl&gt;
+## 1 female no              0.838
+## 2 female yes             1.69 
+## 3 male   no              1.01 
+## 4 male   yes             1.66</code></pre>
+<p>Ad 6.</p>
+<pre class="text"><code>affairs %&gt;% 
+  group_by(...1) %&gt;% 
+  summarise(max(c(religiousness, rating)))</code></pre>
+<pre><code>## # A tibble: 601 × 2
+##    ...1 `max(c(religiousness, rating))`
+##   &lt;dbl&gt;                           &lt;dbl&gt;
+## 1     4                               4
+## 2     5                               4
+## 3     6                               4
+## 4    11                               4
+## 5    12                               5
+## # … with 596 more rows</code></pre>
+<p>Ad 7.</p>
+<pre class="text"><code>affairs %&gt;% 
+  mutate(heiratsalter = age - yearsmarried)</code></pre>
+<pre><code>## # A tibble: 601 × 11
+##    ...1 affairs gender   age yearsmarried children religiousness education
+##   &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt;  &lt;dbl&gt;        &lt;dbl&gt; &lt;chr&gt;            &lt;dbl&gt;     &lt;dbl&gt;
+## 1     4       0 male      37        10    no                   3        18
+## 2     5       0 female    27         4    no                   4        14
+## 3    11       0 female    32        15    yes                  1        12
+## 4    16       0 male      57        15    yes                  5        18
+## 5    23       0 male      22         0.75 no                   2        17
+## # … with 596 more rows, and 3 more variables: occupation &lt;dbl&gt;, rating &lt;dbl&gt;,
+## #   heiratsalter &lt;dbl&gt;</code></pre>
+<br/>
+</li>
+<li>
+<h4>Aufgabe</h4>
+<p>Importieren Sie den folgenden Datensatz in R:</p>
+<pre class="text"><code>mtcars &lt;- read_csv(&quot;https://vincentarelbundock.github.io/Rdatasets/csv/datasets/mtcars.csv&quot;)</code></pre>
+<p>Übersetzen Sie dann die folgende R-Sequenz ins Deutsche:</p>
+<pre class="text"><code>mtcars %&gt;% 
+  drop_na() %&gt;% 
+  select(mpg, hp, cyl) %&gt;% 
+  filter(hp &gt; 100, cyl &gt;= 6) %&gt;% 
+  group_by(cyl) %&gt;% 
+  summarise(mpg_mean = mean(mpg))</code></pre>
+<pre><code>## # A tibble: 2 × 2
+##     cyl mpg_mean
+##   &lt;dbl&gt;    &lt;dbl&gt;
+## 1     6     19.7
+## 2     8     15.1</code></pre>
+<br/>
+<h4>Lösung</h4>
+<p>Hey R:</p>
+<ol style="list-style-type: decimal">
+<li>Nimm den Datensatz <code>mtcars</code> UND DANN</li>
+<li>hau alle Zeilen raus, in denen es fehlende Werte gibt UND DANN</li>
+<li>wähle (selektiere) die folgenden Spalten: Spritverbrauch, PS,
+Zylinder UND DANN</li>
+<li>filter Autos mit mehr als 100 PS und mit mindestens 6 Zylindern UND
+DANN</li>
+<li>gruppiere nach der Zahl der Zylinder UND DANN</li>
+<li>fasse den Verbrauch zum Mittelwert zusammen.</li>
+</ol>
+<br/>
+</li>
+</ol>
+
+</body>
+</html>

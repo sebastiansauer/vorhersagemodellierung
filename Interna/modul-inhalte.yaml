@@ -110,8 +110,10 @@ Thema3:
     - "[learnr-Tutorial zu dplyr](https://allisonhorst.shinyapps.io/dplyr-learnr/)"
     - "[R4DS, Kap. 5](https://r4ds.had.co.nz/transform.html)"
   Skript:
-  Syntax:
   Aufgaben:
+    - "[Datenjudo mit Pinguinen](https://allisonhorst.shinyapps.io/dplyr-learnr/#section-welcome)"
+    - "[Fallstudie zur explorativen Datenanalyse mit Flugverspätungen](https://sebastiansauer.github.io/Fallstudie_Flights/)"
+  Syntax:
   Hinweise:
 
 
