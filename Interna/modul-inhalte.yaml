@@ -79,7 +79,7 @@ Thema2:
     - "[Warum kann man mit dieser (Excel-)Tabelle schlecht arbeiten, obwohl sie schön anzuschauen ist?](https://miro.medium.com/max/1400/1*-dgXuTPTQGXMQNrvgVa5UA.png)"
     - "[Wie Excel nicht zur Hölle wird](https://github.com/datascibc/Data-Science-for-Docs/wiki/Excel-hell)"
     - "[Good enough practices in scientific computing](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510)"
-  Skript:
+
   Syntax:
   Uebung:
     - "[Fassen Sie das Paper 'Data Organization in Spreadsheets' zusammen](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989)"
@@ -109,10 +109,18 @@ Thema3:
     - "[Kurs bei datacamp zum Tidyverse](https://www.datacamp.com/courses/introduction-to-the-tidyverse)"
     - "[learnr-Tutorial zu dplyr](https://allisonhorst.shinyapps.io/dplyr-learnr/)"
     - "[R4DS, Kap. 5](https://r4ds.had.co.nz/transform.html)"
+
   Skript:
+    - "[Download-Seite Skript Thema 3](https://github.com/sebastiansauer/vorhersagemodellierung/blob/main/Skript-Folien/QM1-Thema3.pdf)"
+    - "[Folienskript Thema 3, PDF](https://raw.github.com/sebastiansauer/vorhersagemodellierung/main/Skript-Folien/QM1-Thema3.pdf)"
+    - "[Folienskript Thema 3, PPTX](https://raw.github.com/sebastiansauer/vorhersagemodellierung/main/Skript-Folien/QM1-Thema3.pptx)"
+    - "[Folienskript Thema 3, Keynote](https://raw.github.com/sebastiansauer/vorhersagemodellierung/main/Skript-Folien/QM1-Thema3.key)"
+
   Aufgaben:
     - "[Datenjudo mit Pinguinen](https://allisonhorst.shinyapps.io/dplyr-learnr/#section-welcome)"
     - "[Fallstudie zur explorativen Datenanalyse mit Flugverspätungen](https://sebastiansauer.github.io/Fallstudie_Flights/)"
+    - "[Aufgaben HTML](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema3-Aufgaben1.html)"
+    - "[Lösungen HTML](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema3-Loesungen1.html)"
   Syntax:
   Hinweise:
 
