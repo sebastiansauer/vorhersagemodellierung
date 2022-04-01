@@ -152,8 +152,6 @@ Auf [meinem YouTube-Kanal](https://www.youtube.com/channel/UCkvdtj8maE7g-SOCh4aD
 - [R Syntax aus dem Unterricht](https://github.com/sebastiansauer/Lehre) findet sich im Github-Repo bzw. Ordner zum jeweiligen Semester.
 - [Frag-Jetzt-Raum zum anonymen Fragen stellen während des Unterrichts](https://frag.jetzt/home). Der Keycode wird Ihnen vom Dozenten bereitgestellt.
 - [Padlet](https://de.padlet.com/) zum einfachen (und anonymen) Hochladen von Arbeitsergebnissen der Studentis im Unterricht. Wir nutzen es als eine Art Pinwand zum Sammeln von Arbeitsbeiträgen. Die Zugangsdaten stellt Ihnen der Dozent bereit.
-- [Playlist mit Lerntechniken speziell für mathematisch orientierte Fächer](https://youtube.com/playlist?list=PLRR4REmBgpIFDcr72hs_Dp5lQbIPbDkz7)
-- [RStudio Cloud Project für dieses Modul](https://rstudio.cloud/project/3421620)
 
 ## Daten
 
@@ -175,7 +173,9 @@ content_file <- here::here("Interna/modul-inhalte.yaml")
 stopifnot(file.exists(course_dates_file))
 stopifnot(file.exists(content_file))
 
-descriptors <- c("KW", "Kurswoche", "Datum_Beginn", "Titel", "Lernziele", "Vorbereitung", "Aufgaben", "Vertiefung", "Hinweise", "Skript")
+descriptors <- c("KW", "Kurswoche", "Datum_Beginn", "Titel", "Lernziele", "Vorbereitung", "Aufgaben",
+                 "Literatur",
+                 "Vertiefung", "Hinweise", "Skript")
 
 #debug(render_course_outline)
 render_course_outline(course_dates_file, content_file, 
