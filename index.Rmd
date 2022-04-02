@@ -223,7 +223,7 @@ Viele Menschen haben mich unterstützt, großzügig und auf verschiedene Weise.
 
 Einige möchte ich herausgreifen, um Danke zu sagen:
 
-- Kollegis wie Karsten Lübke, von denen ich viel gelernt habe.
+- Kollegis wie Karsten Lübke vom ifes-Institut der FOM Hochschule, von denen ich viel gelernt habe.
 - Alle Open-Source-Entwickler, die Projekte wie dieses überhaupt erst möglichen machen. 💌
 
 
