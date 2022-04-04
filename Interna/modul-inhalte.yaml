@@ -111,6 +111,7 @@ Thema3:
     - "[Kurs bei datacamp zum Tidyverse](https://www.datacamp.com/courses/introduction-to-the-tidyverse)"
     - "[learnr-Tutorial zu dplyr](https://allisonhorst.shinyapps.io/dplyr-learnr/)"
     - "[R4DS, Kap. 5](https://r4ds.had.co.nz/transform.html)"
+    - "[Cheatsheets für R, z.B. zu RStudio](https://www.rstudio.com/resources/cheatsheets/)"
 
   Skript:
     - "[Download-Seite Skript Thema 3](https://github.com/sebastiansauer/vorhersagemodellierung/blob/main/Skript-Folien/QM1-Thema03.pdf)"
@@ -123,6 +124,9 @@ Thema3:
     - "[Fallstudie zur explorativen Datenanalyse mit Flugverspätungen](https://sebastiansauer.github.io/Fallstudie_Flights/)"
     - "[Aufgaben HTML](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema3-Aufgaben1.html)"
     - "[Lösungen HTML](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema3-Loesungen1.html)"
+
+
+
   Syntax:
   Hinweise:
 
@@ -154,7 +158,12 @@ Thema5:
 
   Syntax:
   Aufgaben:
+    - "[Aufgaben HTML](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema4-Aufgaben1.html)"
+    - "[Lösungen HTML](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema4-Loesungen1.html)"
+    - "[Aufgaben PDF](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema4-Aufgaben1.pdf)"
+
   Vertiefung:
+    - "[Cohens d Visualisierung, APp](https://rpsychologist.com/cohend/)"
 
 
 Thema5a:
@@ -176,6 +185,7 @@ Thema5a:
   Syntax:
   Aufgaben:
   Vertiefung:
+    - "[Visualisieurng zur Korrelation](https://rpsychologist.com/correlation/)"
 
 
 
@@ -213,6 +223,8 @@ Thema7:
   Syntax:
   Aufgaben:
   Vertiefung:
+    - "[Cheatsheets für R, z.B. zu tidyverse/dplyr](https://www.rstudio.com/resources/cheatsheets/)"
+
   Hinweise:
 
 
@@ -232,6 +244,8 @@ Thema8:
   Vertiefung:
     - "[From Data to Viz](https://www.data-to-viz.com/)"
     - "[The R Graph Gallery](https://www.r-graph-gallery.com/index.html)"
+    - "[Cheatsheets für R, z.B. zu GGplot](https://www.rstudio.com/resources/cheatsheets/)"
+
   Skript:
   Syntax:
   Aufgaben:

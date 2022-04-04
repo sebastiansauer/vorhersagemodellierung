@@ -1,0 +1,24 @@
+Variable;Skalenniveau;Nominalniveau;Ordinalniveau;Intervallniveau;Verhältnisniveau;stetig;diskret
+Temperatur in Celcius;Intervallskala;0;0;1;0;1;0
+Temperatur in Kelvin;Verhältnisskala;0;0;0;1;1;0
+Temperatur in Fahrenheit;Verhältnisskala;0;0;1;0;1;0
+Alter;Verhältnisskala;0;0;0;1;1;0
+Schuhgröße;Verhältnisskala;0;0;0;1;1;0
+Gewicht einer Person;Verhältnisskala;0;0;0;1;1;0
+Gewicht eines Tieres;Verhältnisskala;0;0;0;1;1;0
+Gewicht eines Buches;Verhältnisskala;0;0;0;1;1;0
+Gewicht einer Maschine;Verhältnisskala;0;0;0;1;1;0
+Anzahl Geschwister in einer Familie;Verhältnisskala;0;0;0;1;0;1
+Anzahl Kinder in einer Familie;Verhältnisskala;0;0;0;1;0;1
+Ranking von Hochschulen (1. Platz XYZ, 2. Platz ABC, …);Ordinalskala;0;1;0;0;0;0
+IQ;Intervallskala;0;0;1;0;1;0
+Augenfarbe;Nominalskala;1;0;0;0;0;0
+Haarfarbe;Nominalskala;1;0;0;0;0;0
+Präferenz für eine Partei;Nominalskala;1;0;0;0;0;0
+Beliebtester Politiker einer Person;Nominalskala;1;0;0;0;0;0
+Umsatz einer Firma;Verhältnisskala;0;0;0;1;1;0
+Gewinn einer Firma;Verhältnisskala;0;0;0;1;1;0
+Geschlecht;Nominalskala;1;0;0;0;0;0
+Nationalität;Nominalskala;1;0;0;0;0;0
+Rangfolge der Lieblingsspeisen einer Person;Ordinalskala;0;1;0;0;0;0
+Ergebnis bei Talent-Show (1. Platz Mr. Cool, 2. Platz Mr. Bright, 3. Platz Mr. Right);Ordinalskala;0;1;0;0;0;0
