@@ -122,8 +122,15 @@ Oft müssen Sie per VPN angemeldet sein für Volltextzugriff, wenn Sie nicht auf
 
 - Zentrale Begleitlektüre ist `r RefManageR::Citet(bib, "sauer_moderne_2019")`. 
 - Weiterführende Literatur (nicht zwingend nötig, aber ggf. nützlich): `r RefManageR::Citet(bib, "wickham_r_2018")` (abgekürzt als *R4DS*) und `r RefManageR::Citet(bib, "cetinkaya-rundel_introduction_2021")` (abgekürzt als *IMS*, frei [hier](https://openintro-ims.netlify.app/) im Netz verfügbar).
+
+Weitere Literatur:
+
+
 - Um grundlegende Mathekenntnisse aufzufrischen ist `r RefManageR::Citet(bib, "knorrenschild_vorkurs_2021", after = ", Kap. 1-3 und 4.1-4.2")` empfehlenswert.
 - Ein Überblick über weitere, empfehlenswerte Literatur zum Einstieg in Statistik findet sich [hier](https://www.zotero.org/groups/4583286/einstieg-statistik).
+- Eine lockere, zur Vertiefung geeignete, aber nicht direkt prüfungsrelevante Monographie ist  `r RefManageR::Citet(bib, "bueno_de_mesquita_thinking_2021")` (abgekürzt als *ThinkingClearly*).
+
+
 
 
 
@@ -180,7 +187,8 @@ descriptors <- c(
   "Literatur",
   "Vertiefung", 
   "Hinweise", 
-  "Skript")
+  "Skript",
+  "Videos")
 
 #debug(render_course_outline)
 render_course_outline(course_dates_file, content_file, 
