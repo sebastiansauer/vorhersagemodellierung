@@ -144,10 +144,7 @@ Thema5:
   Vorbereitung:
     - Lesen Sie die Literatur.
     - Sehen Sie sich ggf. das Video zum Folienskript an.
-  Kalenderwoche: 15
-  Datum: 11.4.-15.4.
-  Hinweise:
-    - In dieser Woche fällt die Übung aus (Ostern)
+
   Videos:
     - "[Playlist zur deskriptiven Statistik](https://www.youtube.com/playlist?list=PLRR4REmBgpIFLDj6SFpwOKnfGVbkoI9JI)"
     - "[Playlist Explorative Datenenanalyse (EDA)](https://youtube.com/playlist?list=PLRR4REmBgpIFFmLRZvyPcI07CPn7OnmqH)"
@@ -163,27 +160,38 @@ Thema5:
     - "[Aufgaben PDF](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema4-Aufgaben1.pdf)"
 
   Vertiefung:
-    - "[Cohens d Visualisierung, APp](https://rpsychologist.com/cohend/)"
+    - "[Cohens d Visualisierung, App](https://rpsychologist.com/cohend/)"
 
 
 Thema5a:
   Titel: Deskriptive Statistik, Teil 2
   Lernziele:
     - Sie verstehen die Grundkonzepte der Korrelation und können diese in R berechnen.
+    - Sie kennen Maße zur Berechnung des Zusammenhangs nominaler Variablen und können diese in R anwenden.
   Literatur:
     - MODAR, Kap. 8
   Vorbereitung:
     - Lesen Sie die Literatur.
     - Sehen Sie sich ggf. das Video zum Folienskript an.
-  id: 5
   Hinweise:
-    -  Diese Woche endet die Vorlesung schon um 14.45h.
+    - Diese Woche endet die Vorlesung schon um 14.45h. Schauen Sie sich daher ggf. die Videos zu diesem Thema an.
   Videos:
     - "[Playlist zur deskriptiven Statistik](https://www.youtube.com/playlist?list=PLRR4REmBgpIFLDj6SFpwOKnfGVbkoI9JI)"
     - "[Playlist Explorative Datenenanalyse (EDA)](https://youtube.com/playlist?list=PLRR4REmBgpIFFmLRZvyPcI07CPn7OnmqH)"
+    - "[Video zum Zusammenhang nominaler Variablen](https://youtu.be/t3tYIAEE7ME)"
+    - "[Video zum Zusammenhang metrischer Variablen](https://youtu.be/Xv2FFGNsP3k)"
   Skript:
+    - "[Folienskript Thema 5, PDF](https://raw.github.com/sebastiansauer/vorhersagemodellierung/main/Skript-Folien/QM1-Thema05.pdf)"
+    - "[Folienskript Thema 5, PPTX](https://raw.github.com/sebastiansauer/vorhersagemodellierung/main/Skript-Folien/QM1-Thema05.pptx)"
+    - "[Folienskript Thema 5, Keynote](https://raw.github.com/sebastiansauer/vorhersagemodellierung/main/Skript-Folien/QM1-Thema05.key)"
+
   Syntax:
   Aufgaben:
+    - "[Aufgaben HTML](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema5-Aufgaben1.html)"
+    - "[Lösungen HTML](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema5-Loesungen1.html)"
+    - "[Aufgaben PDF](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema5-Aufgaben1.pdf)"
+
+
   Vertiefung:
     - "[Visualisieurng zur Korrelation](https://rpsychologist.com/correlation/)"
 

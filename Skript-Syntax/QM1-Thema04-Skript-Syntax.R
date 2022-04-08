@@ -196,6 +196,7 @@ df2 %>%
 
 
 
+cut_number(df2$groesse,4)
 
 
 # Verteilungsfunktion -----------------------------------------------------
@@ -229,3 +230,46 @@ p2 <-
 "
 
 nomnoml(p2, png = "img/q-fun.png")
+
+
+
+
+
+
+# Streuungsvergleich ------------------------------------------------------
+
+# Code by Karsten Lübke
+
+
+library(gridExtra)
+library(viridis)
+library(mosaic)
+
+xs1 <- rnorm(1000)
+xs2 <- rnorm(1000, sd = 2)
+xs3 <- runif(1000, -6, 6)
+
+hs1 <- gf_histogram( ~ xs1,
+                     xlab = NULL,
+                     title = "A",
+                     fill = viridis(1, alpha = 0.6),
+                     color = "darkgrey") %>%
+  gf_lims(x=c(-6,6))
+
+hs2 <- gf_histogram( ~ xs2,
+                     xlab = NULL,
+                     title = "B",
+                     fill = viridis(1, alpha = 0.6),
+                     color = "darkgrey") %>%
+  gf_lims(x=c(-6,6))
+
+hs3 <- gf_histogram( ~ xs3,
+                     xlab = NULL,
+                     title = "C",
+                     fill = viridis(1, alpha = 0.6),
+                     color = "darkgrey") %>%
+  gf_lims(x=c(-6,6))
+
+grid.arrange(hs1, hs2, hs3, nrow = 3)
+
+
