@@ -196,6 +196,7 @@ df2 %>%
 
 
 
+cut_number(df2$groesse,4)
 
 
 # Verteilungsfunktion -----------------------------------------------------
