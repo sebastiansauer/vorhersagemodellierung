@@ -82,7 +82,13 @@ knitr::include_graphics("https://raw.github.com/allisonhorst/stats-illustrations
 # Was Sie hier lernen und wozu das gut ist
 
 
-In diesem Modul lernen Sie das Handwerk der Prognose: Auf Basis von Fakten (Daten) den (noch unbekannten) Wert einer Zielvariablen vorherzusagen. Zum Beispiel wieviel Umsatz von einem Kunden mit einem bestimmten Profil im Schnitt zu erwarten ist. Damit lernen Sie die Grundkompetenzen zum Berufsbild Data Scientist – ein angesagtes Berufsbild unserer Zeit. Außerdem lernen Sie etwas Handwerkszeug der (quantitativen) Forschung; der überwältigend große Teil der Forschung basiert auf Ideen, von denen Sie ein paar in diesem Kurs lernen. 
+In diesem Modul lernen Sie das Handwerk der Prognose: 
+Auf Basis von Fakten (Daten) den (noch unbekannten) Wert einer Zielvariablen vorherzusagen. 
+Zum Beispiel wieviel Umsatz von einem Kunden mit einem bestimmten Profil im Schnitt zu erwarten ist. 
+Damit lernen Sie die Grundkompetenzen zum Berufsbild Data Scientist – ein angesagtes Berufsbild unserer Zeit. 
+Außerdem lernen Sie etwas Handwerkszeug der (quantitativen) Forschung;
+der überwältigend große Teil der Forschung basiert auf Ideen, 
+von denen Sie ein paar in diesem Kurs lernen. 
 
 
 [Ansprache zur Motivation](https://youtu.be/jtNlzpcPr5Y)
