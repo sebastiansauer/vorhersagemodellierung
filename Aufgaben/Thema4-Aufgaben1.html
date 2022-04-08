@@ -52,24 +52,11 @@ Religiösität und Ehezufriedenheit aus!</li>
   filter(hp &gt; 100, cyl &gt;= 6) %&gt;% 
   group_by(cyl) %&gt;% 
   summarise(mpg_mean = mean(mpg))</code></pre>
-<table>
-<thead>
-<tr class="header">
-<th align="right">cyl</th>
-<th align="right">mpg_mean</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="right">6</td>
-<td align="right">19.74286</td>
-</tr>
-<tr class="even">
-<td align="right">8</td>
-<td align="right">15.10000</td>
-</tr>
-</tbody>
-</table>
+<pre><code>## # A tibble: 2 × 2
+##     cyl mpg_mean
+##   &lt;dbl&gt;    &lt;dbl&gt;
+## 1     6     19.7
+## 2     8     15.1</code></pre>
 <br/>
 </li>
 <li>
