@@ -208,8 +208,10 @@ Thema6:
   Hinweise:
     - In dieser Woche fällt die Vorlesung aus (Ostern).
   Skript:
+    - In dieser Woche gibt es kein Skript.
   Syntax:
   Aufgaben:
+    - Wiederholen Sie die bisherigen Aufgaben.
   Vertiefung:
   Literatur:
   Vorbereitung:
@@ -230,13 +232,17 @@ Thema7:
   Videos:
     - "[Playlist Praxisprobleme der Datenanalyse](https://youtube.com/playlist?list=PLRR4REmBgpIEEt2fWPz_UovZsXFfr5HJT)"
   Skript:
+    - In dieser Woche gibt es kein Skript.
   Syntax:
   Aufgaben:
+    - "[Finde den Tag mit den meisten Flugverspätungen, Datensatz 'nycflights13'](https://data-se.netlify.app/2021/05/27/datensatz-flights-finde-den-tag-mit-den-meisten-abfl%C3%BCgen/)"
   Vertiefung:
     - "[Cheatsheets für R, z.B. zu tidyverse/dplyr](https://www.rstudio.com/resources/cheatsheets/)"
 
   Hinweise:
-
+    - "Der Unterricht in dieser Woche ist sehr praktisch; es gibt keine Theorie (und daher auch kein Skript). Sie profitieren vom Unterricht am meisten, wenn Sie die Literatur vorab gelesen haben."
+    - "Die Literatur können Sie sich als E-Book von der Bib ausleihen"
+    - "Die Installation des R-Pakets 'pradadata' ist in MODAR, Kap. 3.2.3 beschrieben"
 
 Thema8:
   Titel: Datenvisualisierung
@@ -245,7 +251,6 @@ Thema8:
     - Sie können Daten visualisieren, um wesentliche Einsichten zu vermitteln.
   Literatur:
     - MODAR, Kap. 11
-    - "Wilke: [Fundamentals of Data Visualization](https://clauswilke.com/dataviz/)"
   Vorbereitung:
     - Lesen Sie die Literatur.
     - Sehen Sie sich ggf. das Video zum Folienskript an.
@@ -255,6 +260,7 @@ Thema8:
     - "[From Data to Viz](https://www.data-to-viz.com/)"
     - "[The R Graph Gallery](https://www.r-graph-gallery.com/index.html)"
     - "[Cheatsheets für R, z.B. zu GGplot](https://www.rstudio.com/resources/cheatsheets/)"
+    - "Wilke: [Fundamentals of Data Visualization](https://clauswilke.com/dataviz/)"
 
   Skript:
   Syntax:
@@ -278,10 +284,11 @@ Thema9:
     - "[OECD Wellbeing](https://data-se.netlify.app/2021/02/11/explorative-datenanalyse-zum-datensatz-oecd-wellbeing/)"
     - "[IMDB Filmbewertungen](https://minimaxir.com/2018/07/imdb-data-analysis/)"
     - "[Women in Parliament](https://github.com/saghirb/WiP-tidyverse/blob/master/doc/WiP-tidyverse.pdf)  "
-
+    - "[EDA-Fallstudie zu Flugverspätungen](https://data-se.netlify.app/2021/03/08/eda-zu-flugversp%C3%A4tungen/)"
   Skript:
   Syntax:
   Vertiefung:
+    - "[DataCamp-Kurs zum Tidyverse](https://www.new.datacamp.com/courses/case-study-exploratory-data-analysis-in-r)"
   Hinweise:
 
 
