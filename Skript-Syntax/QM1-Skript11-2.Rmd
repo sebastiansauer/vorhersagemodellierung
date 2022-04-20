@@ -1,0 +1,32 @@
+---
+title: "Untitled"
+author: "ses"
+date: "4/19/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Setup
+
+```{r}
+library(finalfit)
+library(tidyverse)
+library(see)
+library(parameters)
+data(mtcars)
+```
+
+
+# Tabelle 1
+
+```{r}
+lm1 <- lm(mpg ~ hp + am, data = mtcars)
+lm1_res <- plot(parameters(lm1))
+lm1_res
+```
+
+

@@ -170,6 +170,8 @@ Thema5a:
     - Sie kennen Maße zur Berechnung des Zusammenhangs nominaler Variablen und können diese in R anwenden.
   Literatur:
     - MODAR, Kap. 8
+    - MODAR, Kap. 10
+    - IMS, Kap. 4-6
   Vorbereitung:
     - Lesen Sie die Literatur.
     - Sehen Sie sich ggf. das Video zum Folienskript an.
@@ -187,14 +189,14 @@ Thema5a:
 
   Syntax:
   Aufgaben:
-    - "[Aufgaben HTML](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema5-Aufgaben1.html)"
-    - "[Lösungen HTML](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema5-Loesungen1.html)"
-    - "[Aufgaben PDF](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema5-Aufgaben1.pdf)"
+    - "[Aufgaben 05 HTML](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema5-Aufgaben1.html)"
+    - "[Lösungen 05 HTML](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema5-Loesungen1.html)"
+    - "[Aufgaben 05 PDF](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema5-Aufgaben1.pdf)"
 
 
   Vertiefung:
     - "[Visualisieurng zur Korrelation](https://rpsychologist.com/correlation/)"
-
+    - ThinkingClearly, Kap. 4
 
 
 Thema6:
@@ -206,8 +208,10 @@ Thema6:
   Hinweise:
     - In dieser Woche fällt die Vorlesung aus (Ostern).
   Skript:
+    - In dieser Woche gibt es kein Skript.
   Syntax:
   Aufgaben:
+    - Wiederholen Sie die bisherigen Aufgaben.
   Vertiefung:
   Literatur:
   Vorbereitung:
@@ -228,13 +232,17 @@ Thema7:
   Videos:
     - "[Playlist Praxisprobleme der Datenanalyse](https://youtube.com/playlist?list=PLRR4REmBgpIEEt2fWPz_UovZsXFfr5HJT)"
   Skript:
+    - In dieser Woche gibt es kein Skript.
   Syntax:
   Aufgaben:
+    - "[Finde den Tag mit den meisten Flugverspätungen, Datensatz 'nycflights13'](https://data-se.netlify.app/2021/05/27/datensatz-flights-finde-den-tag-mit-den-meisten-abfl%C3%BCgen/)"
   Vertiefung:
     - "[Cheatsheets für R, z.B. zu tidyverse/dplyr](https://www.rstudio.com/resources/cheatsheets/)"
 
   Hinweise:
-
+    - "Der Unterricht in dieser Woche ist sehr praktisch; es gibt keine Theorie (und daher auch kein Skript). Sie profitieren vom Unterricht am meisten, wenn Sie die Literatur vorab gelesen haben."
+    - "Die Literatur können Sie sich als E-Book von der Bib ausleihen"
+    - "Die Installation des R-Pakets 'pradadata' ist in MODAR, Kap. 3.2.3 beschrieben"
 
 Thema8:
   Titel: Datenvisualisierung
@@ -243,7 +251,7 @@ Thema8:
     - Sie können Daten visualisieren, um wesentliche Einsichten zu vermitteln.
   Literatur:
     - MODAR, Kap. 11
-    - "Wilke: [Fundamentals of Data Visualization](https://clauswilke.com/dataviz/)"
+    - "[ggplot2-Cheatsheet](https://raw.githubusercontent.com/rstudio/cheatsheets/main/data-visualization.pdf)"
   Vorbereitung:
     - Lesen Sie die Literatur.
     - Sehen Sie sich ggf. das Video zum Folienskript an.
@@ -253,22 +261,35 @@ Thema8:
     - "[From Data to Viz](https://www.data-to-viz.com/)"
     - "[The R Graph Gallery](https://www.r-graph-gallery.com/index.html)"
     - "[Cheatsheets für R, z.B. zu GGplot](https://www.rstudio.com/resources/cheatsheets/)"
-
+    - "Wilke: [Fundamentals of Data Visualization](https://clauswilke.com/dataviz/)"
+    - "Showcase ggplot2](https://www.cedricscherer.com/slides/2019-08-28-intro-ggplot-statsizw#1)"
+    - "Blog zum Thema Data-Viz mit ggplot2](https://www.cedricscherer.com/)"
+    - "[Tidytuesday](https://github.com/rfordatascience/tidytuesday)"
+    - "[DataViz mit R von Ijeamakaanyene](https://github.com/Ijeamakaanyene/tidytuesday)"
   Skript:
+    - "[Folienskript, PDF](https://raw.github.com/sebastiansauer/vorhersagemodellierung/main/Skript-Folien/QM1-Thema08.pdf)"
+    - "[Folienskript, PPTX](https://raw.github.com/sebastiansauer/vorhersagemodellierung/main/Skript-Folien/QM1-Thema08.pptx)"
+    - "[Folienskript, Keynote](https://raw.github.com/sebastiansauer/vorhersagemodellierung/main/Skript-Folien/QM1-Thema08.key)"
+
   Syntax:
   Aufgaben:
+    - "[Aufgaben 08HTML](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema8-Aufgaben1.html)"
+    - "[Lösungen 08 HTML](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema8-Loesungen1.html)"
+    - "[Aufgaben 08 PDF](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema8-Aufgaben1.pdf)"
+
+
   Hinweise:
 
 
 Thema9:
-  Titel: Fallstudie zur EDA
+  Titel: Fallstudien zur EDA
   id: 9
   Lernziele:
     - Sie können die gelernten Techniken der explorativen Datenanalyse praktisch anwenden.
   Vorbereitung:
     - Sehen Sie sich ggf. das Video zum Folienskript an.
-  Literatur:
-    NA: NA
+  Literatur: NA
+
   Videos:
     - "[Playlist YACSDAs](https://youtube.com/playlist?list=PLRR4REmBgpIGet_lcNf2wOd0W8j4c9hYN)"
   Aufgaben:
@@ -276,15 +297,16 @@ Thema9:
     - "[OECD Wellbeing](https://data-se.netlify.app/2021/02/11/explorative-datenanalyse-zum-datensatz-oecd-wellbeing/)"
     - "[IMDB Filmbewertungen](https://minimaxir.com/2018/07/imdb-data-analysis/)"
     - "[Women in Parliament](https://github.com/saghirb/WiP-tidyverse/blob/master/doc/WiP-tidyverse.pdf)  "
-
-  Skript:
+    - "[EDA-Fallstudie zu Flugverspätungen](https://data-se.netlify.app/2021/03/08/eda-zu-flugversp%C3%A4tungen/)"
   Syntax:
   Vertiefung:
+    - "[DataCamp-Kurs zum Tidyverse](https://www.new.datacamp.com/courses/case-study-exploratory-data-analysis-in-r)"
   Hinweise:
+    - In dieser Woche gibt es kein Skript, da es keinen neuen Stoff gibt. Stattdessen steht Anwendung des gelernten im Mittelpunkt.
 
 
 Thema10:
-  Titel: Modellieren
+  Titel: Lineare Modell 1
   id: 10
   Lernziele:
     - Sie verstehen die Methoden des Modellierens.
@@ -297,14 +319,21 @@ Thema10:
   Videos:
     - "[Playlist zum statistischen Modellieren](https://www.youtube.com/playlist?list=PLRR4REmBgpIGWcSjrtt0m36aXHLaiTgdF)"
   Skript:
+    - "[Folienskript, PDF](https://raw.github.com/sebastiansauer/vorhersagemodellierung/main/Skript-Folien/QM1-Thema10.pdf)"
+    - "[Folienskript, PPTX](https://raw.github.com/sebastiansauer/vorhersagemodellierung/main/Skript-Folien/QM1-Thema10.pptx)"
+    - "[Folienskript, Keynote](https://raw.github.com/sebastiansauer/vorhersagemodellierung/main/Skript-Folien/QM1-Thema10.key)"
+
   Syntax:
   Aufgaben:
   Vertiefung:
+    - "[App zur Variationszerlegung in der Regressionsanalyse](https://fomshinyapps.shinyapps.io/Variationszerlegung/)"
+    - "[Zum Unterschied von RMSE und R-Quadrat](https://medium.com/wwblog/evaluating-regression-models-using-rmse-and-r%C2%B2-42f77400efee)"
+    - "[Ableitung der Regressionskoeffizienten](https://data-se.netlify.app/2021/04/07/ableitung-der-koeffizienten-der-einfachen-regression/)"
   Hinweise:
 
 
 Thema11:
-  Titel: Regression
+  Titel: Lineare Modelle 2
   id: 11
   Lernziele:
     - Sie verstehen die Grundkonzepte der Regression und können diese in R anwenden.
@@ -323,7 +352,11 @@ Thema11:
     - "[Playlist von OpenIntro zur Regression](https://www.youtube.com/playlist?list=PLkIselvEzpM63ikRfN41DNIhSgzboELOM)"
     - "[Studie auf Basis einer Regressionsanalyse zu Vorurteilen bei Corona](https://journals.sagepub.com/doi/10.1177/1090198120957949)"
     - "[Korrelationen raten](https://gallery.shinyapps.io/correlation_game/)"
-  Skript: NA
+  Skript:
+    - "[Folienskript, PDF](https://raw.github.com/sebastiansauer/vorhersagemodellierung/main/Skript-Folien/QM1-Thema11.pdf)"
+    - "[Folienskript, PPTX](https://raw.github.com/sebastiansauer/vorhersagemodellierung/main/Skript-Folien/QM1-Thema11.pptx)"
+    - "[Folienskript, Keynote](https://raw.github.com/sebastiansauer/vorhersagemodellierung/main/Skript-Folien/QM1-Thema11.key)"
+
   Syntax: NA
   Aufgaben: NA
 

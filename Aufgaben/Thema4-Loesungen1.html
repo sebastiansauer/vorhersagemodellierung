@@ -45,394 +45,53 @@ Religiösität und Ehezufriedenheit aus!</li>
 <pre class="text"><code>affairs %&gt;% 
   filter(affairs &gt; 0) %&gt;% 
   head(10)</code></pre>
-<table>
-<colgroup>
-<col width="5%" />
-<col width="9%" />
-<col width="7%" />
-<col width="4%" />
-<col width="14%" />
-<col width="10%" />
-<col width="15%" />
-<col width="11%" />
-<col width="12%" />
-<col width="7%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="right">…1</th>
-<th align="right">affairs</th>
-<th align="left">gender</th>
-<th align="right">age</th>
-<th align="right">yearsmarried</th>
-<th align="left">children</th>
-<th align="right">religiousness</th>
-<th align="right">education</th>
-<th align="right">occupation</th>
-<th align="right">rating</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="right">6</td>
-<td align="right">3</td>
-<td align="left">male</td>
-<td align="right">27</td>
-<td align="right">1.500</td>
-<td align="left">no</td>
-<td align="right">3</td>
-<td align="right">18</td>
-<td align="right">4</td>
-<td align="right">4</td>
-</tr>
-<tr class="even">
-<td align="right">12</td>
-<td align="right">3</td>
-<td align="left">female</td>
-<td align="right">27</td>
-<td align="right">4.000</td>
-<td align="left">yes</td>
-<td align="right">3</td>
-<td align="right">17</td>
-<td align="right">1</td>
-<td align="right">5</td>
-</tr>
-<tr class="odd">
-<td align="right">43</td>
-<td align="right">7</td>
-<td align="left">male</td>
-<td align="right">37</td>
-<td align="right">15.000</td>
-<td align="left">yes</td>
-<td align="right">5</td>
-<td align="right">18</td>
-<td align="right">6</td>
-<td align="right">2</td>
-</tr>
-<tr class="even">
-<td align="right">53</td>
-<td align="right">12</td>
-<td align="left">female</td>
-<td align="right">32</td>
-<td align="right">10.000</td>
-<td align="left">yes</td>
-<td align="right">3</td>
-<td align="right">17</td>
-<td align="right">5</td>
-<td align="right">2</td>
-</tr>
-<tr class="odd">
-<td align="right">67</td>
-<td align="right">1</td>
-<td align="left">male</td>
-<td align="right">22</td>
-<td align="right">0.125</td>
-<td align="left">no</td>
-<td align="right">4</td>
-<td align="right">16</td>
-<td align="right">5</td>
-<td align="right">5</td>
-</tr>
-<tr class="even">
-<td align="right">79</td>
-<td align="right">1</td>
-<td align="left">female</td>
-<td align="right">22</td>
-<td align="right">1.500</td>
-<td align="left">yes</td>
-<td align="right">2</td>
-<td align="right">14</td>
-<td align="right">1</td>
-<td align="right">5</td>
-</tr>
-<tr class="odd">
-<td align="right">122</td>
-<td align="right">12</td>
-<td align="left">male</td>
-<td align="right">37</td>
-<td align="right">15.000</td>
-<td align="left">yes</td>
-<td align="right">4</td>
-<td align="right">14</td>
-<td align="right">5</td>
-<td align="right">2</td>
-</tr>
-<tr class="even">
-<td align="right">126</td>
-<td align="right">7</td>
-<td align="left">female</td>
-<td align="right">22</td>
-<td align="right">1.500</td>
-<td align="left">no</td>
-<td align="right">2</td>
-<td align="right">14</td>
-<td align="right">3</td>
-<td align="right">4</td>
-</tr>
-<tr class="odd">
-<td align="right">133</td>
-<td align="right">2</td>
-<td align="left">male</td>
-<td align="right">37</td>
-<td align="right">15.000</td>
-<td align="left">yes</td>
-<td align="right">2</td>
-<td align="right">18</td>
-<td align="right">6</td>
-<td align="right">4</td>
-</tr>
-<tr class="even">
-<td align="right">138</td>
-<td align="right">3</td>
-<td align="left">female</td>
-<td align="right">32</td>
-<td align="right">15.000</td>
-<td align="left">yes</td>
-<td align="right">4</td>
-<td align="right">12</td>
-<td align="right">3</td>
-<td align="right">2</td>
-</tr>
-</tbody>
-</table>
+<pre><code>## # A tibble: 10 × 10
+##     ...1 affairs gender   age yearsmarried children religiousness education
+##    &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt;  &lt;dbl&gt;        &lt;dbl&gt; &lt;chr&gt;            &lt;dbl&gt;     &lt;dbl&gt;
+##  1     6       3 male      27        1.5   no                   3        18
+##  2    12       3 female    27        4     yes                  3        17
+....</code></pre>
 <p>Hinweis: <code>head(10)</code> begrenzt die Ausgabe auf 10 Zeilen,
 einfach um den Bildschirm nicht vollzumüllen.</p>
 <p>Ad 2.</p>
 <pre class="text"><code>affairs %&gt;% 
   arrange(-affairs) %&gt;% 
   head(10)</code></pre>
-<table>
-<colgroup>
-<col width="5%" />
-<col width="9%" />
-<col width="7%" />
-<col width="4%" />
-<col width="14%" />
-<col width="10%" />
-<col width="15%" />
-<col width="11%" />
-<col width="12%" />
-<col width="7%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="right">…1</th>
-<th align="right">affairs</th>
-<th align="left">gender</th>
-<th align="right">age</th>
-<th align="right">yearsmarried</th>
-<th align="left">children</th>
-<th align="right">religiousness</th>
-<th align="right">education</th>
-<th align="right">occupation</th>
-<th align="right">rating</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="right">53</td>
-<td align="right">12</td>
-<td align="left">female</td>
-<td align="right">32</td>
-<td align="right">10.0</td>
-<td align="left">yes</td>
-<td align="right">3</td>
-<td align="right">17</td>
-<td align="right">5</td>
-<td align="right">2</td>
-</tr>
-<tr class="even">
-<td align="right">122</td>
-<td align="right">12</td>
-<td align="left">male</td>
-<td align="right">37</td>
-<td align="right">15.0</td>
-<td align="left">yes</td>
-<td align="right">4</td>
-<td align="right">14</td>
-<td align="right">5</td>
-<td align="right">2</td>
-</tr>
-<tr class="odd">
-<td align="right">174</td>
-<td align="right">12</td>
-<td align="left">female</td>
-<td align="right">42</td>
-<td align="right">15.0</td>
-<td align="left">yes</td>
-<td align="right">5</td>
-<td align="right">9</td>
-<td align="right">4</td>
-<td align="right">1</td>
-</tr>
-<tr class="even">
-<td align="right">176</td>
-<td align="right">12</td>
-<td align="left">male</td>
-<td align="right">37</td>
-<td align="right">10.0</td>
-<td align="left">yes</td>
-<td align="right">2</td>
-<td align="right">20</td>
-<td align="right">6</td>
-<td align="right">2</td>
-</tr>
-<tr class="odd">
-<td align="right">181</td>
-<td align="right">12</td>
-<td align="left">female</td>
-<td align="right">32</td>
-<td align="right">15.0</td>
-<td align="left">yes</td>
-<td align="right">3</td>
-<td align="right">14</td>
-<td align="right">1</td>
-<td align="right">2</td>
-</tr>
-<tr class="even">
-<td align="right">252</td>
-<td align="right">12</td>
-<td align="left">male</td>
-<td align="right">27</td>
-<td align="right">1.5</td>
-<td align="left">yes</td>
-<td align="right">3</td>
-<td align="right">17</td>
-<td align="right">5</td>
-<td align="right">4</td>
-</tr>
-<tr class="odd">
-<td align="right">253</td>
-<td align="right">12</td>
-<td align="left">female</td>
-<td align="right">27</td>
-<td align="right">7.0</td>
-<td align="left">yes</td>
-<td align="right">4</td>
-<td align="right">14</td>
-<td align="right">6</td>
-<td align="right">2</td>
-</tr>
-<tr class="even">
-<td align="right">392</td>
-<td align="right">12</td>
-<td align="left">female</td>
-<td align="right">32</td>
-<td align="right">10.0</td>
-<td align="left">yes</td>
-<td align="right">2</td>
-<td align="right">16</td>
-<td align="right">5</td>
-<td align="right">5</td>
-</tr>
-<tr class="odd">
-<td align="right">513</td>
-<td align="right">12</td>
-<td align="left">female</td>
-<td align="right">22</td>
-<td align="right">4.0</td>
-<td align="left">no</td>
-<td align="right">3</td>
-<td align="right">12</td>
-<td align="right">3</td>
-<td align="right">4</td>
-</tr>
-<tr class="even">
-<td align="right">516</td>
-<td align="right">12</td>
-<td align="left">male</td>
-<td align="right">27</td>
-<td align="right">7.0</td>
-<td align="left">yes</td>
-<td align="right">1</td>
-<td align="right">18</td>
-<td align="right">6</td>
-<td align="right">2</td>
-</tr>
-</tbody>
-</table>
+<pre><code>## # A tibble: 10 × 10
+##     ...1 affairs gender   age yearsmarried children religiousness education
+##    &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt;  &lt;dbl&gt;        &lt;dbl&gt; &lt;chr&gt;            &lt;dbl&gt;     &lt;dbl&gt;
+##  1    53      12 female    32         10   yes                  3        17
+##  2   122      12 male      37         15   yes                  4        14
+##  3   174      12 female    42         15   yes                  5         9
+##  4   176      12 male      37         10   yes                  2        20
+##  5   181      12 female    32         15   yes                  3        14
+##  6   252      12 male      27          1.5 yes                  3        17
+##  7   253      12 female    27          7   yes                  4        14
+....</code></pre>
 <p>Ad 3.</p>
 <pre class="text"><code>affairs %&gt;% 
   select(affairs, rating, children) %&gt;% 
   arrange(children, affairs) %&gt;% 
   head(10)</code></pre>
-<table>
-<thead>
-<tr class="header">
-<th align="right">affairs</th>
-<th align="right">rating</th>
-<th align="left">children</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="right">0</td>
-<td align="right">4</td>
-<td align="left">no</td>
-</tr>
-<tr class="even">
-<td align="right">0</td>
-<td align="right">4</td>
-<td align="left">no</td>
-</tr>
-<tr class="odd">
-<td align="right">0</td>
-<td align="right">3</td>
-<td align="left">no</td>
-</tr>
-<tr class="even">
-<td align="right">0</td>
-<td align="right">5</td>
-<td align="left">no</td>
-</tr>
-<tr class="odd">
-<td align="right">0</td>
-<td align="right">3</td>
-<td align="left">no</td>
-</tr>
-<tr class="even">
-<td align="right">0</td>
-<td align="right">5</td>
-<td align="left">no</td>
-</tr>
-<tr class="odd">
-<td align="right">0</td>
-<td align="right">4</td>
-<td align="left">no</td>
-</tr>
-<tr class="even">
-<td align="right">0</td>
-<td align="right">4</td>
-<td align="left">no</td>
-</tr>
-<tr class="odd">
-<td align="right">0</td>
-<td align="right">4</td>
-<td align="left">no</td>
-</tr>
-<tr class="even">
-<td align="right">0</td>
-<td align="right">5</td>
-<td align="left">no</td>
-</tr>
-</tbody>
-</table>
+<pre><code>## # A tibble: 10 × 3
+##    affairs rating children
+##      &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;   
+##  1       0      4 no      
+##  2       0      4 no      
+##  3       0      3 no      
+##  4       0      5 no      
+##  5       0      3 no      
+##  6       0      5 no      
+##  7       0      4 no      
+....</code></pre>
 <p>Ad 4.</p>
 <pre class="text"><code>affairs %&gt;% 
   summarise(affairs_mean = mean(affairs)) %&gt;% 
   head(10)</code></pre>
-<table>
-<thead>
-<tr class="header">
-<th align="right">affairs_mean</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="right">1.455907</td>
-</tr>
-</tbody>
-</table>
+<pre><code>## # A tibble: 1 × 1
+##   affairs_mean
+##          &lt;dbl&gt;
+## 1         1.46</code></pre>
 <p>Ad 5.</p>
 <pre class="text"><code>affairs %&gt;% 
   group_by(gender, children) %&gt;% 
@@ -451,222 +110,32 @@ einfach um den Bildschirm nicht vollzumüllen.</p>
   group_by(...1) %&gt;% 
   summarise(max(c(religiousness, rating))) %&gt;% 
   head(10)</code></pre>
-<table>
-<thead>
-<tr class="header">
-<th align="right">…1</th>
-<th align="right">max(c(religiousness, rating))</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="right">4</td>
-<td align="right">4</td>
-</tr>
-<tr class="even">
-<td align="right">5</td>
-<td align="right">4</td>
-</tr>
-<tr class="odd">
-<td align="right">6</td>
-<td align="right">4</td>
-</tr>
-<tr class="even">
-<td align="right">11</td>
-<td align="right">4</td>
-</tr>
-<tr class="odd">
-<td align="right">12</td>
-<td align="right">5</td>
-</tr>
-<tr class="even">
-<td align="right">16</td>
-<td align="right">5</td>
-</tr>
-<tr class="odd">
-<td align="right">23</td>
-<td align="right">3</td>
-</tr>
-<tr class="even">
-<td align="right">29</td>
-<td align="right">5</td>
-</tr>
-<tr class="odd">
-<td align="right">43</td>
-<td align="right">5</td>
-</tr>
-<tr class="even">
-<td align="right">44</td>
-<td align="right">3</td>
-</tr>
-</tbody>
-</table>
+<pre><code>## # A tibble: 10 × 2
+##     ...1 `max(c(religiousness, rating))`
+##    &lt;dbl&gt;                           &lt;dbl&gt;
+##  1     4                               4
+##  2     5                               4
+##  3     6                               4
+##  4    11                               4
+##  5    12                               5
+##  6    16                               5
+##  7    23                               3
+....</code></pre>
 <p>Ad 7.</p>
 <pre class="text"><code>affairs %&gt;% 
   mutate(heiratsalter = age - yearsmarried) %&gt;%
   head(10)</code></pre>
-<table style="width:100%;">
-<colgroup>
-<col width="4%" />
-<col width="7%" />
-<col width="6%" />
-<col width="3%" />
-<col width="12%" />
-<col width="8%" />
-<col width="13%" />
-<col width="9%" />
-<col width="10%" />
-<col width="6%" />
-<col width="12%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="right">…1</th>
-<th align="right">affairs</th>
-<th align="left">gender</th>
-<th align="right">age</th>
-<th align="right">yearsmarried</th>
-<th align="left">children</th>
-<th align="right">religiousness</th>
-<th align="right">education</th>
-<th align="right">occupation</th>
-<th align="right">rating</th>
-<th align="right">heiratsalter</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="right">4</td>
-<td align="right">0</td>
-<td align="left">male</td>
-<td align="right">37</td>
-<td align="right">10.00</td>
-<td align="left">no</td>
-<td align="right">3</td>
-<td align="right">18</td>
-<td align="right">7</td>
-<td align="right">4</td>
-<td align="right">27.00</td>
-</tr>
-<tr class="even">
-<td align="right">5</td>
-<td align="right">0</td>
-<td align="left">female</td>
-<td align="right">27</td>
-<td align="right">4.00</td>
-<td align="left">no</td>
-<td align="right">4</td>
-<td align="right">14</td>
-<td align="right">6</td>
-<td align="right">4</td>
-<td align="right">23.00</td>
-</tr>
-<tr class="odd">
-<td align="right">11</td>
-<td align="right">0</td>
-<td align="left">female</td>
-<td align="right">32</td>
-<td align="right">15.00</td>
-<td align="left">yes</td>
-<td align="right">1</td>
-<td align="right">12</td>
-<td align="right">1</td>
-<td align="right">4</td>
-<td align="right">17.00</td>
-</tr>
-<tr class="even">
-<td align="right">16</td>
-<td align="right">0</td>
-<td align="left">male</td>
-<td align="right">57</td>
-<td align="right">15.00</td>
-<td align="left">yes</td>
-<td align="right">5</td>
-<td align="right">18</td>
-<td align="right">6</td>
-<td align="right">5</td>
-<td align="right">42.00</td>
-</tr>
-<tr class="odd">
-<td align="right">23</td>
-<td align="right">0</td>
-<td align="left">male</td>
-<td align="right">22</td>
-<td align="right">0.75</td>
-<td align="left">no</td>
-<td align="right">2</td>
-<td align="right">17</td>
-<td align="right">6</td>
-<td align="right">3</td>
-<td align="right">21.25</td>
-</tr>
-<tr class="even">
-<td align="right">29</td>
-<td align="right">0</td>
-<td align="left">female</td>
-<td align="right">32</td>
-<td align="right">1.50</td>
-<td align="left">no</td>
-<td align="right">2</td>
-<td align="right">17</td>
-<td align="right">5</td>
-<td align="right">5</td>
-<td align="right">30.50</td>
-</tr>
-<tr class="odd">
-<td align="right">44</td>
-<td align="right">0</td>
-<td align="left">female</td>
-<td align="right">22</td>
-<td align="right">0.75</td>
-<td align="left">no</td>
-<td align="right">2</td>
-<td align="right">12</td>
-<td align="right">1</td>
-<td align="right">3</td>
-<td align="right">21.25</td>
-</tr>
-<tr class="even">
-<td align="right">45</td>
-<td align="right">0</td>
-<td align="left">male</td>
-<td align="right">57</td>
-<td align="right">15.00</td>
-<td align="left">yes</td>
-<td align="right">2</td>
-<td align="right">14</td>
-<td align="right">4</td>
-<td align="right">4</td>
-<td align="right">42.00</td>
-</tr>
-<tr class="odd">
-<td align="right">47</td>
-<td align="right">0</td>
-<td align="left">female</td>
-<td align="right">32</td>
-<td align="right">15.00</td>
-<td align="left">yes</td>
-<td align="right">4</td>
-<td align="right">16</td>
-<td align="right">1</td>
-<td align="right">2</td>
-<td align="right">17.00</td>
-</tr>
-<tr class="even">
-<td align="right">49</td>
-<td align="right">0</td>
-<td align="left">male</td>
-<td align="right">22</td>
-<td align="right">1.50</td>
-<td align="left">no</td>
-<td align="right">4</td>
-<td align="right">14</td>
-<td align="right">4</td>
-<td align="right">5</td>
-<td align="right">20.50</td>
-</tr>
-</tbody>
-</table>
+<pre><code>## # A tibble: 10 × 11
+##     ...1 affairs gender   age yearsmarried children religiousness education
+##    &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt;  &lt;dbl&gt;        &lt;dbl&gt; &lt;chr&gt;            &lt;dbl&gt;     &lt;dbl&gt;
+##  1     4       0 male      37        10    no                   3        18
+##  2     5       0 female    27         4    no                   4        14
+##  3    11       0 female    32        15    yes                  1        12
+##  4    16       0 male      57        15    yes                  5        18
+##  5    23       0 male      22         0.75 no                   2        17
+##  6    29       0 female    32         1.5  no                   2        17
+##  7    44       0 female    22         0.75 no                   2        12
+....</code></pre>
 <br/>
 </li>
 <li>
@@ -680,24 +149,11 @@ einfach um den Bildschirm nicht vollzumüllen.</p>
   filter(hp &gt; 100, cyl &gt;= 6) %&gt;% 
   group_by(cyl) %&gt;% 
   summarise(mpg_mean = mean(mpg))</code></pre>
-<table>
-<thead>
-<tr class="header">
-<th align="right">cyl</th>
-<th align="right">mpg_mean</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="right">6</td>
-<td align="right">19.74286</td>
-</tr>
-<tr class="even">
-<td align="right">8</td>
-<td align="right">15.10000</td>
-</tr>
-</tbody>
-</table>
+<pre><code>## # A tibble: 2 × 2
+##     cyl mpg_mean
+##   &lt;dbl&gt;    &lt;dbl&gt;
+## 1     6     19.7
+## 2     8     15.1</code></pre>
 <br/>
 <h4>Lösung</h4>
 <p>Hey R:</p>
@@ -841,7 +297,7 @@ etwaige fehlende Werte. Runden Sie auf zwei Dezimalstellen.</p>
 <p>Die Antwort lautet -0.28.</p>
 <p>In R kann man den Mittelwert z.B. so berechnen:</p>
 <pre class="text"><code>mean(x, na.rm = TRUE)</code></pre>
-<pre><code>## [1] 5.016</code></pre>
+<pre><code>## Error in mean(x, na.rm = TRUE): object &#39;x&#39; not found</code></pre>
 <p>Das Argument <code>na.rm = TRUE</code> sorgt dafür, dass R <em>auch
 bei Vorhandensein fehlender Werte</em> ein Ergebnis ausgibt. Ohne dieses
 Argument würde R ein sprödes <code>NA</code> zurückgeben, falls fehlende
