@@ -89,7 +89,7 @@ Thema2:
     - "[Fassen Sie das Paper 'Data Organization in Spreadsheets' zusammen](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989)"
     - "[Aufgaben HTML](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema2-Aufgaben1.html)"
     - "[Lösungen HTML](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema2-Loesungen1.html)"
-    - "[Aufgaben PDF](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema2-Aufgaben1.pdf)"
+    - "[Aufgaben PDF](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema2-Loesungen1.pdf)"
 
   Hinweise:
 
@@ -157,7 +157,7 @@ Thema5:
   Aufgaben:
     - "[Aufgaben HTML](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema4-Aufgaben1.html)"
     - "[Lösungen HTML](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema4-Loesungen1.html)"
-    - "[Aufgaben PDF](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema4-Aufgaben1.pdf)"
+    - "[Aufgaben PDF](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema4-Loesungen1.pdf)"
 
   Vertiefung:
     - "[Cohens d Visualisierung, App](https://rpsychologist.com/cohend/)"
@@ -192,7 +192,7 @@ Thema5a:
   Aufgaben:
     - "[Aufgaben 05 HTML](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema5-Aufgaben1.html)"
     - "[Lösungen 05 HTML](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema5-Loesungen1.html)"
-    - "[Aufgaben 05 PDF](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema5-Aufgaben1.pdf)"
+    - "[Aufgaben 05 PDF](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema5-Loesungen1.pdf)"
 
 
   Vertiefung:
@@ -236,8 +236,6 @@ Thema7:
   Skript:
     - In dieser Woche gibt es kein Skript.
   Syntax:
-  Aufgaben:
-    - "[Finde den Tag mit den meisten Flugverspätungen, Datensatz 'nycflights13'](https://data-se.netlify.app/2021/05/27/datensatz-flights-finde-den-tag-mit-den-meisten-abfl%C3%BCgen/)"
   Vertiefung:
     - "[Cheatsheets für R, z.B. zu tidyverse/dplyr](https://www.rstudio.com/resources/cheatsheets/)"
 
@@ -245,6 +243,15 @@ Thema7:
     - "Der Unterricht in dieser Woche ist sehr praktisch; es gibt keine Theorie (und daher auch kein Skript). Sie profitieren vom Unterricht am meisten, wenn Sie die Literatur vorab gelesen haben."
     - "Die Literatur können Sie sich als E-Book von der Bib ausleihen"
     - "Die Installation des R-Pakets 'pradadata' ist in MODAR, Kap. 3.2.3 beschrieben"
+  Aufgaben:
+    - "[Aufgaben HTML](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema7-Aufgaben1.html)"
+    - "[Lösungen HTML](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema7-Loesungen1.html)"
+    - "[Aufgaben PDF](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema7-Loesungen1.pdf)"
+    - "[Finde den Tag mit den meisten Flugverspätungen, Datensatz 'nycflights13'](https://data-se.netlify.app/2021/05/27/datensatz-flights-finde-den-tag-mit-den-meisten-abfl%C3%BCgen/)"
+
+
+
+
 
 Thema8:
   Titel: Datenvisualisierung
@@ -277,7 +284,7 @@ Thema8:
   Aufgaben:
     - "[Aufgaben 08HTML](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema8-Aufgaben1.html)"
     - "[Lösungen 08 HTML](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema8-Loesungen1.html)"
-    - "[Aufgaben 08 PDF](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema8-Aufgaben1.pdf)"
+    - "[Aufgaben 08 PDF](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema8-Loesungen1.pdf)"
 
 
   Hinweise:
