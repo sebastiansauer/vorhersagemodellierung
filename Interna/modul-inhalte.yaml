@@ -275,6 +275,8 @@ Thema8:
     - "Blog zum Thema Data-Viz mit ggplot2](https://www.cedricscherer.com/)"
     - "[Tidytuesday](https://github.com/rfordatascience/tidytuesday)"
     - "[DataViz mit R von Ijeamakaanyene](https://github.com/Ijeamakaanyene/tidytuesday)"
+    - "[Information is beautiful](https://informationisbeautiful.net/)"
+    - "[Tuftes Prinzipien der Datenvisualisierung](https://anilbas.github.io/teaching/hci/week13/Tufte.pdf)"
   Skript:
     - "[Folienskript, PDF](https://raw.github.com/sebastiansauer/vorhersagemodellierung/main/Skript-Folien/QM1-Thema08.pdf)"
     - "[Folienskript, PPTX](https://raw.github.com/sebastiansauer/vorhersagemodellierung/main/Skript-Folien/QM1-Thema08.pptx)"
@@ -302,14 +304,15 @@ Thema9:
   Videos:
     - "[Playlist YACSDAs](https://youtube.com/playlist?list=PLRR4REmBgpIGet_lcNf2wOd0W8j4c9hYN)"
   Aufgaben:
-    - "[TopGear](https://data-se.netlify.app/2021/02/11/yacda-topgear/)"
-    - "[OECD Wellbeing](https://data-se.netlify.app/2021/02/11/explorative-datenanalyse-zum-datensatz-oecd-wellbeing/)"
-    - "[IMDB Filmbewertungen](https://minimaxir.com/2018/07/imdb-data-analysis/)"
-    - "[Women in Parliament](https://github.com/saghirb/WiP-tidyverse/blob/master/doc/WiP-tidyverse.pdf)  "
+    - "[Fallstudie TopGear](https://data-se.netlify.app/2021/02/11/yacda-topgear/)"
+    - "[Fallstudie OECD Wellbeing](https://data-se.netlify.app/2021/02/11/explorative-datenanalyse-zum-datensatz-oecd-wellbeing/)"
+    - "[Fallstudie IMDB Filmbewertungen](https://minimaxir.com/2018/07/imdb-data-analysis/)"
+    - "[Fallstudie Women in Parliament](https://github.com/saghirb/WiP-tidyverse/blob/master/doc/WiP-tidyverse.pdf)  "
     - "[EDA-Fallstudie zu Flugverspätungen](https://data-se.netlify.app/2021/03/08/eda-zu-flugversp%C3%A4tungen/)"
   Syntax:
   Vertiefung:
     - "[DataCamp-Kurs zum Tidyverse](https://www.new.datacamp.com/courses/case-study-exploratory-data-analysis-in-r)"
+    - "[Google Data Analytics Kurs bei Coursera](https://grow.google/certificates/data-analytics/#?modal_active=none)"
   Hinweise:
     - In dieser Woche gibt es kein Skript, da es keinen neuen Stoff gibt. Stattdessen steht Anwendung des gelernten im Mittelpunkt.
 
