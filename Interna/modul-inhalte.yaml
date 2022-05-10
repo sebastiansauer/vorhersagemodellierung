@@ -377,7 +377,16 @@ Thema12:
   Skript:
   Syntax:
   Aufgaben:
+    - "[Beispiel für Ihre Prüfungsleistung 1, grundlegender Anspruch, Video](https://youtu.be/5pBTHrnRIZY)"
+    - "[Beispiel für Ihre Prüfungsleistung 2, mittlerer Anspruch](https://data-se.netlify.app/2020/11/13/fallstudie-zur-regressionsanalyse-ggplot2movies/)"
+    - "[Beispiel für Ihre Prüfungsleistung 3, hoher Anspruch](https://data-se.netlify.app/2021/03/10/fallstudie-modellierung-von-flugversp%C3%A4tungen/)"
+
   Vertiefung:
+    - "[Fallstudie als Beispiel einer Prognosemodellierung: Top-Gear](https://data-se.netlify.app/2021/02/11/yacda-topgear/)"
+    - "[Fallstudie als Beispiel einer Prognosemodellierung: OECD-Wellbeing-Studie](https://data-se.netlify.app/2021/02/11/explorative-datenanalyse-zum-datensatz-oecd-wellbeing/)"
+    - "[Fallstudie als Beispiel einer Prognosemodellierung: Movie Rating](https://minimaxir.com/2018/07/imdb-data-analysis/)"
+    - "[Fallstudie als Beispiel einer Prognosemodellierung: Women in Parliament](https://github.com/saghirb/WiP-tidyverse/blob/master/doc/WiP-tidyverse.pdf)"
+
   Literatur:
   Vorbereitung:
   Videos:
