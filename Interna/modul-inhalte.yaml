@@ -69,11 +69,14 @@ Thema2:
     - Sie kennen einige Datenstrukturen in R.
     - "Sie wissen, was 'tidy Data' ist."
     - "Sie können 'unaufgeräumte' Datensätze bereinigen."
+    - "Sie können RStudio-Projekte anlegen und nutzen."
   Vorbereitung:
     - Lesen Sie die Literatur.
     - Sehen Sie sich ggf. die Videos an.
+    - "Lesen Sie [dieses Post](https://data-se.netlify.app/2020/10/19/what-s-my-path/) zum Thema Datenimport in R und Pfadangaben."
   Literatur:
-    - MODAR, Kap. 5-6
+    - "MODAR, Kap. 5 (Datenstrukturen)"
+    - "Modar, Kap. 6 (Datenimport und -export); v.a. 6.1 ist wichtig zum Verstädnis von Import von Daten"
     - "[Data Organization in Spreadsheets](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989)"
   Videos:
     - "[Playlist Datenstrukturen in R](https://youtube.com/playlist?list=PLRR4REmBgpIGet_lcNf2wOd0W8j4c9hYN)"
@@ -309,6 +312,8 @@ Thema9:
     - "[Fallstudie IMDB Filmbewertungen](https://minimaxir.com/2018/07/imdb-data-analysis/)"
     - "[Fallstudie Women in Parliament](https://github.com/saghirb/WiP-tidyverse/blob/master/doc/WiP-tidyverse.pdf)  "
     - "[EDA-Fallstudie zu Flugverspätungen](https://data-se.netlify.app/2021/03/08/eda-zu-flugversp%C3%A4tungen/)"
+    - "[Fallstudie Sprit sparen](https://data-se.netlify.app/2022/05/02/fallstudie-spritverbrauch/)"
+    - "[Beispiel zum Pivotieren von Tabellen](https://data-se.netlify.app/2021/05/27/beispiel-f%C3%BCr-pivot-longer/)"
   Syntax:
   Vertiefung:
     - "[DataCamp-Kurs zum Tidyverse](https://www.new.datacamp.com/courses/case-study-exploratory-data-analysis-in-r)"
@@ -318,7 +323,7 @@ Thema9:
 
 
 Thema10:
-  Titel: Lineare Modell 1
+  Titel: "Lineare Modell 1"
   id: 10
   Lernziele:
     - Sie verstehen die Methoden des Modellierens.
@@ -388,7 +393,10 @@ Thema12:
   Skript:
   Syntax:
   Aufgaben:
+    - "[Data-Wranglinng-Aufgaben zur Lebenserwartung](https://data-se.netlify.app/2021/02/24/exercises-to-data-wrangling-with-the-tidyverse/)"
   Vertiefung:
+    - "[Data Science Memes](https://data-se.netlify.app/2021/02/23/data-science-memes/)"
+    - "[Aufgabe zur Datenvisualisierung des Diamantenpreises](https://data-se.netlify.app/2020/12/07/ex-visualizing-diamonds/)"
   Literatur:
   Vorbereitung:
   Videos:
