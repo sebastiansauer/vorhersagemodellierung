@@ -73,7 +73,7 @@ Thema2:
   Vorbereitung:
     - Lesen Sie die Literatur.
     - Sehen Sie sich ggf. die Videos an.
-    - "Lesen Sie [dieses Post](https://data-se.netlify.app/2020/10/19/what-s-my-path/) zum Thema Datenimport in R und Pfadangaben."
+    - "Lesen Sie [dieses Post](https://data-se.netlify.app/2022/05/11/importing-data-into-r/) zum Thema Datenimport in R und Pfadangaben."
   Literatur:
     - "MODAR, Kap. 5 (Datenstrukturen)"
     - "Modar, Kap. 6 (Datenimport und -export); v.a. 6.1 ist wichtig zum Verstädnis von Import von Daten"
