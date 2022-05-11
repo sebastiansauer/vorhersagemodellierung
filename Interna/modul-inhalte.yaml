@@ -342,6 +342,8 @@ Thema10:
 
   Syntax:
   Aufgaben:
+    - "[Einfaches Beispiel zur Vorhersagemodellierung](https://sebastiansauer.github.io/vorhersagemodellierung/Pruefung/Beispiel-Vorhersagemodellierung2.html)"
+
   Vertiefung:
     - "[App zur Variationszerlegung in der Regressionsanalyse](https://fomshinyapps.shinyapps.io/Variationszerlegung/)"
     - "[Zum Unterschied von RMSE und R-Quadrat](https://medium.com/wwblog/evaluating-regression-models-using-rmse-and-r%C2%B2-42f77400efee)"
@@ -391,12 +393,22 @@ Thema12:
   Hinweise:
     - In dieser Woche fällt die Vorlesung aus (Pfingsten).
   Skript:
+    - "[Beispiel für Ihre Prüfungsleistung 1, grundlegender Anspruch, Video](https://youtu.be/5pBTHrnRIZY)"
+    - "[Beispiel für Ihre Prüfungsleistung 2, mittlerer Anspruch](https://data-se.netlify.app/2020/11/13/fallstudie-zur-regressionsanalyse-ggplot2movies/)"
+    - "[Beispiel für Ihre Prüfungsleistung 3, hoher Anspruch](https://data-se.netlify.app/2021/03/10/fallstudie-modellierung-von-flugversp%C3%A4tungen/)"
+
   Syntax:
   Aufgaben:
     - "[Data-Wranglinng-Aufgaben zur Lebenserwartung](https://data-se.netlify.app/2021/02/24/exercises-to-data-wrangling-with-the-tidyverse/)"
-  Vertiefung:
     - "[Data Science Memes](https://data-se.netlify.app/2021/02/23/data-science-memes/)"
     - "[Aufgabe zur Datenvisualisierung des Diamantenpreises](https://data-se.netlify.app/2020/12/07/ex-visualizing-diamonds/)"
+
+  Vertiefung:
+    - "[Fallstudie als Beispiel einer Prognosemodellierung: Top-Gear](https://data-se.netlify.app/2021/02/11/yacda-topgear/)"
+    - "[Fallstudie als Beispiel einer Prognosemodellierung: OECD-Wellbeing-Studie](https://data-se.netlify.app/2021/02/11/explorative-datenanalyse-zum-datensatz-oecd-wellbeing/)"
+    - "[Fallstudie als Beispiel einer Prognosemodellierung: Movie Rating](https://minimaxir.com/2018/07/imdb-data-analysis/)"
+    - "[Fallstudie als Beispiel einer Prognosemodellierung: Women in Parliament](https://github.com/saghirb/WiP-tidyverse/blob/master/doc/WiP-tidyverse.pdf)"
+
   Literatur:
   Vorbereitung:
   Videos:
