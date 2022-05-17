@@ -200,7 +200,7 @@ Thema5a:
 
 
   Vertiefung:
-    - "[Visualisieurng zur Korrelation](https://rpsychologist.com/correlation/)"
+    - "[Visualisierung zur Korrelation](https://rpsychologist.com/correlation/)"
     - ThinkingClearly, Kap. 4
     - "[Vertiefung zu Korrelation](https://github.com/sebastiansauer/vorhersagemodellierung/blob/main/Material/Report.pdf)"
 
@@ -345,7 +345,7 @@ Thema10:
 
   Syntax:
   Aufgaben:
-    - "[Einfaches Beispiel zur Vorhersagemodellierung](https://sebastiansauer.github.io/vorhersagemodellierung/Pruefung/Beispiel-Vorhersagemodellierung2.html)"
+      - "[Einfaches Beispiel zur Vorhersagemodellierung](https://sebastiansauer.github.io/vorhersagemodellierung/Pruefung/Beispiel-Vorhersagemodellierung2.html)"
     - "[Beispiel für eine Vorhersagemodellierung bei Kaggle: Movie Revenues](https://www.kaggle.com/code/ssauer/tmdb-simple-regression-beginners/notebook?scriptVersionId=95441291)"
     - "[R-Code für Kaggle-Prognosemodell zu Movie Revenues](https://github.com/sebastiansauer/Lehre/blob/main/22-SoSe/QM1/tmdb-box-office-submission1.R)"
 
