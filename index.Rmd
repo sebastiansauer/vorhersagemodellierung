@@ -209,6 +209,7 @@ descriptors <- c(
   "Literatur",
   "Vertiefung", 
   "Hinweise", 
+  "Terminhinweise",
   "Skript",
   "Videos")
 

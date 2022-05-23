@@ -288,7 +288,7 @@ Thema8:
 
   Syntax:
   Aufgaben:
-    - "[Aufgaben 08HTML](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema8-Aufgaben1.html)"
+    - "[Aufgaben 08 HTML](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema8-Aufgaben1.html)"
     - "[Lösungen 08 HTML](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema8-Loesungen1.html)"
     - "[Aufgaben 08 PDF](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema8-Loesungen1.pdf)"
 
@@ -345,7 +345,7 @@ Thema10:
 
   Syntax:
   Aufgaben:
-      - "[Einfaches Beispiel zur Vorhersagemodellierung](https://sebastiansauer.github.io/vorhersagemodellierung/Pruefung/Beispiel-Vorhersagemodellierung2.html)"
+    - "[Einfaches Beispiel zur Vorhersagemodellierung](https://sebastiansauer.github.io/vorhersagemodellierung/Pruefung/Beispiel-Vorhersagemodellierung2.html)"
     - "[Beispiel für eine Vorhersagemodellierung bei Kaggle: Movie Revenues](https://www.kaggle.com/code/ssauer/tmdb-simple-regression-beginners/notebook?scriptVersionId=95441291)"
     - "[R-Code für Kaggle-Prognosemodell zu Movie Revenues](https://github.com/sebastiansauer/Lehre/blob/main/22-SoSe/QM1/tmdb-box-office-submission1.R)"
 
@@ -367,21 +367,23 @@ Thema11:
     - Sehen Sie sich ggf. das Video zum Folienskript an.
   Videos:
     - "[Playlist Vorhersage-Modellierung](https://youtube.com/playlist?list=PLRR4REmBgpIH6uG8LZWPTSMReX1OFxfUx)"
-  Hinweise:
-    - Nächste Woche ist Blockwoche; es findet kein regulärer Unterricht statt.
-    - Diese Woche fällt die Übung aus.
+
   Vertiefung:
     - "[App zur Verdeutlichung der Minimierung der Fehlerbalken](https://paternogbc.shinyapps.io/SS_regression/)"
     - "[Playlist von OpenIntro zur Regression](https://www.youtube.com/playlist?list=PLkIselvEzpM63ikRfN41DNIhSgzboELOM)"
     - "[Studie auf Basis einer Regressionsanalyse zu Vorurteilen bei Corona](https://journals.sagepub.com/doi/10.1177/1090198120957949)"
     - "[Korrelationen raten](https://gallery.shinyapps.io/correlation_game/)"
+    - "[Ableitung der Regressionskoeffizienten](https://data-se.netlify.app/2022/05/23/ableitung-der-koeffizienten-der-einfachen-regression/)"
   Skript:
     - "[Folienskript, PDF](https://raw.github.com/sebastiansauer/vorhersagemodellierung/main/Skript-Folien/QM1-Thema11.pdf)"
     - "[Folienskript, PPTX](https://raw.github.com/sebastiansauer/vorhersagemodellierung/main/Skript-Folien/QM1-Thema11.pptx)"
     - "[Folienskript, Keynote](https://raw.github.com/sebastiansauer/vorhersagemodellierung/main/Skript-Folien/QM1-Thema11.key)"
 
   Syntax: NA
-  Aufgaben: NA
+  Aufgaben:
+    - "[Aufgaben HTML](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema11-Aufgaben1.html)"
+    - "[Lösungen HTML](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema11-Loesungen1.html)"
+    - "[Aufgaben PDF](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema11-Loesungen1.pdf)"
 
 
 Thema11a:
