@@ -1,6 +1,9 @@
 library(tidyverse)
 data(mtcars)
 library(patchwork)
+library(easystats)
+library(gt)
+library(dagitty)
 
 theme_set(theme_minimal())
 
@@ -27,6 +30,7 @@ lm1
 
 mtcars3 <- mtcars
 
+# Ausreißer erzeugen:
 mtcars3[1,1] <- 30
 mtcars3[1,4 ] <- 1000
 
@@ -71,16 +75,23 @@ p3$plane3d(lm1a)
 # Regression mit 2 Prädiktoren --------------------------------------------
 
 
-lm2 <- lm(mpg ~ hp + factor(am), data = mtcars)
+mtcars <-
+  mtcars %>%
+  mutate(hp100 = hp / 100)
+
+lm2 <- lm(mpg ~ hp100 + factor(am), data = mtcars)
 
 
-ggplot(mtcars, aes(x = hp, y = mpg, color = factor(am))) +
-  geom_point()
+ggplot(mtcars, aes(x = hp100, y = mpg, color = factor(am))) +
+  geom_point() +
+  xlim(c(0, 4))
 
 
 library(mosaic)
 
-plotModel(lm2)
+
+plotModel(lm2)  +
+  xlim(c(0, 4))
 
 
 
@@ -102,17 +113,17 @@ mtcars <-
   mutate(hp100 = hp / 100)
 
 
-lm1 <- lm(mpg ~ hp100 + am, data = mtcars)
-lm1
-parameters(lm1)
 
-parameters(lm1) %>%
+
+parameters(lm2)
+
+parameters(lm2) %>%
   select(1,2,4,5) %>%
   gt::gt() %>%
   fmt_number(where(is.numeric))
 
-lm1_res <- plot(parameters(lm1),show_intercept = TRUE)
-lm1_res
+lm2_res <- plot(parameters(lm2),show_intercept = TRUE)
+lm2_res
 
 
 
@@ -120,7 +131,6 @@ lm1_res
 # DAG ---------------------------------------------------------------------
 
 
-library(dagitty)
 
 dag1 <- dagitty::dagitty("dag {hp -> mpg}")
 dag1
@@ -136,9 +146,7 @@ plot(dag2)
 
 # Interaktionseffekt mtcars ------------------------------------------------------
 
-mtcars <-
-  mtcars %>%
-  mutate(hp100 = hp / 100)
+
 
 lm3 <- lm(mpg ~ hp100*cyl, data = mtcars)
 lm3
@@ -207,14 +215,16 @@ ggplot(kidiq) +
   geom_jitter(width = 0.1, alpha = .5) +
   geom_abline(slope = coef(m1)[2],
               intercept = coef(m1)[1])  +
-  scale_x_continuous(breaks = c(0, 1))
+  scale_x_continuous(breaks = c(0, 1)) +
+  stat_summary(geom = "point", fun = "mean", color = "red", size = 5, alpha = .5)+
+  labs(caption = "Rote Punkte symbolisieren die Mittelwerte der Gruppen")
 
 plot(parameters(m1),show_intercept = TRUE)
 
 
 
 parameters(m1) %>%
-  select(1,2,4,5) %>%
+  select(1,2,4,5, 6) %>%
   gt::gt() %>%
   fmt_number(where(is.numeric))
 
