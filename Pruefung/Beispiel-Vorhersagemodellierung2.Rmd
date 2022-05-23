@@ -27,7 +27,7 @@ editor_options:
   fig.path = "chunk-img/",
   dpi = 300,
   # tidy = TRUE,
-  echo = FALSE,
+  echo = TRUE,
   message = FALSE,
   warning = FALSE,
   cache = FALSE,
@@ -36,23 +36,13 @@ editor_options:
 
 
 
-```{r}
-library(tidyverse)
-```
 
-
-
-
----
-title: "Beispiel für Vorhersagemodellierung"
-author: "ses"
-date: "5/10/2021"
-output: html_document
----
 
 # Einleitung
 
 Wie gut kann man das Trinkgeld eines Kellners im Datensatz `tips` vorhersagen? Welche Prädiktoren sind dabei besonders informativ?
+
+Hier schreiben Sie mehr zu Ihrer Einleitung ...
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
