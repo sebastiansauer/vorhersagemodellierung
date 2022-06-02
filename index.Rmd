@@ -257,6 +257,34 @@ RefManageR::PrintBibliography(bib)
 
 
 
+# Zitationsvorschlag
+
+Wenn Sie diesen Kurs verwenden (für Ihre Analyse, Ihren Unterricht, ...),
+zitieren Sie ihn bitte. Hier ist ein Zitations
+
+[![DOI](https://zenodo.org/badge/446419926.svg)](https://zenodo.org/badge/latestdoi/446419926)
+
+
+Als Bibtex:
+
+```
+@software{sauer_sebastiansauervorhersagemodellierung_2022,
+	title = {sebastiansauer/vorhersagemodellierung: v0.1.1-alpha},
+	rights = {Open Access},
+	url = {https://zenodo.org/record/6602672},
+	shorttitle = {sebastiansauer/vorhersagemodellierung},
+	abstract = {Kurs zu den Grundlagen der Vorhersagemodellierung mit R},
+	version = {draft},
+	publisher = {Zenodo},
+	author = {Sauer, Sebastian},
+	urldate = {2022-06-02},
+	date = {2022-06-01},
+	doi = {10.5281/ZENODO.6602672}
+}
+```
+
+
+
 
 # Kudos
 
