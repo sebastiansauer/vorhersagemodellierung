@@ -245,7 +245,7 @@ Kurz gesagt gehen Sie so vor: Importieren Sie die Daten in R, starten Sie die n�
 - [Hinweise zur Prüfung]()
 - [Einfache, beispielhafte Vorhersagemodellierung (Video)](https://www.youtube.com/watch?v=5pBTHrnRIZY) 
 - [YouTube-Playlist zur Prüfungsleistung Prognosemodellierung](https://youtube.com/playlist?list=PLRR4REmBgpIFQIReNf_ihRm5GYJSKh3WT)
-- [Materialüberblick zur Prüfung](https://github.com/sebastiansauer/vorhersagemodellierung/tree/main/Pruefung)
+- [Materialüberblick zur Prüfung](https://github.com/sebastiansauer/Lehre/tree/main/Hinweise/Prognosewettbewerb)
 - Der gesamte Stoff, der im Unterricht behandelt bzw. für den Kurs bereitgestellt ist, ist prüfungsrelvant. Eine Ausnahme ist, wenn bestimmte Inhalte explizit als "nicht prüfungsrelevant" gekennzeichnet sind.
 - Denken Sie daran, sich rechtzeitig zu den Prüfungsleistungen anzumelden. Beachten Sie, dass die Fristen für Anmeldung und Abgabe (Hochladen der Prüfungsleistung) unterschiedlich sein können.
 
