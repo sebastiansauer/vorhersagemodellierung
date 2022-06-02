@@ -260,9 +260,11 @@ RefManageR::PrintBibliography(bib)
 # Zitationsvorschlag
 
 Wenn Sie diesen Kurs verwenden (für Ihre Analyse, Ihren Unterricht, ...),
-zitieren Sie ihn bitte. Hier ist ein Zitations
+zitieren Sie ihn bitte. Hier ist ein Zitationsvorschlag:
 
 [![DOI](https://zenodo.org/badge/446419926.svg)](https://zenodo.org/badge/latestdoi/446419926)
+
+(Sie können z.B. die angegebene DOI in Ihr Zitationsprogramm importieren.)
 
 
 Als Bibtex:
