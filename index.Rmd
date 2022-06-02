@@ -242,7 +242,7 @@ Kurz gesagt gehen Sie so vor: Importieren Sie die Daten in R, starten Sie die n�
 
 ## Hinweise zur Pr체fung
 
-- [Hinweise zur Pr체fungsform des Prognosewettbewerbs](https://sebastiansauer.github.io/vorhersagemodellierung/Hinweise-Prognosewettbewerb.html)
+- [Hinweise zur Pr체fungsform des Prognosewettbewerbs](https://sebastiansauer.github.io/vorhersagemodellierung/Referenz-Hinweise-Prognosewettbewerb.html)
 - [Einfache, beispielhafte Vorhersagemodellierung (Video)](https://www.youtube.com/watch?v=5pBTHrnRIZY) 
 - [YouTube-Playlist zur Pr체fungsleistung Prognosemodellierung](https://youtube.com/playlist?list=PLRR4REmBgpIFQIReNf_ihRm5GYJSKh3WT)
 - [Material체berblick zur Pr체fung](https://github.com/sebastiansauer/Lehre/tree/main/Hinweise/Prognosewettbewerb)
