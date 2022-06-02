@@ -390,14 +390,58 @@ Thema11a:
   Titel: KEIN UNTERRICHT in dieser Woche
   id: 12
 
+#
+#
+# Thema11a:
+#   Titel: TEST
+#   id: 12a
+
+
+
+
+Thema13:
+  Titel: Fallstudie zur Regression
+  id: 13
+  Lernziele:
+    - Sie können die gelernten Techniken der Regressionsanalyse praktisch anwenden.
+
+  Literatur:
+    NA: NA
+  Videos:
+    - "[Playlist YACSDAs](https://youtube.com/playlist?list=PLRR4REmBgpIGet_lcNf2wOd0W8j4c9hYN)"
+  Vertiefung:
+    - "[Movies](https://data-se.netlify.app/2020/11/13/fallstudie-zur-regressionsanalyse-ggplot2movies/)"
+    - "[Playlist YACSDAs](https://youtube.com/playlist?list=PLRR4REmBgpIGet_lcNf2wOd0W8j4c9hYN)"
+    - "[Fallstudie als Beispiel einer Prognosemodellierung: Top-Gear](https://data-se.netlify.app/2021/02/11/yacda-topgear/)"
+    - "[Fallstudie als Beispiel einer Prognosemodellierung: OECD-Wellbeing-Studie](https://data-se.netlify.app/2021/02/11/explorative-datenanalyse-zum-datensatz-oecd-wellbeing/)"
+    - "[Fallstudie als Beispiel einer Prognosemodellierung: Movie Rating](https://minimaxir.com/2018/07/imdb-data-analysis/)"
+    - "[Fallstudie als Beispiel einer Prognosemodellierung: Women in Parliament](https://github.com/saghirb/WiP-tidyverse/blob/master/doc/WiP-tidyverse.pdf)"
+
+  Skript:
+  Syntax:
+  Hinweise:
+    - Wir nähern uns dem Ende des Moduls. Es ist wichtig, dass Sie sich einen Überblick erarbeiten. Noch ist Zeit, etwaige Wissenslücken zu schließen.
+    - Es kann sein, dass wir (noch) nicht allen Stoff im Unterricht behandelt haben, der in den Fallstudien vorkommt. Sie können in diesem Fall die entsprechenden Abschnitte ohne Schaden ignorieren. Alternativ können Sie sich selbständig mit diesen Inhalten beschäftigen.
+  Aufgaben:
+    - "[Aufgaben HTML](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema11-Aufgaben1.html)"
+    - "[Lösungen HTML](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema11-Loesungen1.html)"
+    - "[Aufgaben PDF](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema11-Loesungen1.pdf)"
+    - "[Fallstudie Flugverspätungen - EDA](https://data-se.netlify.app/2021/03/08/eda-zu-flugversp%C3%A4tungen/)"
+    - "[Fallstudie Flugverspätungen - Modellierung](https://data-se.netlify.app/2021/03/10/fallstudie-modellierung-von-flugversp%C3%A4tungen/#tidymodels)"
+
+
+
+
+
 
 Thema12:
   Titel: Wiederholung
-  id: 13
+  id: 14
   Lernziele:
     - Sie vertiefen Ihr Wissen in den bisher gelernten Themen.
   Hinweise:
-    - In dieser Woche fällt die Vorlesung aus (Pfingsten).
+    - "[Data Science Memes](https://data-se.netlify.app/2021/02/23/data-science-memes/)"
+
   Skript:
     - "[Beispiel für Ihre Prüfungsleistung 1, grundlegender Anspruch, Video](https://youtu.be/5pBTHrnRIZY)"
     - "[Beispiel für Ihre Prüfungsleistung 2, mittlerer Anspruch](https://data-se.netlify.app/2020/11/13/fallstudie-zur-regressionsanalyse-ggplot2movies/)"
@@ -406,10 +450,11 @@ Thema12:
   Syntax:
   Aufgaben:
     - "[Data-Wranglinng-Aufgaben zur Lebenserwartung](https://data-se.netlify.app/2021/02/24/exercises-to-data-wrangling-with-the-tidyverse/)"
-    - "[Data Science Memes](https://data-se.netlify.app/2021/02/23/data-science-memes/)"
     - "[Aufgabe zur Datenvisualisierung des Diamantenpreises](https://data-se.netlify.app/2020/12/07/ex-visualizing-diamonds/)"
 
   Vertiefung:
+    - "[Movies](https://data-se.netlify.app/2020/11/13/fallstudie-zur-regressionsanalyse-ggplot2movies/)"
+    - "[Playlist YACSDAs](https://youtube.com/playlist?list=PLRR4REmBgpIGet_lcNf2wOd0W8j4c9hYN)"
     - "[Fallstudie als Beispiel einer Prognosemodellierung: Top-Gear](https://data-se.netlify.app/2021/02/11/yacda-topgear/)"
     - "[Fallstudie als Beispiel einer Prognosemodellierung: OECD-Wellbeing-Studie](https://data-se.netlify.app/2021/02/11/explorative-datenanalyse-zum-datensatz-oecd-wellbeing/)"
     - "[Fallstudie als Beispiel einer Prognosemodellierung: Movie Rating](https://minimaxir.com/2018/07/imdb-data-analysis/)"
@@ -420,27 +465,6 @@ Thema12:
   Videos:
 
 
-
-
-
-Thema13:
-  Titel: Fallstudie zur Regression
-  id: 14
-  Lernziele:
-    - Sie können die gelernten Techniken der Regressionsanalyse praktisch anwenden.
-  Vorbereitung:
-    - Sehen Sie sich ggf. das Video zum Folienskript an.
-  Literatur:
-    NA: NA
-  Videos:
-    - "[Playlist YACSDAs](https://youtube.com/playlist?list=PLRR4REmBgpIGet_lcNf2wOd0W8j4c9hYN)"
-  Aufgaben:
-    - "[Movies](https://data-se.netlify.app/2020/11/13/fallstudie-zur-regressionsanalyse-ggplot2movies/)"
-    - "[Playlist YACSDAs](https://youtube.com/playlist?list=PLRR4REmBgpIGet_lcNf2wOd0W8j4c9hYN)"
-  Skript:
-  Syntax:
-  Vertiefung:
-  Hinweise:
 
 
 
@@ -460,6 +484,9 @@ Thema14:
   Vertiefung:
   Hinweise:
   Videos:
+
+
+
 
 Thema15:
   Titel: Vertiefung
