@@ -294,7 +294,7 @@ Thema8:
 
 
   Hinweise:
-
+    - "[Data Science Memes](https://data-se.netlify.app/2021/02/23/data-science-memes/)"
 
 Thema9:
   Titel: Fallstudien zur EDA
@@ -317,10 +317,13 @@ Thema9:
     - "[Beispiel zum Pivotieren von Tabellen](https://data-se.netlify.app/2021/05/27/beispiel-f%C3%BCr-pivot-longer/)"
   Syntax:
   Vertiefung:
-    - "[DataCamp-Kurs zum Tidyverse](https://www.new.datacamp.com/courses/case-study-exploratory-data-analysis-in-r)"
-    - "[Google Data Analytics Kurs bei Coursera](https://grow.google/certificates/data-analytics/#?modal_active=none)"
+    - "[Movies](https://data-se.netlify.app/2020/11/13/fallstudie-zur-regressionsanalyse-ggplot2movies/)"
+    - "[Playlist YACSDAs](https://youtube.com/playlist?list=PLRR4REmBgpIGet_lcNf2wOd0W8j4c9hYN)"
+
   Hinweise:
     - In dieser Woche gibt es kein Skript, da es keinen neuen Stoff gibt. Stattdessen steht Anwendung des gelernten im Mittelpunkt.
+    - "[DataCamp-Kurs zum Tidyverse](https://www.new.datacamp.com/courses/case-study-exploratory-data-analysis-in-r)"
+    - "[Google Data Analytics Kurs bei Coursera](https://grow.google/certificates/data-analytics/#?modal_active=none)"
 
 
 Thema10:
@@ -346,7 +349,7 @@ Thema10:
   Syntax:
   Aufgaben:
     - "[Einfaches Beispiel zur Vorhersagemodellierung](https://sebastiansauer.github.io/vorhersagemodellierung/Pruefung/Beispiel-Vorhersagemodellierung2.html)"
-    - "[Beispiel für eine Vorhersagemodellierung bei Kaggle: Movie Revenues](https://www.kaggle.com/code/ssauer/tmdb-simple-regression-beginners/notebook?scriptVersionId=95441291)"
+    - "[Beispiel für eine Vorhersagemodellierung bei Kaggle: Movie Revenues, TMDB](https://www.kaggle.com/code/ssauer/tmdb-simple-regression-beginners/notebook?scriptVersionId=95441291)"
     - "[R-Code für Kaggle-Prognosemodell zu Movie Revenues](https://github.com/sebastiansauer/Lehre/blob/main/22-SoSe/QM1/tmdb-box-office-submission1.R)"
 
   Vertiefung:
@@ -397,43 +400,6 @@ Thema11a:
 #   id: 12a
 
 
-
-
-Thema13:
-  Titel: Fallstudie zur Regression
-  id: 13
-  Lernziele:
-    - Sie können die gelernten Techniken der Regressionsanalyse praktisch anwenden.
-
-  Literatur:
-    NA: NA
-  Videos:
-    - "[Playlist YACSDAs](https://youtube.com/playlist?list=PLRR4REmBgpIGet_lcNf2wOd0W8j4c9hYN)"
-  Vertiefung:
-    - "[Movies](https://data-se.netlify.app/2020/11/13/fallstudie-zur-regressionsanalyse-ggplot2movies/)"
-    - "[Playlist YACSDAs](https://youtube.com/playlist?list=PLRR4REmBgpIGet_lcNf2wOd0W8j4c9hYN)"
-    - "[Fallstudie als Beispiel einer Prognosemodellierung: Top-Gear](https://data-se.netlify.app/2021/02/11/yacda-topgear/)"
-    - "[Fallstudie als Beispiel einer Prognosemodellierung: OECD-Wellbeing-Studie](https://data-se.netlify.app/2021/02/11/explorative-datenanalyse-zum-datensatz-oecd-wellbeing/)"
-    - "[Fallstudie als Beispiel einer Prognosemodellierung: Movie Rating](https://minimaxir.com/2018/07/imdb-data-analysis/)"
-    - "[Fallstudie als Beispiel einer Prognosemodellierung: Women in Parliament](https://github.com/saghirb/WiP-tidyverse/blob/master/doc/WiP-tidyverse.pdf)"
-
-  Skript:
-  Syntax:
-  Hinweise:
-    - Wir nähern uns dem Ende des Moduls. Es ist wichtig, dass Sie sich einen Überblick erarbeiten. Noch ist Zeit, etwaige Wissenslücken zu schließen.
-    - Es kann sein, dass wir (noch) nicht allen Stoff im Unterricht behandelt haben, der in den Fallstudien vorkommt. Sie können in diesem Fall die entsprechenden Abschnitte ohne Schaden ignorieren. Alternativ können Sie sich selbständig mit diesen Inhalten beschäftigen.
-  Aufgaben:
-    - "[Aufgaben HTML](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema11-Aufgaben1.html)"
-    - "[Lösungen HTML](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema11-Loesungen1.html)"
-    - "[Aufgaben PDF](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema11-Loesungen1.pdf)"
-    - "[Fallstudie Flugverspätungen - EDA](https://data-se.netlify.app/2021/03/08/eda-zu-flugversp%C3%A4tungen/)"
-    - "[Fallstudie Flugverspätungen - Modellierung](https://data-se.netlify.app/2021/03/10/fallstudie-modellierung-von-flugversp%C3%A4tungen/#tidymodels)"
-
-
-
-
-
-
 Thema12:
   Titel: Wiederholung
   id: 14
@@ -442,26 +408,77 @@ Thema12:
   Hinweise:
     - "[Data Science Memes](https://data-se.netlify.app/2021/02/23/data-science-memes/)"
 
-  Skript:
-    - "[Beispiel für Ihre Prüfungsleistung 1, grundlegender Anspruch, Video](https://youtu.be/5pBTHrnRIZY)"
-    - "[Beispiel für Ihre Prüfungsleistung 2, mittlerer Anspruch](https://data-se.netlify.app/2020/11/13/fallstudie-zur-regressionsanalyse-ggplot2movies/)"
-    - "[Beispiel für Ihre Prüfungsleistung 3, hoher Anspruch](https://data-se.netlify.app/2021/03/10/fallstudie-modellierung-von-flugversp%C3%A4tungen/)"
 
   Syntax:
   Aufgaben:
-    - "[Data-Wranglinng-Aufgaben zur Lebenserwartung](https://data-se.netlify.app/2021/02/24/exercises-to-data-wrangling-with-the-tidyverse/)"
-    - "[Aufgabe zur Datenvisualisierung des Diamantenpreises](https://data-se.netlify.app/2020/12/07/ex-visualizing-diamonds/)"
+    - "[Aufgaben HTML](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema11-Aufgaben1.html)"
+    - "[Lösungen HTML](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema11-Loesungen1.html)"
+    - "[Aufgaben PDF](https://sebastiansauer.github.io/vorhersagemodellierung/Aufgaben/Thema11-Loesungen1.pdf)"
+
+  Vertiefung:
+    - "[Fallstudie Sprit sparen](https://data-se.netlify.app/2022/05/02/fallstudie-spritverbrauch/)"
+
+
+
+Thema13:
+  Titel: Fallstudie zur Regression
+  id: 13
+  Lernziele:
+    - Sie können die gelernten Techniken der Regressionsanalyse praktisch anwenden.
 
   Vertiefung:
     - "[Movies](https://data-se.netlify.app/2020/11/13/fallstudie-zur-regressionsanalyse-ggplot2movies/)"
     - "[Playlist YACSDAs](https://youtube.com/playlist?list=PLRR4REmBgpIGet_lcNf2wOd0W8j4c9hYN)"
-    - "[Fallstudie als Beispiel einer Prognosemodellierung: Top-Gear](https://data-se.netlify.app/2021/02/11/yacda-topgear/)"
-    - "[Fallstudie als Beispiel einer Prognosemodellierung: OECD-Wellbeing-Studie](https://data-se.netlify.app/2021/02/11/explorative-datenanalyse-zum-datensatz-oecd-wellbeing/)"
-    - "[Fallstudie als Beispiel einer Prognosemodellierung: Movie Rating](https://minimaxir.com/2018/07/imdb-data-analysis/)"
-    - "[Fallstudie als Beispiel einer Prognosemodellierung: Women in Parliament](https://github.com/saghirb/WiP-tidyverse/blob/master/doc/WiP-tidyverse.pdf)"
+    - "[Fallstudie Flugverspätungen - EDA](https://data-se.netlify.app/2021/03/08/eda-zu-flugversp%C3%A4tungen/)"
+    - "[Fallstudie Flugverspätungen - Modellierung](https://data-se.netlify.app/2021/03/10/fallstudie-modellierung-von-flugversp%C3%A4tungen/#tidymodels)"
+
+  Skript:
+  Syntax:
+  Hinweise:
+    - Wir nähern uns dem Ende des Moduls. Es ist wichtig, dass Sie sich einen Überblick erarbeiten. Noch ist Zeit, etwaige Wissenslücken zu schließen.
+    - Es kann sein, dass wir (noch) nicht allen Stoff im Unterricht behandelt haben, der in den Fallstudien vorkommt. Sie können in diesem Fall die entsprechenden Abschnitte ohne Schaden ignorieren. Alternativ können Sie sich selbständig mit diesen Inhalten beschäftigen.
+  Aufgaben:
+    - "[Fallstudie Filmumsatz, TMDB](https://www.kaggle.com/code/ssauer/tmdb-simple-regression-beginners)"
+
+
 
   Literatur:
   Vorbereitung:
+    - "Schauen Sie sich das Video zur Kaggle-Fallstudie TMDB an"
+    - "[Arbeiten Sie die Syntax zur Kaggle-Fallstudie 'TMDB' durch](https://github.com/sebastiansauer/Lehre/blob/main/22-SoSe/QM1/tmdb-box-office-submission1.R)"
+  Videos:
+    - "[Kaggle-Fallstudie TMDB](https://youtu.be/vR9l-k50I1M)"
+
+
+
+
+
+Thema12a:
+  Titel: Prüfungsvorbereitung
+  id: 14
+  Lernziele:
+    - Der genaue Ablauf und die Anforderungen der Prüfung sind Ihnen bekannt.
+  Hinweise:
+  -  "Beachten Sie die Hinweise zur Prüfungsform 'Prognosewettbewerb'](https://sebastiansauer.github.io/vorhersagemodellierung/index.html#pr%C3%BCfung)"
+
+  Skript:
+    - "[Beispiel für Ihre Prüfungsleistung 1, grundlegender Anspruch, Video](https://youtu.be/5pBTHrnRIZY)"
+    - "[Beispiel für Ihre Prüfungsleistung 2, mittlerer Anspruch](https://data-se.netlify.app/2020/11/13/fallstudie-zur-regressionsanalyse-ggplot2movies/)"
+    - "[Beispiel für Ihre Prüfungsleistung 3, hoher Anspruch](https://data-se.netlify.app/2021/03/10/fallstudie-modellierung-von-flugversp%C3%A4tungen/)"
+  Vorbereitung:
+    - "Stellen Sie sicher, dass Sie den bisherigen Stoff gut beherrschen. Arbeiten Sie ggf. fehlende Inhalte nach. Langsam geht das Semester zu Ende. Sie sollten jetzt alle bisherigen Inhalte kennen."
+
+  Syntax:
+  Aufgaben:
+    - "[Bearbeiten Sie eine Auswahl von Fallstudien Ihrer Wahl (aus den bisher bereitgestellten Aufgaben)](https://sebastiansauer.github.io/Lehre/Material/yacsdas.html)"
+
+  Vertiefung:
+    - "[Movies](https://data-se.netlify.app/2020/11/13/fallstudie-zur-regressionsanalyse-ggplot2movies/)"
+    - "[Playlist YACSDAs](https://youtube.com/playlist?list=PLRR4REmBgpIGet_lcNf2wOd0W8j4c9hYN)"
+    - "[Data-Wranglinng-Aufgaben zur Lebenserwartung](https://data-se.netlify.app/2021/02/24/exercises-to-data-wrangling-with-the-tidyverse/)"
+    - "[Aufgabe zur Datenvisualisierung des Diamantenpreises](https://data-se.netlify.app/2020/12/07/ex-visualizing-diamonds/)"
+
+  Literatur:
   Videos:
 
 
@@ -488,21 +505,21 @@ Thema14:
 
 
 
-Thema15:
-  Titel: Vertiefung
-  id: 16
-  Lernziele:
-    - Sie erwerben tieferes Wissen in den Stoffgebieten dieses Kurses.
-  Hinweise:
-    - Nach dieser Woche endet der Unterricht.
-  Skript:
-  Syntax:
-  Aufgaben:
-  Vertiefung:
-  Literatur:
-  Videos:
-    - "[Playlist zur Prüfungsleistung Prognosewettbewerb](https://youtube.com/playlist?list=PLRR4REmBgpIH6uG8LZWPTSMReX1OFxfUx)"
-  Vorbereitung:
+# Thema15:
+#   Titel: Vertiefung
+#   id: 16
+#   Lernziele:
+#     - Sie erwerben tieferes Wissen in den Stoffgebieten dieses Kurses.
+#   Hinweise:
+#     - Nach dieser Woche endet der Unterricht.
+#   Skript:
+#   Syntax:
+#   Aufgaben:
+#   Vertiefung:
+#   Literatur:
+#   Videos:
+#     - "[Playlist zur Prüfungsleistung Prognosewettbewerb](https://youtube.com/playlist?list=PLRR4REmBgpIH6uG8LZWPTSMReX1OFxfUx)"
+#   Vorbereitung:
 
 
 
