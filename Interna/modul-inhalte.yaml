@@ -400,6 +400,32 @@ Thema11a:
 #   id: 12a
 
 
+Thema13:
+  Titel: Vertiefung zur Regression
+  id: 13
+  Lernziele:
+    - Sie können die gelernten Techniken der Regressionsanalyse praktisch anwenden.
+
+  Vertiefung:
+    - "[Movies](https://data-se.netlify.app/2020/11/13/fallstudie-zur-regressionsanalyse-ggplot2movies/)"
+    - "[Playlist YACSDAs](https://youtube.com/playlist?list=PLRR4REmBgpIGet_lcNf2wOd0W8j4c9hYN)"
+    - "[Fallstudie Flugverspätungen - EDA](https://data-se.netlify.app/2021/03/08/eda-zu-flugversp%C3%A4tungen/)"
+    - "[Fallstudie Flugverspätungen - Modellierung](https://data-se.netlify.app/2021/03/10/fallstudie-modellierung-von-flugversp%C3%A4tungen/#tidymodels)"
+
+  Skript:
+  Syntax:
+  Hinweise:
+    - Wir nähern uns dem Ende des Moduls. Es ist wichtig, dass Sie sich einen Überblick erarbeiten. Noch ist Zeit, etwaige Wissenslücken zu schließen.
+    - Es kann sein, dass wir (noch) nicht allen Stoff im Unterricht behandelt haben, der in den Fallstudien vorkommt. Sie können in diesem Fall die entsprechenden Abschnitte ohne Schaden ignorieren. Alternativ können Sie sich selbständig mit diesen Inhalten beschäftigen.
+  Aufgaben:
+    - "[Fallstudie Filmumsatz, TMDB](https://www.kaggle.com/code/ssauer/tmdb-simple-regression-beginners)"
+
+
+
+
+
+
+
 Thema12:
   Titel: Wiederholung
   id: 14
@@ -418,27 +444,6 @@ Thema12:
   Vertiefung:
     - "[Fallstudie Sprit sparen](https://data-se.netlify.app/2022/05/02/fallstudie-spritverbrauch/)"
 
-
-
-Thema13:
-  Titel: Fallstudie zur Regression
-  id: 13
-  Lernziele:
-    - Sie können die gelernten Techniken der Regressionsanalyse praktisch anwenden.
-
-  Vertiefung:
-    - "[Movies](https://data-se.netlify.app/2020/11/13/fallstudie-zur-regressionsanalyse-ggplot2movies/)"
-    - "[Playlist YACSDAs](https://youtube.com/playlist?list=PLRR4REmBgpIGet_lcNf2wOd0W8j4c9hYN)"
-    - "[Fallstudie Flugverspätungen - EDA](https://data-se.netlify.app/2021/03/08/eda-zu-flugversp%C3%A4tungen/)"
-    - "[Fallstudie Flugverspätungen - Modellierung](https://data-se.netlify.app/2021/03/10/fallstudie-modellierung-von-flugversp%C3%A4tungen/#tidymodels)"
-
-  Skript:
-  Syntax:
-  Hinweise:
-    - Wir nähern uns dem Ende des Moduls. Es ist wichtig, dass Sie sich einen Überblick erarbeiten. Noch ist Zeit, etwaige Wissenslücken zu schließen.
-    - Es kann sein, dass wir (noch) nicht allen Stoff im Unterricht behandelt haben, der in den Fallstudien vorkommt. Sie können in diesem Fall die entsprechenden Abschnitte ohne Schaden ignorieren. Alternativ können Sie sich selbständig mit diesen Inhalten beschäftigen.
-  Aufgaben:
-    - "[Fallstudie Filmumsatz, TMDB](https://www.kaggle.com/code/ssauer/tmdb-simple-regression-beginners)"
 
 
 
